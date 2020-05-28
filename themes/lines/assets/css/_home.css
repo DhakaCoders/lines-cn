@@ -18,7 +18,7 @@
 	justify-content: center;
 }
 .main-slider-sec{
-	padding: 50px 0 80px;
+	padding: 50px 0 0;
 	margin-top: -100px;
 	position: relative;
 	z-index: 1;
@@ -51,7 +51,7 @@
 .mainSlideItem-fea-img{
 	width: 50%;
 	text-align: right;
-	padding-top: 100px;
+	padding-top: 55px;
 }
 .mainSlideItem-fea-img img{
 	display: inline-block;
@@ -83,6 +83,13 @@
 	background-position: center center;
 }
 
+.mainSlider.slick-slider ul.slick-dots{
+	position: absolute!important;
+	left: 0;
+	right: 0;
+	bottom: 70px;
+	z-index: 20;
+}
 .hm-cat-secton{
 	padding: 50px 0 100px;
 }
@@ -120,8 +127,34 @@
 	position: relative;
 	padding: 60px 0 50px;
 }
+.beer-list-sec-top-angle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9px;
+    height: 70px;
+    background: url(../images/beer-list-sec-top-angle.png);
+    background-repeat: repeat-x;
+    background-position: center top;
+}
+.beer-list-sec-btm-angle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    height: 70px;
+    background: url(../images/beer-list-sec-btm-angle.png);
+    background-repeat: repeat-x;
+    background-position: center top;
+    z-index: 5;
+}
+
+.hm-beer-list-sec-inr{
+    background: url(../images/hm-beer-list-sec-bg.png);
+}
 .hm-beer-list-sec-hdr{
 	text-align: center;
+	margin-top: -20px;
 }
 .hm-beer-list-sec-hdr-title{
 	margin-bottom: 60px;
@@ -142,6 +175,8 @@
 }
 .fl-product-item:last-of-type{
 	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 .red-product .fl-product-item-des p i{
 	background: #ff001e;
@@ -159,44 +194,39 @@
 	display: inline-block;
 	vertical-align: baseline;
 }
-.available-title{
+.available-title,
+.in-the-tank-title,
+.concept-title{
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: 'CenturyGothic';
+	margin-bottom: 25px;	
+}
+.available-title{
 	width: 260px;
 	height: 76px;
 	text-align: center;
 	background: url(../images/available-title-bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	margin-bottom: 25px;
 }
 .in-the-tank-title{
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 268px;
 	height: 80px;
 	text-align: center;
 	background: url(../images/in-the-tank-title-bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	margin-bottom: 25px;
 }
 .concept-title{
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 269px;
 	height: 86px;
 	text-align: center;
 	background: url(../images/concept-title-bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	margin-bottom: 25px;
 }
 .fl-product-item-des{
 	font-size: 15px;
@@ -238,6 +268,9 @@
 .hm-gallery-item-img{
 	height: 100%;
 	width: 100%;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-position: center center!important;
 }
 
 
@@ -245,10 +278,44 @@
 
 .hm-latest-news-sec{
 	position: relative;
-	padding: 100px 0 50px;
+	padding: 100px 0 10px;
 }
+.hm-gallery-sec{
+	padding-top: 35px;
+}
+.hm-gallery-sec-bg{
+	background: url(../images/gallery-sec-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 0 0 55px;
+}
+/*.gallery-sec-top-anlge{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -50px;
+    height: 52px;
+    background: url(../images/gallery-sec-top-angle.png);
+    background-repeat: repeat-x;
+    background-position: center top;
+    z-index: 5;
+}*/
+.gallery-sec-btm-anlge{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -53px;
+    height: 54px;
+    background: url(../images/gallery-sec-btm-angle.png);
+    background-repeat: repeat-x;
+    background-position: center top;
+    z-index: 5;
+}
+
 .hm-latest-news-sec-hdr{
 	text-align: center;
+	margin-top: 0;
 }
 .hm-latest-news-sec-hdr-title{
 	margin-bottom: 30px;
@@ -257,7 +324,7 @@
 	text-transform: uppercase;
 }
 .hm-latest-news-item-fea-img{
-	padding-bottom: 20px;
+	padding-bottom: 16px;
 }
 .hm-latest-news-item-fea-img img{
 	width: 100%;
@@ -287,6 +354,9 @@
 	margin-left: auto;
 }
 
+.eco-brewing-sec-hdr{
+	margin-top: -15px;
+}
 
 .eco-brewing-sec-hdr-title{
 	margin-bottom: 45px;
@@ -297,12 +367,15 @@
 	position: relative;
 	padding: 40px 0 60px;
 }
+.eco-brewing-sec-inr{
+	
+}
 .eco-brewing-sec-top-anlge{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -21px;
-	height: 62px;
+	top: -15px;
+	height: 55px;
 	background: url(../images/eco-brewing-sec-top-anlge.png);
 	background-repeat: repeat-x;
 	background-position: center top;
@@ -311,15 +384,15 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -21px;
-	height: 58px;
+	bottom: -31px;
+	height: 52px;
 	background: url(../images/eco-brewing-sec-btm-anlge.png);
 	background-repeat: repeat-x;
 	background-position: center top;
 	z-index: 5;
 }
 .eco-brewing-sec-inr{
-	background: rgba(35,31,32,.6);
+	background: url(../images/eco-brewing-sec-bg.png);
 
 }
 .eco-brewing-sec-hdr{

@@ -338,3 +338,7 @@ form .dropdown-menu li a{
 	text-align: center;
 	margin-bottom: 15px;
 }
+.fl-btn:hover{
+	color: #fff;
+	border-color: #342e24;
+}
