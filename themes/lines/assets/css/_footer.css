@@ -1,0 +1,47 @@
+.footer-wrp{
+	padding: 90px 0 0;
+}
+.ftr-logo{
+	margin-top: -30px;
+}
+.ftr-visit-col{
+	padding-right: 20px;
+}
+.ftr-col .ftr-col-title{
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 30px;
+	display: block;
+}
+.ftr-col p{
+	margin-bottom: 20px;
+}
+.ftr-col p a{
+	color: #fff;
+}
+.ftr-col p:last-of-type{
+	margin-bottom: 5px;
+}
+.footer-btm-con-wrap{
+	padding: 20px 0 30px;
+	background: #000000;
+}
+.footer-btm-con{
+	display: flex;
+	align-items: center;
+}
+.ftr-socila ul{
+	padding-right: 65px;
+}
+.ftr-socila ul li,
+.ftr-socila ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.ftr-copyright-text p{
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 1;
+}
