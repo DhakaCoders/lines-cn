@@ -3,19 +3,24 @@
 	position: relative;
 	z-index: 2;
 }
-.global-graphics img{
-	margin-top: auto;
+.sections-cntlr{
+	position: relative;
 }
-.global-graphics{
+.global-graphics-btm{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
-	bottom: 0;
+	bottom: 150px;
 	text-align: center;
 	z-index: 1;
-	display: flex;
-	justify-content: center;
+}
+.section-graphics-top{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 418px;
+	text-align: center;
+	z-index: 1;
 }
 .main-slider-sec{
 	padding: 50px 0 0;
@@ -92,7 +97,7 @@
 	z-index: 20;
 }
 .hm-cat-secton{
-	padding: 50px 0 100px;
+	padding: 0 0 100px;
 }
 .hm-cat-item{
 	height: 260px;
