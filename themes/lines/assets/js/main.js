@@ -189,5 +189,8 @@ $('.hdr-humbergur-btn').on('click', function(e){
     $(this).toggleClass('sub-menu-active');
   });
 
-
+$('.enter-now-btn').on('click', function(e){
+  e.preventDefault();
+  $('.home-overlay').hide(300);
+});
 })(jQuery);

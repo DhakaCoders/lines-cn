@@ -1,33 +1,48 @@
 body{
 	position: relative;
 }
+.sections-cntlr{
+	overflow: hidden;
+}
 .home-overlay{
 	background-image: url(../images/home-overlay-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 100;
-	width: 100%;
-	height: 100%;
-	display: none;
+	position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
 }
 .home-overlay-inr{
 	
 }
 .home-overlay-inr{
-	background-image: url(../images/home-overlay-graphics.png);
-	background-position: center center;
-	background-repeat: no-repeat;
+	position: relative;
 	height: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+.home-overlay-graphics{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
 .home-overlay-des{
 	text-align: center;
+	position: relative;
+	z-index: 2;
 }
 .home-overlay-des p{
 	font-size: 32px;
@@ -50,40 +65,77 @@ body{
 	margin-right: auto;
 	padding-bottom: 14px;
 }
+.home-overlay-des > a:hover{
+	color: #FF7274;
+}
 
-
-.home-overlay-des{
-	-webkit-animation: preloadzoominout 2s infinite;
-	animation: preloadzoominout 2s infinite;
+.home-overlay-graphics,
+.section-graphics-top,
+.global-graphics-btm,
+.global-graphics-mid{
+	-webkit-animation: preloadzoominout 7s infinite;
+	animation: preloadzoominout 7s infinite;
 }
 
 @-webkit-@keyframes preloadzoominout {
     0% {
-        -webkit-transform: scale(0.8,0.8);
-        transform: scale(0.8,0.8);
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
     }
-    50% {
-        -webkit-transform: scale(1,1);
-        transform: scale(1,1);
+    15% {
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+    30% {
+        -webkit-transform: rotate(75deg);
+        transform: rotate(75deg);
+    }
+    45% {
+        -webkit-transform: rotate(100deg);
+        transform: rotate(100deg);
+    }
+    60% {
+        -webkit-transform: rotate(125deg);
+        transform: rotate(125deg);
+    }
+    85% {
+        -webkit-transform: rotate(150deg);
+        transform: rotate(150deg);
     }
     100% {
-        -webkit-transform: scale(0.8,0.8);
-        transform: scale(0.8,0.8);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
 @keyframes preloadzoominout {
     0% {
-        -webkit-transform: scale(0.8,0.8);
-        transform: scale(0.8,0.8);
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
     }
-    50% {
-        -webkit-transform: scale(1,1);
-        transform: scale(1,1);
+    15% {
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+    30% {
+        -webkit-transform: rotate(75deg);
+        transform: rotate(75deg);
+    }
+    45% {
+        -webkit-transform: rotate(100deg);
+        transform: rotate(100deg);
+    }
+    60% {
+        -webkit-transform: rotate(125deg);
+        transform: rotate(125deg);
+    }
+    85% {
+        -webkit-transform: rotate(150deg);
+        transform: rotate(150deg);
     }
     100% {
-        -webkit-transform: scale(0.8,0.8);
-        transform: scale(0.8,0.8);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
@@ -95,6 +147,14 @@ body{
 }
 .sections-cntlr{
 	position: relative;
+}
+.global-graphics-mid{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 1670px;
+	text-align: center;
+	z-index: 1;
 }
 .global-graphics-btm{
 	position: absolute;
@@ -156,8 +216,8 @@ body{
 
 
 .mainSlider .mainSlideItem.slick-current .mainSlideItem-fea-img{
-  -webkit-animation-name: fadeInUpShort;
-  animation-name: fadeInUpShort;
+  -webkit-animation-name: fadeInRightShort;
+  animation-name: fadeInRightShort;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
