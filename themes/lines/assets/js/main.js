@@ -164,10 +164,30 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-$('.hdr-humbergur-btn').on('click', function(){
+/*$('.hdr-humbergur-btn').on('click', function(){
   $(this).toggleClass('menu-expend');
   $('.hdr-toogle-menu').slideToggle(300);
-});
+});*/
+
+
+$('.hdr-humbergur-btn').on('click', function(e){
+    $('.xs-nav-cntlr').addClass('opacity-1');
+    $('.bdoverlay').addClass('active');
+    $('body').addClass('active-scroll-off');
+  });
+  $('.menu-closebtn').on('click', function(e){
+    $('.bdoverlay').removeClass('active');
+    $('.xs-nav-cntlr').removeClass('opacity-1');
+    $('body').removeClass('active-scroll-off');
+    $('.hdr-humbergur-btn').removeClass('menu-expend');
+  });
+  
+  $('li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().siblings().find('.sub-menu').slideUp(300);
+    $(this).parent().find('.sub-menu').slideToggle(300);
+    $(this).toggleClass('sub-menu-active');
+  });
 
 
 })(jQuery);
