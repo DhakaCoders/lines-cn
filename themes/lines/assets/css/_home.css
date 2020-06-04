@@ -422,7 +422,57 @@
 	width: 25%;
 }
 
-
+body{
+	position: relative;
+}
+.home-overlay{
+	background-image: url(../images/home-overlay-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+.home-overlay-inr{
+	
+}
+.home-overlay-inr{
+	background-image: url(../images/home-overlay-graphics.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-overlay-des{
+	text-align: center;
+}
+.home-overlay-des p{
+	font-size: 32px;
+	line-height: 1;
+}
+.home-overlay-des > a{
+	background: url(../images/enter-now-btn-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	max-width: 409px;
+	width: 100%;
+	height: 136px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 55px;
+	line-height: 1;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 14px;
+}
 @media(max-width: 1499px){
 	.mainSlideItem-des strong{
 		font-size: 80px;
