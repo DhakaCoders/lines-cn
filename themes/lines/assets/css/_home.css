@@ -73,8 +73,8 @@ body{
 .section-graphics-top,
 .global-graphics-btm,
 .global-graphics-mid{
-	-webkit-animation: preloadzoominout 20s infinite;
-	animation: preloadzoominout 20s infinite;
+	-webkit-animation: preloadzoominout 70s infinite;
+	animation: preloadzoominout 70s infinite;
 }
 
 @-webkit-@keyframes preloadzoominout {
