@@ -39,6 +39,9 @@
 	display: inline-block;
 	vertical-align: baseline;
 }
+.ftr-socila ul li a:hover{
+	opacity: .7;
+}
 
 .ftr-copyright-text p{
 	margin-bottom: 0;

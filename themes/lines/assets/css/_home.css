@@ -76,6 +76,29 @@
   animation-delay: 0.7s;
 }
 
+.mainSlider .mainSlideItem.slick-current .mainSlideItem-des strong{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;	
+}
+
+.mainSlider .mainSlideItem.slick-current .mainSlideItem-des span{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;	
+}
+
+
 
 .mainSlider .slick-prev,
 .mainSlider .slick-next{

@@ -123,7 +123,7 @@ if( $('.mainSlider').length ){
       infinite: false,
       autoplay: true,
       autoplaySpeed: 2000,
-      speed: 300,
+      speed: 200,
       slidesToShow: 1,
       slidesToScroll: 1
     });

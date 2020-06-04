@@ -291,6 +291,9 @@ nav.main-nav ul.sub-menu li:hover:after {
 .xs-popup-btm-content ul li a{
 	color: inherit;
 }
+.xs-popup-btm-content ul li a:hover{
+	color: #FF7274;
+}
 .xs-popup-btm-content{
 	padding-top: 40px;
 }
@@ -413,6 +416,10 @@ body.active-scroll-off{
 	color: #000;
 	display: block;
 	position: relative;
+}
+.xs-main-nav > ul > li:hover > a,
+.xs-main-nav > ul > li.current-menu-item > a{
+	color: #FF7274;
 }
 .xs-main-nav > ul > li > a{
 	text-transform: uppercase;
