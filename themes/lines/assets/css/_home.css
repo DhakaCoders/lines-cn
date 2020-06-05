@@ -16,6 +16,7 @@ body{
     width: 100%;
     height: 100vh;
     z-index: 9999;
+    display: none;
 }
 .home-overlay-inr{
 	
@@ -73,16 +74,16 @@ body{
 .section-graphics-top,
 .global-graphics-btm,
 .global-graphics-mid{
-	-webkit-animation: preloadzoominout 70s infinite;
-	animation: preloadzoominout 70s infinite;
+	-webkit-animation: preloadzoominout 60s infinite;
+	animation: preloadzoominout 60s infinite;
 }
 
 @-webkit-@keyframes preloadzoominout {
-    0% {
+/*    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    
+    */
     100% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
@@ -90,10 +91,10 @@ body{
 }
 
 @keyframes preloadzoominout {
-    0% {
+    /*0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
-    }
+    }*/
     
     100% {
         -webkit-transform: rotate(180deg);
