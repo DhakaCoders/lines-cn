@@ -76,7 +76,10 @@
 }
 
 @media(max-width: 991px){
-
+	.ftr-logo a{
+		margin: 0 auto 40px;
+		display: table;
+	}
 	
 }
 
@@ -89,10 +92,29 @@
 	    padding-right: 0;
 	    padding-bottom: 15px;
 	}
+	.ftr-col{
+		padding: 0 0 50px 0;
+		max-width: 500px;
+		margin-left: auto;
+		margin: auto;
+		text-align: center;
+	}
+	.ftr-col p {
+	    font-size: 17px;
+	}
+	.ftr-logo a{
+		margin-bottom: 0;
+	}
+	.ftr-col .ftr-col-title{
+		margin-bottom: 20px;
+	}
 }
 @media(max-width: 639px){
 	.ftr-socila ul li a{
 		max-width: 50px;
+	}
+	.ftr-logo a{
+		max-width: 170px;
 	}
 }
 
@@ -104,11 +126,16 @@
 	.ftr-copyright-text p{
 		font-size: 17px;
 	}
+	.ftr-logo a{
+		max-width: 150px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.ftr-logo a{
+		max-width: 130px;
+	}
 
 }
 
