@@ -411,6 +411,11 @@ body{
 .fl-product-item-fea-img{
 	float: left;
 	width: 40%;
+	padding-right: 20px;
+}
+.fl-product-item-fea-img a{
+	display: inline-block;
+	vertical-align:baseline;
 }
 .fl-product-item-des{
 	float: left;
@@ -614,10 +619,68 @@ body{
 	.hm-gallery-item{
 		height: 200px;
 	}
+	.fl-product-item-fea-img{
+		width: 32%;
+	}
+	.fl-product-item-des{
+		width: 68%;
+	}
+	.available-title, .in-the-tank-title, .concept-title{
+		font-size: 30px;
+	}
+	.hm-cat-secton{
+		padding-bottom: 70px;
+	}
+	.hm-cat-item strong{
+		font-size: 35px;
+	}
+	.hm-cat-item{
+		height: 235px;
+	}
 }
 
 @media(max-width: 991px){
-
+	.hm-gallery-item {
+	    height: 165px;
+	}
+	.available-title, .in-the-tank-title, .concept-title {
+	    font-size: 25px;
+	}
+	.fl-product-item-fea-img{
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 25px;
+		text-align: center;
+	}
+	.fl-product-item-des{
+		width: 100%;
+		text-align: center;
+	}
+	.available-title {
+    	width: 225px;
+    	height: 68px;
+	}
+	.in-the-tank-title {
+    	width: 215px;
+    	height: 67px;
+	}
+	.concept-title {
+    	width: 220px;
+    	height: 67px;
+	}
+	.hm-beer-list-grds-cntlr ul{
+		margin: 0 -15px;
+	}
+	.hm-beer-list-grds-cntlr ul li{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.hm-latest-news-item-des-title{
+		font-size: 35px;
+	}
+	.hm-cat-secton ul li{
+		width: 50%;
+	}
 }
 
 @media(max-width: 767px){
@@ -626,6 +689,45 @@ body{
 	}
 	.eco-brewing-gallery-img {
 	    height: 165px;
+	}
+	.hm-gallery-img-cntlr ul li{
+		width: 33.3333%;
+	}
+	.hm-gallery-sec-bg{
+		padding-bottom: 35px;
+	}
+	.hm-beer-list-grds-cntlr ul li{
+		width: 100%;
+	}
+	.available-title, .in-the-tank-title, .concept-title{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fl-product-item{
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.fl-product-item-fea-img{
+		width: 35%;
+		text-align: left;
+		padding-right: 20px;
+	}
+	.fl-product-item-des{
+		width: 65%;
+		text-align: left;
+	}
+	.hm-beer-list-grds-cntlr ul li{
+		padding-bottom: 50px;
+	}
+	.hm-beer-list-grds-cntlr ul li:last-child{
+		padding-bottom: 0;
+	}
+	.hm-latest-news-item-des-title {
+	    font-size: 30px;
+	}
+	.hm-cat-secton{
+		padding-bottom: 60px;
 	}
 
 }
@@ -636,18 +738,57 @@ body{
 	.eco-brewing-gallery-img {
 	    height: 175px;
 	}
+	.hm-cat-secton ul{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.hm-cat-secton ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 }
 @media(max-width: 575px){
 	
-
+	.hm-gallery-sec-bg{
+		padding-bottom: 25px;
+	}
+	.available-title, .in-the-tank-title, .concept-title {
+	    font-size: 22px;
+	}
+	.fl-product-item-des h4{
+		font-size: 18px;
+	}
+	.hm-latest-news-item-des-title {
+	    font-size: 26px;
+	}
+	.hm-latest-news-sec-hdr-title{
+		margin-bottom: 25px;
+	}
+	.hm-latest-news-sec{
+		padding-top: 80px;
+	}
 }
 
 @media(max-width: 479px){
 	.eco-brewing-gallery-img {
 	    height: 165px;
 	}
-
+	.hm-gallery-img-cntlr ul li{
+		width: 50%;
+	}
+	.hm-latest-news-item-des-title {
+	    font-size: 24px;
+	}
+	.hm-cat-secton ul li{
+		width: 100%;
+	}
+	.hm-cat-item{
+		max-width: 250px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 359px){
