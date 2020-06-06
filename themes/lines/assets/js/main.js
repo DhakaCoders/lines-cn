@@ -121,7 +121,7 @@ if( $('.mainSlider').length ){
     $('.mainSlider').slick({
       dots: true,
       infinite: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       speed: 200,
       slidesToShow: 1,
