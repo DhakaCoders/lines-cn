@@ -4,6 +4,10 @@
 .ftr-logo{
 	margin-top: -30px;
 }
+.ftr-logo a{
+	display: inline-block;
+	vertical-align: baseline;
+}
 .ftr-visit-col{
 	padding-right: 20px;
 }
@@ -63,8 +67,12 @@
 }
 
 @media(max-width: 1199px){
-
-
+	.ftr-logo a{
+		max-width: 200px;
+	}
+	.ftr-col p{
+		font-size: 18px;
+	}
 }
 
 @media(max-width: 991px){

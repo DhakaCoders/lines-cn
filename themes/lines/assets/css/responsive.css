@@ -17,7 +17,9 @@
 	.show-lg{
 		display: block!important;
 	}
-
+	body{
+		font-size: 19px;
+	}
 }
 
 @media(max-width: 991px){
@@ -27,9 +29,7 @@
 	.show-md{
 		display: block!important;
 	}
-	body{
-		font-size: 19px;
-	}
+	
 }
 
 @media(max-width: 767px){
