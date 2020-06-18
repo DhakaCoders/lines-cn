@@ -1,0 +1,93 @@
+.lb-cntinfo-sec{
+	margin-top: 142px;
+}
+.lb-cntinfo-leftsidebar{
+	float: left;
+	width: 40.3508%;
+}
+.lb-cntinf-right-form{
+	float: right;
+	width: 59.6491%;
+}
+
+.lb-cntinf-ls-title,
+.lb-cntinf-rf-title{
+	display: block;
+	font-size: 47px;
+	line-height: 1;
+	margin-bottom: 70px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'CenturyGothic';
+}
+.lb-cntinfo-leftsidebar-adrs,
+.lb-cntinfo-leftsidebar-phn,
+.lb-cntinfo-leftsidebar-mail,
+.lb-cntinfo-leftsidebar-hours{
+	padding-left: 62px;
+	padding-bottom: 60px;
+}
+
+.lb-cnt-adr-title,
+.lb-cnt-phn-title,
+.lb-cnt-mail-title,
+.lb-cnt-hour-title{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.lb-cntinfo-leftsidebar-adrs a,
+.lb-cntinfo-leftsidebar-phn a{
+	color: #fff;
+	line-height: 35px; 
+	display: block;
+}
+.lbcntinls-gen,
+.lbcntinls-sal,
+.lbcntinls-shop{
+	padding-left: 12px;
+}
+.lbcntinls-gen span{
+	line-height: 35px;
+}
+.lbcntinls-gen a,
+.lbcntinls-sal a,
+.lbcntinls-shop a{
+	color: #fff;
+	line-height: 35px;
+}
+.lb-cntinfo-leftsidebar-hours span{
+	display: block;
+	line-height: 35px;
+	padding-left: 12px;
+}
+
+
+.name,
+.mail{
+	margin-bottom: 25px;
+}
+.firstname{
+	float: left;
+	width: 50%;
+}
+.lastname{
+	float: right;
+	width: 50%;
+}
+.firstname input[type=text],
+.lastname input[type=text]{
+	width: 330px;
+	height: 60px;
+	padding-left: 22px;
+	color: #2F2E2E;
+	text-transform: uppercase;
+	font-style: italic;
+}
+.mail input[type=text]{
+	width: 
+}
