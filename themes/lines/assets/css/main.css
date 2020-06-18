@@ -4,15 +4,19 @@
 @import url('_effects.css');
 @import url('_header.css');
 @import url('_page.css');
+/* Rannojit */
 @import url('_home.css');
 @import url('_live-beers.css');
 
+
+/* noyon */
+@import url('_news-events.css');
+
+
+
+
 /*shariful*/
 @import url('_contact.css');
-
-
-
-
 @import url('_footer.css');
 
 
