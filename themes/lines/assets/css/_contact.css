@@ -68,7 +68,9 @@
 
 
 .name,
-.mail{
+.mail,
+.subject,
+.msg{
 	margin-bottom: 25px;
 }
 .firstname{
@@ -88,6 +90,22 @@
 	text-transform: uppercase;
 	font-style: italic;
 }
-.mail input[type=text]{
-	width: 
+.mail input[type=text],
+.subject input[type=text]{
+	width: 680px;
+	height: 60px;
+	padding-left: 22px;
+	color: #2F2E2E;
+	text-transform: uppercase;
+	font-style: italic;
+}
+.msg textarea{
+	width: 680px;
+	height: 358px;
+	padding-left: 22px;
+	padding-top: 25px;
+	color: #2F2E2E;
+	text-transform: uppercase;
+	font-style: italic;
+	resize: none;
 }
