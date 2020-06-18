@@ -1,0 +1,212 @@
+
+
+.shop-all-beers-sec{
+	padding: 110px 0 35px;
+}
+.shop-all-beers-sec-hdr{
+	padding-bottom: 45px;
+}
+.sabs-hdr-title{
+	display: block;
+	text-transform: uppercase;
+	font-size: 47px;
+	line-height: 1;
+	font-family: 'CenturyGothic-Bold';
+	margin: 0 0 5px 0;
+}
+.shop-all-beers-sec-hdr span{
+	display: block;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.fls-product-item-fea-img-bx{
+	height: 226px;
+	width: 100%;
+	position: relative;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pro-img-angle{
+	position: absolute;
+	min-width: 109px;
+	min-height: 32px;
+	background: url(../images/angle-red.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-right: 10px;
+}
+.fls-pro-yellow .pro-img-angle{
+	background: url(../images/angle-yellow.png);
+	background-size: 100% 100%;
+	
+}
+.pro-img-angle strong{
+	font-size: 16px;
+	line-height: 1;
+	font-family: 'CenturyGothic-Bold';
+}
+
+.shop-all-beers-sec-grds ul{
+	margin: 0 -30px;
+	padding: 0 15px;
+}
+.shop-all-beers-sec-grds ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 30px 65px;
+}
+.fls-product-item-des{
+	text-align: center;
+	padding: 25px 10px 0;
+}
+
+.flspid-title{
+	display: block;
+	margin: 0 0 22px 0;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 1;
+	font-family: 'CenturyGothic-Bold';
+}
+.flspid-title a{
+	color: #fff;
+}
+.fls-price{
+	font-family: 'CenturyGothic-Bold';
+	font-size: 24px;
+	line-height: 1;
+}
+.fls-price span{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #fff;
+}
+
+
+.shop-pre-ftr-inr{
+	padding: 35px 0 0;
+	background: url(../images/Middle.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.shop-pre-ftr-cntlr ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.shop-pre-ftr-cntlr ul li{
+	padding: 0 35px 40px;
+}
+.spf-item{
+	text-align: center;
+}
+.spf-img{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 37px;
+}
+.shop-pre-ftr-cntlr ul li span{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1;
+}
+
+.pbs-title{
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 1;
+	font-family: 'CenturyGothic-Bold';
+	margin: 0 0 45px 0;
+}
+.main-shop-bnr-menu ul{
+	margin: 0 -5px;
+	padding-bottom: 30px;
+}
+.main-shop-bnr-menu ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 5px 15px;
+}
+
+.main-shop-bnr-menu ul li span,
+.main-shop-bnr-menu ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #fff;
+	border: 2px solid #FFFFFF;
+	font-size: 47px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 10px 19px;
+	font-family: 'CenturyGothic-Bold';
+}
+
+.main-shop-bnr-menu ul li.active span{
+	background: #f6ece0;
+	border-color: #f6ece0;
+	color: #000000;
+}
+
+.shop-filter-menu ul{
+	margin: 0 -3px;
+}
+.shop-filter-menu ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 3px 15px;
+}
+
+
+.shop-filter-menu ul li a{
+	font-size: 22px;
+	line-height: 1;
+	text-transform: uppercase;
+	border: 2px solid #FFFFFF;
+	padding: 10px 0;
+	display: inline-block;
+	vertical-align: baseline;
+	font-family: 'CenturyGothic-Bold';
+	color: #fff;
+	min-width: 100px;
+	text-align: center;
+}
+
+.shop-filter-menu ul li.active a,
+.shop-filter-menu ul li:hover a{
+	border: 2px solid transparent;
+}
+.shop-filter-menu ul li a span{
+	display: block;
+	position: relative;
+	padding: 0 7px;
+}
+.shop-filter-menu ul li a span:after{
+	content: "";
+	position: absolute;
+	bottom: -6px;
+	height: 3px;
+	left: 0;
+	width: 0;
+	background: #f9efe3;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.shop-filter-menu ul li.active a span:after,
+.shop-filter-menu ul li:hover a span:after{
+	width: 100%;
+}
