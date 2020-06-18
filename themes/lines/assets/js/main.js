@@ -117,17 +117,7 @@ if( $('.responsive-slider').length ){
 }
 
 
-if( $('.mainSlider').length ){
-    $('.mainSlider').slick({
-      dots: true,
-      infinite: false,
-      autoplay: false,
-      autoplaySpeed: 2000,
-      speed: 200,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
-}
+
 
 
 
@@ -169,6 +159,40 @@ google.maps.event.addDomListener(window, 'load', initialize);
   $('.hdr-toogle-menu').slideToggle(300);
 });*/
 
+/*---- Noyon ------*/
+
+
+
+
+
+
+
+
+
+/*---- Shoriful ------*/
+
+
+
+
+
+
+
+
+
+/*---- Rannojit ------*/
+
+if( $('.mainSlider').length ){
+    $('.mainSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 200,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+}
+
 
 $('.hdr-humbergur-btn').on('click', function(e){
     $('.xs-nav-cntlr').addClass('opacity-1');
@@ -193,4 +217,7 @@ $('.enter-now-btn').on('click', function(e){
   e.preventDefault();
   $('.home-overlay').hide(300);
 });
+
+
+
 })(jQuery);
