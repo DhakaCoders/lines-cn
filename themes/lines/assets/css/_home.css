@@ -16,7 +16,7 @@ body{
     width: 100%;
     height: 100vh;
     z-index: 9999;
-    display: none;
+    /*display: none;*/
 }
 .home-overlay-inr{
 	
@@ -70,10 +70,7 @@ body{
 	color: #FF7274;
 }
 
-.home-overlay-graphics,
-.section-graphics-top,
-.global-graphics-btm,
-.global-graphics-mid{
+.home-overlay-graphics{
 	-webkit-animation: preloadzoominout 60s infinite;
 	animation: preloadzoominout 60s infinite;
 }
