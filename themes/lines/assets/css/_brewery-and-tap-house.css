@@ -1,0 +1,40 @@
+.page-banner-bth-bg{
+	height: 1280px;
+}
+.page-banner-bth{
+	position: relative;
+}
+.page-banner-bth-des{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	padding-top: 180px;
+}
+.bth-left-img{
+	float: left;
+	width: 50%;
+}
+.bth-des{
+	float: right;
+	width: 50%;
+	padding-left: 70px;
+}
+.bth-left-img img{
+	margin-bottom: 45px;
+}
+
+.bth-des-title{
+	display: block;
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.bth-des p{
+	line-height: 40px;
+	margin-bottom: 30px;
+}
