@@ -1,0 +1,153 @@
+
+.banner-page-story{
+	padding-top: 145px;
+	padding-bottom: 100px;
+	min-height: 890px;
+}
+.banner-page-story-innr{
+	position: relative;
+}
+.story-page-banner-top-hdr-angle{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 45px;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+.banner-page-story-cntlr{
+	display: flex;
+}
+.banner-page-story-gelery{
+	max-width: 50.4%;
+	width: 100%;
+}
+.banner-page-story-gelery-title-img{
+	min-height: 340px;
+	margin-bottom: 34px;
+}
+.banner-page-story-gelery-items-cntlr ul{
+	margin-right: -17px;
+	margin-left: -17px;
+}
+.banner-page-story-gelery-items-cntlr > ul >li{
+	float: left;
+	max-width: 50%;
+	width: 100%;
+	padding: 0 17px;
+	margin-bottom: 34px;
+}
+.banner-page-story-gelery-items{
+	min-height: 200px;
+}
+.banner-page-story-desc{
+	max-width: 49.6%;
+	width: 100%;
+	padding-left: 65px;
+}
+.banner-page-story-desc-title{
+
+}
+.banner-page-story-desc-title h1{
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 33px;
+}
+.banner-page-story-desc p{
+	line-height: 40px;
+	margin-bottom: 18px;
+}
+.lines-system{
+	padding: 135px 0 117px 0;
+}
+.lines-system-innr{
+
+}
+.lines-system-cntlr{
+
+}
+.lines-system-img{
+	max-width: 41.8%;
+	width: 100%;
+	float: right;
+}
+.lines-system-desc{
+	max-width: 58.2%;
+	width: 100%;
+	float: left;
+	padding-right: 72px;
+	padding-top: 10px;
+}
+.lines-system-desc h3{
+	font-size: 47px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.lines-system-desc p{
+	line-height: 40px;
+	margin-bottom: 18px;
+}
+.eco-brewing{
+	margin: 123px 0 102px 0;
+	background: #000;
+}
+.eco-brewing-innr{
+	position: relative;
+}
+.eco-brewing-top-border{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-repeat: repeat-x;
+    background-position: center;
+	min-height: 145px;
+	margin-top: -122px;
+	z-index: 13;
+}
+.eco-brewing-bottom-border{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-repeat: repeat-x;
+    background-position: center;
+	min-height: 121px;
+	z-index: 13;
+	margin-bottom: -100px;
+}
+.eco-brewing-cntlr{
+	padding-bottom: 40px;
+	padding-top: 48px;
+}
+.eco-brewing-img{
+	max-width: 50%;
+	width: 100%;
+	float: left;
+}
+.eco-brewing-desc{
+	max-width: 50%;
+	width: 100%;
+	float: left;
+	padding-left: 62px;
+}
+.eco-brewing-desc-title{
+
+}
+.eco-brewing-desc-title h3{
+	font-size: 47px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.eco-brewing-desc p{
+	line-height: 40px;
+	margin-bottom: 18px;
+}
+.{
+	ECO-BREWING
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at metus interdum, bibendum neque quis, commodo sapien. Proin ac auctor massa. Quisque iaculis arcu eu dui consequat, in condimentum lectus convallis. 
+Donec eleifend mi id orci porttitor, sit amet sollicitudin tortor gravida. Donec nec tellus a risus tempus fermentum eu quis justo. Donec a dui justo. Nulla suscipit, augue ac consequat varius, lorem tellus malesuada lacus, eu vestibulum elit odio ac purus. 
+
+} */
