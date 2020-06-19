@@ -160,7 +160,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
 });*/
 
 /*---- Noyon ------*/
-
+if( $('.events-mainSlider').length ){
+    $('.events-mainSlider').slick({
+      dots: true,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true
+    });
+}
 
 
 
