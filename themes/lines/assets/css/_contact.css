@@ -173,7 +173,8 @@
 
 /*banner page*/
 
-.cnt-ctlr .header{
+.cnt-ctlr .header,
+.bth-ctlr .header{
 	position: absolute;
 	top: 0;
 	right: 0;

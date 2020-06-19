@@ -182,7 +182,14 @@ if( $('.events-mainSlider').length ){
 
 /*---- Shoriful ------*/
 
+$(".bth-tab-btn ul li a").click(function(){
+  $(".bth-tab-btn ul li a").removeClass('current');
+  $(this).addClass('current');
+  var tagid = $(this).data('tag');
+  $(".bth-tab-content").removeClass('active').addClass('hide');
+  $("#"+tagid).addClass('active').removeClass('hide');
 
+});
 
 
 
