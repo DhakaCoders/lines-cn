@@ -71,31 +71,40 @@ body{
 }
 
 .home-overlay-graphics{
-	-webkit-animation: preloadzoominout 60s infinite;
-	animation: preloadzoominout 60s infinite;
+	-webkit-animation: preloadzoominout 80s infinite;
+	animation: preloadzoominout 80s infinite;
+	-webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-@keyframes preloadzoominout {
-/*    0% {
+	0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    */
-    100% {
+    50% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 @keyframes preloadzoominout {
-    /*0% {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
-    }*/
-    
-    100% {
+    }
+    50% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
