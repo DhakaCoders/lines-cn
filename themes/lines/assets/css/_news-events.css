@@ -4,7 +4,7 @@
 .news-events-banner-innr{
   position: relative;
 }
-.events-page-banner-top-hdr-angle{
+/* .events-page-banner-top-hdr-angle{
   position: absolute;
   top: 0;
   left: 0;
@@ -12,10 +12,20 @@
   min-height: 45px;
   background-repeat: repeat-x;
   background-position: center;
+} */
+.events-page-banner-bottom-angle{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 85px;
+  margin-bottom: -2px;
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .news-events-banner-fix-hedding{
   position: absolute;
-  top: 170px;
+  top: 165px;
   left: 0;
   right: 0;
   z-index: 2;
@@ -26,7 +36,8 @@
 }
 .events-mainSlideItem{
   min-height: 792px;
-  padding-top: 280px;
+  padding-top: 288px;
+  position: relative;
 }
 .events-bnnr-feature{
   max-width: 975px;
@@ -99,7 +110,8 @@
   background-position: center;
 }
 .lines-stories-cntlr{
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 122px;
 }
 .lines-stories-hedding{
 
@@ -109,7 +121,7 @@
   display: inline-block;
   line-height: 80px;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 50px;
   margin-top: 20px;
 }
 .lines-stories-items-wrap{
@@ -160,7 +172,7 @@
   font-weight: 400;
   position: relative;
   margin-top: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .lines-stories-items-hedding h4:after{
   position: absolute;
@@ -170,10 +182,10 @@
   background: #fff;
   bottom: 0;
   left: 0;
-  margin-bottom: -16px;
+  margin-bottom: -20px;
 }
 .lines-stories-items-desc{
-  padding-top: 8px;
+  padding-top: 12px;
 }
 .lines-stories-items-desc p{
   font-size: 18px;
@@ -204,10 +216,36 @@
 }
 
 .events{
-
+  margin: 145px 0 122px 0;
+  background: #000;
 }
 .events-innr{
-  padding-bottom: 100px;
+  position: relative;
+}
+.events-page-events-top-angle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 145px;
+  margin-top: -144px;
+  background-repeat: repeat-x;
+  background-position: center;
+
+}
+.events-page-events-bottom-angle{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 122px;
+  margin-bottom: -121px;
+  background-repeat: repeat-x;
+  background-position: center;
+
+}
+.events-cntlr{
+  padding-bottom: 63px;
   
 }
 .events-hedding{
@@ -218,7 +256,7 @@
   display: inline-block;
   line-height: 80px;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 53px;
   margin-top: 20px;
 }
 .events-items-wrap{
@@ -269,7 +307,7 @@
   font-weight: 400;
   position: relative;
   margin-top: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .events-items-hedding h4:after{
   position: absolute;
@@ -279,10 +317,10 @@
   background: #fff;
   bottom: 0;
   left: 0;
-  margin-bottom: -16px;
+  margin-bottom: -20px;
 }
 .events-items-desc{
-  padding-top: 8px;
+  padding-top: 12px;
 }
 .events-items-desc p{
   font-size: 18px;
@@ -305,6 +343,7 @@
   padding: 6.5px 102px;
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 20px;
 }
 .events-button >a:hover{
   color: #fff;
