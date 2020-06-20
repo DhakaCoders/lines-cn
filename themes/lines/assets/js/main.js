@@ -182,8 +182,8 @@ if( $('.events-mainSlider').length ){
 
 /*---- Shoriful ------*/
 
-$(".bth-tab-btn ul li a").click(function(){
-  $(".bth-tab-btn ul li a").removeClass('current');
+$(".bth-tab-btn ul li button").click(function(){
+  $(".bth-tab-btn ul li button").removeClass('current');
   $(this).addClass('current');
   var tagid = $(this).data('tag');
   $(".bth-tab-content").removeClass('active').addClass('hide');

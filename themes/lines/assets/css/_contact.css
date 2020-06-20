@@ -1,6 +1,6 @@
 .lb-cntinfo-sec{
-	margin-top: 142px;
-	margin-bottom: 100px;
+	margin-top: 100px;
+	margin-bottom: 65px;
 }
 .lb-cntinfo-leftsidebar{
 	float: left;
@@ -52,12 +52,15 @@
 	margin-bottom: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin-top: -10px;
 }
 
 .lb-cntinfo-leftsidebar-adrs a,
 .lb-cntinfo-leftsidebar-phn a{
 	color: #fff;
 	line-height: 35px; 
+}
+.lb-cntinfo-leftsidebar-phn a{
 	display: block;
 }
 .lbcntinls-gen,
@@ -79,7 +82,7 @@
 .lbcntinls-gen a:hover,
 .lbcntinls-sal a:hover,
 .lbcntinls-shop a:hover{
-	color: #685445;
+	color: #FF7274;
 }
 .lb-cntinfo-leftsidebar-hours span{
 	display: block;
@@ -146,8 +149,8 @@
 	cursor: pointer;
 }
 .cnt-btn input[type=submit]:hover{
-	background: #fff;
-	color: #685445;
+	border-color: #FF7274;
+    background-color: #FF7274;
 }
 
 .lb-cnt-google-map-sec{
@@ -159,14 +162,14 @@
 }
 
 /*.lb-cnt-gm-top-angel{
-	background: url('../images/lb-cnt-gm-top-angel.png');
+	background: url('../images/map-top-angel.png');
 	background-repeat: repeat-x;
-    background-position: center bottom;
-    height: 120px;
+    background-position: center top;
+    height: 145px;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: 0;
 }*/
 
 
@@ -184,7 +187,7 @@
 	min-height: 750px;
 }
 .page-banner-cnt-bg{
-	height: 750px;
+	height: 735px;
 }
 .page-banner-cnt{
 	position: relative;
@@ -226,7 +229,17 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
+}
+.lb-cnt-page-bnr-top{
+	background: url('../images/lb-cnt-page-top-border.png');
+	background-repeat: repeat-x;
+    background-position: center top;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 130px;
 }
 
 
@@ -246,5 +259,5 @@
 	-ms-transition: all 0.5s;
 }
 .lb-cnt-page-socials-media ul li a:hover{
-	color: #685445;
+	color: #FF7274;
 }
