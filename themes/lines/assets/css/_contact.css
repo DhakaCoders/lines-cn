@@ -221,7 +221,7 @@
 	text-transform: capitalize;
 }
 
-.lb-cnt-page-btm-border{
+/*.lb-cnt-page-btm-border{
 	background: url('../images/lb-cnt-page-btm-border.png');
 	background-repeat: repeat-x;
     background-position: center bottom;
@@ -230,6 +230,16 @@
     left: 0;
     right: 0;
     bottom: 10px;
+}*/
+.lb-cnt-page-btm-border svg.lb-cnt-page-btm-border-svg{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    height: auto;
+    max-height: 83px;
+    max-width: 100%;
+    width: 100%;
 }
 .lb-cnt-page-bnr-top{
 	background: url('../images/lb-cnt-page-top-border.png');

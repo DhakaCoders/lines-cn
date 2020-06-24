@@ -264,7 +264,7 @@
 
 
 
-.bth-rp-btm-angel{
+/*.bth-rp-btm-angel{
 	background: url('../images/bth-rp-btm-angel.png');
 	background-repeat: repeat-x;
     background-position: center bottom;
@@ -273,8 +273,8 @@
     left: 0;
     right: 0;
     bottom: -120px;
-}
-.bth-rp-top-angel{
+}*/
+/*.bth-rp-top-angel{
 	background: url('../images/bth-rp-top-angel.png');
 	background-repeat: repeat-x;
     background-position: center top;
@@ -283,5 +283,27 @@
     left: 0;
     right: 0;
     top: -144px;
+}*/
+
+.bth-rp-top-angel svg.bth-rp-top-angel-svg{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -145px;
+    height: auto;
+    max-height: 145px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.bth-rp-btm-angel svg.bth-rp-btm-angel-svg{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -120px;
+    height: auto;
+    max-height: 120px;
+    max-width: 100%;
+    width: 100%;
 }
 
