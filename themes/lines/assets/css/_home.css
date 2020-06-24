@@ -301,13 +301,9 @@ body{
     height: auto;
     max-height: 70px;
     max-width: 100%;
-    /*background: url(../images/beer-list-sec-top-angle.png);
-    background-repeat: repeat-x;
-    background-position: center top;*/
+    width: 100%;
 }
-.beer-list-sec-top-angle svg.beer-list-sec-btm-angle-svg path{
-	/*min-width: 100%;*/
-}
+
 .beer-list-sec-btm-angle {
     position: absolute;
     left: 0;
