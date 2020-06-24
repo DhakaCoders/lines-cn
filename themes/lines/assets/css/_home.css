@@ -293,15 +293,20 @@ body{
 	position: relative;
 	padding: 60px 0 50px;
 }
-.beer-list-sec-top-angle {
+.beer-list-sec-top-angle svg.beer-list-sec-btm-angle-svg{
     position: absolute;
     left: 0;
     right: 0;
     top: -9px;
-    height: 70px;
-    background: url(../images/beer-list-sec-top-angle.png);
+    height: auto;
+    max-height: 70px;
+    max-width: 100%;
+    /*background: url(../images/beer-list-sec-top-angle.png);
     background-repeat: repeat-x;
-    background-position: center top;
+    background-position: center top;*/
+}
+.beer-list-sec-top-angle svg.beer-list-sec-btm-angle-svg path{
+	/*min-width: 100%;*/
 }
 .beer-list-sec-btm-angle {
     position: absolute;
