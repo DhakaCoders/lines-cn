@@ -31,6 +31,24 @@
 }
 
 
+.sitemap{
+	padding: 150px 0;
+}
+.sitemap ul{
+	padding-left: 50px;
+}
+.sitemap ul li{
+	padding: 15px 0;
+}
+.sitemap ul li a{
+	color: #fff;
+}
+.sitemap ul li a:hover,
+.sitemap ul li a:focus{
+	text-decoration: underline;
+}
+
+
 
 
 @media(max-width: 1499px){

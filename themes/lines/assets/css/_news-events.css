@@ -13,7 +13,7 @@
   background-repeat: repeat-x;
   background-position: center;
 } */
-.events-page-banner-bottom-angle{
+/*.events-page-banner-bottom-angle{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -22,7 +22,17 @@
   margin-bottom: -2px;
   background-repeat: repeat-x;
   background-position: center;
-}
+}*/
+/*.events-page-banner-bottom-angle svg.events-page-banner-bottom-angle-svg{
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 83px;
+    max-width: 100%;
+    width: 100%;
+}*/
 .news-events-banner-fix-hedding{
   position: absolute;
   top: 165px;
@@ -222,7 +232,7 @@
 .events-innr{
   position: relative;
 }
-.events-page-events-top-angle{
+/*.events-page-events-top-angle{
   position: absolute;
   top: 0;
   left: 0;
@@ -232,8 +242,19 @@
   background-repeat: repeat-x;
   background-position: center;
 
+}*/
+.events-page-events-top-angle svg.events-page-events-top-angle-svg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: auto;
+  max-height: 145px;
+  max-width: 100%;
+  width: 100%;
+  margin-top: -145px;
 }
-.events-page-events-bottom-angle{
+/*.events-page-events-bottom-angle{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -243,6 +264,17 @@
   background-repeat: repeat-x;
   background-position: center;
 
+}*/
+.events-page-events-bottom-angle svg.events-page-events-bottom-angle-svg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 120px;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: -120px;
 }
 .events-cntlr{
   padding-bottom: 63px;
