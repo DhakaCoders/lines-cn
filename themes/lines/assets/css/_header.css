@@ -62,6 +62,9 @@ nav.main-nav > ul > li{
 	text-align: center;
 	position: relative;
 }
+nav.main-nav > ul > li:last-child{
+	padding-right: 0;
+}
 nav.main-nav > ul > li > a{
 	color: #fff;
 	font-size: 27px;
