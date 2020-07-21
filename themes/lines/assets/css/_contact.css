@@ -114,6 +114,7 @@
 	text-transform: uppercase;
 	font-style: italic;
 	background: #F6ECE0;
+	border: 1px solid #F6ECE0;
 }
 .mail input[type=text],
 .subject input[type=text]{
@@ -124,6 +125,7 @@
 	text-transform: uppercase;
 	font-style: italic;
 	background: #F6ECE0;
+	border: 1px solid #F6ECE0;
 }
 .msg textarea{
 	width: 680px;
@@ -135,6 +137,14 @@
 	font-style: italic;
 	resize: none;
 	background: #F6ECE0;
+	border: 1px solid #F6ECE0;
+}
+.firstname input:focus,
+.lastname input:focus,
+.mail input:focus,
+.subject input:focus,
+.msg textarea:focus{
+	border-color: #FF7274;
 }
 .cnt-btn input[type=submit]{
 	font-size: 14px;
@@ -158,7 +168,7 @@
 
 .lb-cnt-google-map-sec{
 	position: relative;
-	padding: 144px 0 121px;
+	padding: 105px 0 121px;
 }
 .lb-cnt-google-map-sec iframe{
 	width: 100%;
@@ -189,20 +199,13 @@
 	left: 0;
 }
 
-.page-banner-cnt-bg{
-	min-height: 735px;
-}
-.page-banner-cnt{
-	position: relative;
-}
 .page-banner-cnt-des{
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: 2;
-	padding-top: 300px;
+	min-height: 540px;
+	height: 100%;
+}
+
+.page-banner-cnt-des-inner{
+	padding-top: 160px;
 }
 
 .cnt-banner-page-title{

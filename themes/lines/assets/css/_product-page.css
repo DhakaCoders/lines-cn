@@ -1,3 +1,7 @@
+.page-bnr-product{
+	min-height: 510px;
+	height: 100%;
+}
 .product-passage-sec{
 	padding-top: 145px;
 }
@@ -123,12 +127,11 @@
 
 .pp-quantity-left{
 	float: left;
-	width: 92px;
-	height: 60px;
-	background: #dc1c27;
+	margin-left: -5px;
 }
 .pp-quantity-btn{
 	float: left;
+	margin-left: -7px;
 }
 .pp-quantity-btn button{
 	width: 215px;
@@ -151,7 +154,7 @@
 
 
 .pp-migration-sec{
-	margin-top: 140px;
+	margin-top: 82px;
 	padding: 144px 0 121px;
 	position: relative;
 }
@@ -203,6 +206,7 @@
 
 .pp-mig-rgt-des{
 	text-align: right;
+	padding-bottom: 50px;
 }
 .pp-mig-rgt-des strong{
 	display: inline-block;
@@ -232,7 +236,7 @@
 
 .rp-slider-sec{
 	padding: 110px 0;
-	margin-bottom: 145px;
+	margin-bottom: 40px;
 }
 
 .rp-slider-title{
@@ -264,11 +268,20 @@
 	font-weight: 700;
 	text-transform: uppercase;
 }
+.rp-slide-des-title a{
+	color: #fff;
+}
+.rp-slide-des-title a:hover{
+	color: #FF7274;
+}
 .rp-slide-des p{
 	font-size: 16px;
 	color: #F6ECE0;
 }
 
+.rp-slide-img-ctlr{
+	position: relative;
+}
 .rp-slide-img{
 	min-height: 480px;
 }

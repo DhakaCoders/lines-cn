@@ -151,7 +151,7 @@
 	padding: 144px 0 121px;
 }
 .sl-pg-grid-btn{
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .sl-pg-grid-btn a{
 	display: inline-block;
@@ -167,4 +167,21 @@
 	background: #FF7274;
 	color: #fff;
 	border-color: #FF7274;
+}
+
+.lines-stories-innr{
+	position: relative;
+	z-index: 6;
+}
+.sl-pg-articles-sec-top-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.sl-pg-articles-sec-btm-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
