@@ -148,7 +148,7 @@ body{
 	z-index: 1;
 }
 .mainSlideItem{
-	padding-top: 50px;
+	padding-top: 0;
 }
 .mainSlideItemInr{
 	display: flex;

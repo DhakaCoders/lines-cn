@@ -4,13 +4,13 @@
 	z-index: 100;
 }
 .hdr-bg{
-	background: #231f20;
+
 }
 .hdr-btm-angle{
-	background: url(../images/hdr-btm-angle.png);
+/*	background: url(../images/hdr-btm-angle.png);
 	background-repeat: repeat-x;
 	background-position: center bottom;
-	height: 44px;
+	height: 44px;*/
 	position: absolute;
 	left: 0;
 	right: 0;
