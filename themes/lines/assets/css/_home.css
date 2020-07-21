@@ -6,24 +6,23 @@ body{
 }
 .home-overlay{
 	/*background-image: url(../images/home-overlay-bg.jpg);*/
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2d2d2d+0,020202+100 */
-background: #2d2d2d; /* Old browsers */
-background: -moz-linear-gradient(top,  #2d2d2d 0%, #020202 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #2d2d2d 0%,#020202 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #2d2d2d 0%,#020202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#020202',GradientType=0 ); /* IE6-9 */
+
+	background: #2d2d2d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2d2d 0%, #020202 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #2d2d2d 0%,#020202 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #2d2d2d 0%,#020202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#020202',GradientType=0 ); /* IE6-9 */
 
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width: 100%;
-    height: 100vh;
-    z-index: 9999;
-    /*display: none;*/
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 100%;
+	height: 100vh;
+	z-index: 9999;
 }
 .home-overlay-inr{
 	
