@@ -195,11 +195,11 @@ if( $('.rpSlider').length ){
 
 
 $(".bth-tab-btn ul li button").click(function(){
-  $(".bth-tab-btn ul li button").removeClass('current');
-  $(this).addClass('current');
   var tagid = $(this).data('tag');
-  $(".bth-tab-content").removeClass('active').addClass('hide');
-  $("#"+tagid).addClass('active').removeClass('hide');
+  $(".bth-tab-btn ul li button").removeClass('current');
+  $(".bth-tab-content").removeClass('current');
+  $(this).addClass('current');
+  $("#"+tagid).addClass('current');
 
 });
 
