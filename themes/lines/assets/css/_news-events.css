@@ -79,6 +79,12 @@
   padding: 0 0 121px 0;
   
 }
+.lines-stories-sec-btm-angle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .lines-stories-innr{
   position: relative;
   z-index: 6;
