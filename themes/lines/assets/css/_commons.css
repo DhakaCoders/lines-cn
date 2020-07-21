@@ -178,6 +178,11 @@ img{
 	background-repeat: no-repeat!important;
 	background-position: center center!important;
 }
+.bg-position-btm{
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+	background-position: center bottom!important;
+}
 
 ul.reset-list,
 ol.reset-list,
