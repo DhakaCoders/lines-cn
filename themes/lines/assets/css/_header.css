@@ -262,9 +262,6 @@ nav.main-nav ul.sub-menu li:hover:after {
 	position: absolute;
 	height: 0;
 	text-indent: -999px;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
 }
 
 .main-nav-menu-bar-xs{
@@ -391,9 +388,6 @@ body.active-scroll-off{
     width: 0;
     z-index: -1;
     opacity: 0;
-    -ms-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
 }
 .xs-nav-cntlr.opacity-1 {
     right: 0;
@@ -402,6 +396,9 @@ body.active-scroll-off{
     width: 100%;
     height: initial;
     text-indent: initial;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .xs-nav-inr{
 	position: relative;
