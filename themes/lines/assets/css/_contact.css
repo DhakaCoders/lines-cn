@@ -179,14 +179,14 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 104px;
 }
 
 .lb-cnt-gm-btm-angle{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 4px;
+	bottom: 103px;
 }
 
 /*banner page*/
