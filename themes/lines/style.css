@@ -18,8 +18,9 @@ Text Domain: clipfresh
 	height: 100%;
 	top: 0;
 	left: 0;
+	text-align: center;
 }
-
-.home-overlay{
-	display: none;
+.section-graphics-top img{
+	max-height: 100%;
+	width: auto;
 }
