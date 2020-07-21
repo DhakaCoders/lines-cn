@@ -1,3 +1,7 @@
+.page-bnr-product{
+	min-height: 510px;
+	height: 100%;
+}
 .product-passage-sec{
 	padding-top: 145px;
 }
@@ -151,7 +155,7 @@
 
 
 .pp-migration-sec{
-	margin-top: 140px;
+	margin-top: 82px;
 	padding: 144px 0 121px;
 	position: relative;
 }
@@ -203,6 +207,7 @@
 
 .pp-mig-rgt-des{
 	text-align: right;
+	padding-bottom: 50px;
 }
 .pp-mig-rgt-des strong{
 	display: inline-block;
@@ -232,7 +237,7 @@
 
 .rp-slider-sec{
 	padding: 110px 0;
-	margin-bottom: 145px;
+	margin-bottom: 40px;
 }
 
 .rp-slider-title{
