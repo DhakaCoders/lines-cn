@@ -3,13 +3,9 @@
 	position: relative;
 }
 .page-bnr-shop-con{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	z-index: 1;
-	padding-top: 70px;
+	min-height: 600x;
+	height: 100%;
+	padding: 110px 0 150px;
 }
 .page-bnr-shop img{
 	width: 100%;
