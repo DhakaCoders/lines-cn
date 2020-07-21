@@ -219,7 +219,9 @@ if( $('.mainSlider').length ){
       autoplaySpeed: 2000,
       speed: 200,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      fade: true,
+      cssEase: 'linear'
     });
 }
 
