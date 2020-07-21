@@ -1,17 +1,8 @@
-.page-banner-bth-bg{
-	height: 1280px;
-}
-.page-banner-bth{
-	position: relative;
-}
+
+
 .page-banner-bth-des{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 2;
-	padding-top: 275px;
+	padding-top: 130px;
+	padding-bottom: 180px;
 }
 .bth-left-img{
 	float: left;
@@ -21,6 +12,7 @@
 	float: right;
 	width: 50%;
 	padding-left: 70px;
+	padding-right: 30px;
 }
 .bth-left-img img{
 	margin-bottom: 45px;
@@ -30,7 +22,7 @@
 	display: block;
 	font-size: 60px;
 	line-height: 1;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: -10px;
@@ -193,6 +185,7 @@
 	float: right;
 	width: 48.6842%;
 	padding-left: 70px;
+	padding-right: 22px;
 }
 
 .bth-rp-img ul{
@@ -214,13 +207,13 @@
 	display: block;
 	font-size: 47px;
 	line-height: 1;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 .bth-rp-des p{
 	line-height: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .bth-rp-des-top-left-btn{
