@@ -107,12 +107,32 @@
 }
 
 
+.shop-pre-footer-sec{
+	padding-top: 140px;
+	padding-bottom: 120px;
+	position: relative;
+}
+.security-sec-top-anlge{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.security-sec-btm-anlge{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 40px;
+}
 .shop-pre-ftr-inr{
 	padding: 35px 0 0;
-	background: url(../images/Middle.png);
+	background-image: url(../images/Middle.png);
+	background-color: #000;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	position: relative;
+	z-index: 6;
 }
 
 .shop-pre-ftr-cntlr ul{
