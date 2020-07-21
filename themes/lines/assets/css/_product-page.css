@@ -1,0 +1,259 @@
+.product-passage-sec{
+	padding-top: 145px;
+	padding-bottom: 120px;
+}
+.pp-img-sec{
+	float: left;
+	width: 50%;
+}
+.pp-des{
+	float: right;
+	width: 50%;
+}
+
+.pp-des-title{
+	display: block;
+	font-size: 47px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+.pp-des-title strong{
+	margin-left: 16px;
+	font-size: 22px;
+	padding: 10px;
+	background: #dc1c27;
+	display: inline-block;
+}
+.pp-des span{
+	display: block;
+	font-size: 26px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.pp-des > strong{
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+	display: block;
+	margin-bottom: 30px;
+}
+.pp-des p{
+	margin-bottom: 25px;
+}
+
+.pp-category{
+	padding-bottom: 30px;
+}
+.pp-category label,
+.pp-social-medias label{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.pp-category ul,
+.pp-social-medias ul{
+	display: inline-block;
+	vertical-align: 
+}
+.pp-category ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.pp-category ul li:first-child{
+	padding-left: 18px;
+}
+.pp-category ul li a{
+	font-size: 16px;
+	font-weight: 700;
+	color: #ECDE8C;
+	border: 2px solid #ECDE8C;
+	padding: 7px;
+	text-transform: uppercase;
+}
+
+.pp-social-medias ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pp-social-medias ul li:first-child{
+	padding-left: 15px;
+}
+.pp-social-medias ul li a{
+	font-size: 16px;
+	color: #fff;
+}
+
+.pp-quantity span{
+	display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.pp-quantity-left{
+	float: left;
+	width: 92px;
+	height: 60px;
+	background: #dc1c27;
+}
+.pp-quantity-btn{
+	float: left;
+}
+.pp-quantity-btn button{
+	width: 215px;
+	height: 60px;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	background: transparent;
+	border: 2px solid #fff;
+}
+
+
+.pp-migration-sec{
+	background: #000000;
+	padding-bottom: 50px;
+}
+.pp-migration-des,
+.pp-mig-img,
+.pp-mig-rgt-des{
+	float: left;
+	width: 33.3333%;
+}
+
+.pp-mig-des-title,
+.pp-mig-rgt-title{
+	display: block;
+	font-size: 35px;
+	line-height: 1;
+	margin-bottom: 35px;
+	font-family: 'CenturyGothic';
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.pp-migration-des p{
+	font-size: 16px;
+	margin-bottom: 28px;
+}
+.pp-migration-des strong{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.pp-mig-rgt-des{
+	text-align: right;
+}
+.pp-mig-rgt-des strong{
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.pp-mig-rgt-des p{
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+.pp-mig-rgt-quantity ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 12px;
+}
+.pp-mig-rgt-quantity ul li div.bear-quantity-option{
+	text-align: center;
+}
+.pp-mig-rgt-quantity ul li div.bear-quantity-option strong{
+	font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    font-family: 'CenturyGothic-Bold';
+}
+
+.rp-slider-sec{
+	padding: 110px 0;
+}
+
+.rp-slider-title{
+	display: block;
+	font-size: 47px;
+	line-height: 1;
+	margin-bottom: 120px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.rp-slide-item{
+	float: left;
+	width: 33.3333%;
+	padding-left: 60px;
+	padding-right: 60px;
+	text-align: center;
+}
+
+.rp-slide-des{
+	padding-top: 60px;
+}
+.rp-slide-des-title{
+	display: block;
+	font-size: 35px;
+	line-height: 1;
+	margin-bottom: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.rp-slide-des p{
+	font-size: 16px;
+}
+
+.rp-slide-img{
+	min-height: 480px;
+}
+
+.rp-slider-ctlr{
+	position: relative;
+}
+.rp-slider-arrow .rp-slider-left,
+.rp-slider-arrow .rp-slider-rgt{
+	display: block;
+    height: 40px;
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 5;
+}
+.rp-slider-arrow .rp-slider-left{
+	content: "";
+    height: 40px;
+    width: 25px;
+    background: url(../images/rp-slider-left-arrow.png);
+    background-size: 100% 100%!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    position: absolute;
+    left: 0px;
+    top: 32%;
+}
+.rp-slider-arrow .rp-slider-rgt{
+	content: "";
+    height: 40px;
+    width: 25px;
+    background: url(../images/rp-slider-ght-arrow.png);
+    background-size: 100% 100%!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    position: absolute;
+    right: 0;
+    top: 32%;
+}

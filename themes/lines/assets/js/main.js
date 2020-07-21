@@ -181,6 +181,22 @@ if( $('.events-mainSlider').length ){
 
 
 /*---- Shoriful ------*/
+if( $('.rpSlider').length ){
+    $('.rpSlider').slick({
+      dots: false,
+      infinite: false,
+      speed: 1000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.rp-slider-arrow .rp-slider-left'),
+      nextArrow: $('.rp-slider-arrow .rp-slider-rgt'),
+    });
+}
+
+
+
+
+
 
 $(".bth-tab-btn ul li button").click(function(){
   $(".bth-tab-btn ul li button").removeClass('current');
