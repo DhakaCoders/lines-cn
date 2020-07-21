@@ -151,10 +151,28 @@
 
 
 .pp-migration-sec{
-	background: #000000;
-	padding-bottom: 50px;
 	margin-top: 140px;
-	margin-bottom: 120px;
+	padding: 144px 0 121px;
+	position: relative;
+}
+
+.pp-migration-sec-top-angle-svg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.pp-migration-sec-btm-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 4px;
+}
+.pp-migration-sec-inr{
+	background: #000000;
+	position: relative;
+	z-index: 6;
 }
 .pp-migration-des,
 .pp-mig-img,
