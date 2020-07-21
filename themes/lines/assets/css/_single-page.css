@@ -9,6 +9,10 @@
 
 .sl-pg-udr-ln{
 	text-decoration: underline;
+	color: #fff;
+}
+.sl-pg-udr-ln:hover{
+	color: #FF7274;
 }
 .sl-pg-post-content-top{
 	display: flex;
