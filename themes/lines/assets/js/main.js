@@ -194,10 +194,6 @@ if( $('.rpSlider').length ){
 }
 
 
-
-
-
-
 $(".bth-tab-btn ul li button").click(function(){
   $(".bth-tab-btn ul li button").removeClass('current');
   $(this).addClass('current');
