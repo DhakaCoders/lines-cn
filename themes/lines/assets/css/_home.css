@@ -5,18 +5,24 @@ body{
 	overflow: hidden;
 }
 .home-overlay{
-	background-image: url(../images/home-overlay-bg.jpg);
+	/*background-image: url(../images/home-overlay-bg.jpg);*/
+
+	background: #2d2d2d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2d2d2d 0%, #020202 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #2d2d2d 0%,#020202 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #2d2d2d 0%,#020202 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#020202',GradientType=0 ); /* IE6-9 */
+
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width: 100%;
-    height: 100vh;
-    z-index: 9999;
-    /*display: none;*/
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 100%;
+	height: 100vh;
+	z-index: 9999;
 }
 .home-overlay-inr{
 	
@@ -39,6 +45,9 @@ body{
 	align-items: center;
 	justify-content: center;
 	z-index: 1;
+}
+.home-overlay-graphics img{
+	max-height: 100%;
 }
 .home-overlay-des{
 	text-align: center;
@@ -71,9 +80,47 @@ body{
 }
 
 .home-overlay-graphics{
-	-webkit-animation: preloadzoominout 80s infinite;
-	animation: preloadzoominout 80s infinite;
-	-webkit-animation-fill-mode: forwards;
+  -webkit-animation: rotating 30s linear infinite;
+  -moz-animation: rotating 30s linear infinite;
+  -ms-animation: rotating 30s linear infinite;
+  -o-animation: rotating 30s linear infinite;
+  animation: rotating 30s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }
 
 @-webkit-@keyframes preloadzoominout {
@@ -315,8 +362,8 @@ body{
 }
 
 .hm-beer-list-sec-inr{
-    background: url(../images/hm-beer-list-sec-bg.png);
-    /*background: rgba(38,35,35,0.89);*/
+    /*background: url(../images/hm-beer-list-sec-bg.png);*/
+    background: rgba(38,34,35,0.74);
 }
 .hm-beer-list-sec-hdr{
 	text-align: center;
@@ -536,15 +583,13 @@ body{
 	text-transform: uppercase;
 	display: block;
 }
-.eco-brewing-sec{
-	position: relative;
-	padding: 144px 0 120px;
+.eco-brewing-sec {
+    position: relative;
+    padding: 144px 0 0;
+    margin-bottom: 120px;
 }
 .eco-brewing-sec-des p:last-of-type{
 	margin-bottom: 0;
-}
-.eco-brewing-sec-inr{
-	
 }
 .eco-brewing-sec-top-anlge{
 	position: absolute;
@@ -555,18 +600,16 @@ body{
 	background-repeat: repeat-x;
 	background-position: center top;*/
 }
-.eco-brewing-sec-btm-anlge{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	/*background: url(../images/eco-brewing-sec-btm-anlge.png);
-	background-repeat: repeat-x;
-	background-position: center top;*/
-	z-index: 5;
+.eco-brewing-sec-btm-anlge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 5;
 }
 .eco-brewing-sec-inr{
-	background: url(../images/eco-brewing-sec-bg.png);
+	/*background: url(../images/eco-brewing-sec-bg.png);*/
+	background: rgba(38,34,35,.74);
 
 }
 .eco-brewing-sec-hdr{

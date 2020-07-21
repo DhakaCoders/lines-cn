@@ -245,7 +245,7 @@ $('.hdr-humbergur-btn').on('click', function(e){
 
 $('.enter-now-btn').on('click', function(e){
   e.preventDefault();
-  $('.home-overlay').hide(300);
+  $('.home-overlay').fadeOut(300);
 });
 
 
