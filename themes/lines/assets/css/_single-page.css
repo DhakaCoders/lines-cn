@@ -168,3 +168,20 @@
 	color: #fff;
 	border-color: #FF7274;
 }
+
+.lines-stories-innr{
+	position: relative;
+	z-index: 6;
+}
+.sl-pg-articles-sec-top-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.sl-pg-articles-sec-btm-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
