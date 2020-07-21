@@ -217,7 +217,7 @@ if( $('.mainSlider').length ){
       infinite: false,
       autoplay: false,
       autoplaySpeed: 2000,
-      speed: 200,
+      speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
