@@ -19,3 +19,7 @@ Text Domain: clipfresh
 	top: 0;
 	left: 0;
 }
+
+.home-overlay{
+	display: none;
+}

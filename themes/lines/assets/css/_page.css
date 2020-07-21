@@ -30,7 +30,16 @@
 	height: 100%;
 }
 
-
+.svg-cntlr{
+	left: 0;
+	right: 0;
+    max-width: 100%;
+    width: 100%;
+}
+.hm-beer-list-sec-inr{
+	z-index: 6;
+	position: relative;
+}
 .sitemap{
 	padding: 150px 0;
 }
