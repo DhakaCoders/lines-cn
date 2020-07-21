@@ -118,6 +118,7 @@
 	cursor: pointer;
 	position: relative;
 }
+.bth-tab-btn ul li button.current:before,
 .bth-tab-btn ul li button:before{
 	content: "";
 	position: absolute;
@@ -129,11 +130,15 @@
 	background: #fff;
 	transition: width 0.5s;
 }
+.bth-tab-btn ul li button.current:before,
 .bth-tab-btn ul li button:hover:before{
 	width: 100%;
 }
 .bth-tab-btn ul li button:hover{
 	border: 1px solid transparent;
+}
+.bth-tab-btn ul li button.current{
+	border: none;
 }
 
 

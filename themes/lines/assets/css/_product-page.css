@@ -268,11 +268,20 @@
 	font-weight: 700;
 	text-transform: uppercase;
 }
+.rp-slide-des-title a{
+	color: #fff;
+}
+.rp-slide-des-title a:hover{
+	color: #FF7274;
+}
 .rp-slide-des p{
 	font-size: 16px;
 	color: #F6ECE0;
 }
 
+.rp-slide-img-ctlr{
+	position: relative;
+}
 .rp-slide-img{
 	min-height: 480px;
 }
