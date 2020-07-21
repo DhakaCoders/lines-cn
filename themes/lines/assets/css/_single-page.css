@@ -146,6 +146,10 @@
 .sl-pg-stories-hedding{
 	text-align: center;
 }
+
+.sl-pg-articles{
+	padding: 144px 0 121px;
+}
 .sl-pg-grid-btn{
 	padding-top: 20px;
 }
@@ -160,7 +164,7 @@
 	border: 1px solid #fff;
 }
 .sl-pg-grid-btn a:hover{
-	background: #fff;
-	color: #aa8262;
-	border-color: #aa8262;
+	background: #FF7274;
+	color: #fff;
+	border-color: #FF7274;
 }
