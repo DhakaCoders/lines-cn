@@ -43,17 +43,17 @@
 .sitemap{
 	padding: 150px 0;
 }
-.sitemap ul{
+.sitemap ol{
 	padding-left: 50px;
 }
-.sitemap ul li{
+.sitemap ol li{
 	padding: 15px 0;
 }
-.sitemap ul li a{
+.sitemap ol li a{
 	color: #fff;
 }
-.sitemap ul li a:hover,
-.sitemap ul li a:focus{
+.sitemap ol li a:hover,
+.sitemap ol li a:focus{
 	text-decoration: underline;
 }
 
