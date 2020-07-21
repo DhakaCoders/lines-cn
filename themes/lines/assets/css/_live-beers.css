@@ -1,6 +1,10 @@
 .core-beers-section{
 	padding: 125px 0 130px;
 }
+.page-bnr-line-beers{
+	min-height: 855px;
+	background-position: center bottom!important;
+}
 .page-bnr-line-beers img{
 	width: 100%;
 }
