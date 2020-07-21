@@ -113,6 +113,7 @@
 	color: #2F2E2E;
 	text-transform: uppercase;
 	font-style: italic;
+	background: #F6ECE0;
 }
 .mail input[type=text],
 .subject input[type=text]{
@@ -122,6 +123,7 @@
 	color: #2F2E2E;
 	text-transform: uppercase;
 	font-style: italic;
+	background: #F6ECE0;
 }
 .msg textarea{
 	width: 680px;
@@ -132,6 +134,7 @@
 	text-transform: uppercase;
 	font-style: italic;
 	resize: none;
+	background: #F6ECE0;
 }
 .cnt-btn input[type=submit]{
 	font-size: 14px;
@@ -219,6 +222,7 @@
 	font-weight: 400;
 	font-family: 'CenturyGothic';
 	text-transform: capitalize;
+	color: #F6ECE0;
 }
 
 /*.lb-cnt-page-btm-border{
