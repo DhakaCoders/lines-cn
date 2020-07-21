@@ -2,7 +2,11 @@
 	padding: 125px 0 130px;
 }
 .page-bnr-line-beers{
-	min-height: 855px;
+	min-height: 755px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .page-bnr-line-beers img{
 	width: 100%;
