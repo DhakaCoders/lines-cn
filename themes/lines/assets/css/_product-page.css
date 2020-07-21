@@ -23,9 +23,11 @@
 .pp-des-title strong{
 	margin-left: 16px;
 	font-size: 22px;
-	padding: 10px;
+	padding: 8px;
 	background: #dc1c27;
 	display: inline-block;
+	vertical-align: top;
+	margin-top: 8px;
 }
 .pp-des span{
 	display: block;
@@ -77,6 +79,13 @@
 	border: 2px solid #ECDE8C;
 	padding: 7px;
 	text-transform: uppercase;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.pp-category ul li a:hover{
+	border: 2px solid #FF7274;
+	color: #FF7274;
 }
 
 .pp-social-medias ul li{
@@ -91,6 +100,12 @@
 .pp-social-medias ul li a{
 	font-size: 16px;
 	color: #fff;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.pp-social-medias ul li a:hover{
+	color: #FF7274;
 }
 
 .pp-quantity span{
@@ -118,6 +133,14 @@
 	color: #fff;
 	background: transparent;
 	border: 2px solid #fff;
+	cursor: pointer;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.pp-quantity-btn button:hover{
+	border-color: #FF7274;
+	color: #FF7274;
 }
 
 
@@ -247,6 +270,15 @@
     position: absolute;
     left: 0px;
     top: 32%;
+    transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.rp-slider-arrow .rp-slider-left:hover{
+	background: url('../images/rp-slider-left-arrow-hover.png');
+	background-size: 100% 100%!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
 }
 .rp-slider-arrow .rp-slider-rgt{
 	content: "";
@@ -259,4 +291,25 @@
     position: absolute;
     right: 0;
     top: 32%;
+    transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
+.rp-slider-arrow .rp-slider-rgt:hover{
+	background: url('../images/rp-slider-ght-arrow-hover.png');
+	background-size: 100% 100%!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+}
+
+.rpSlider .rp-slide-item{
+	display: none!important;
+}
+.rpSlider .rp-slide-item{
+	display: block!important;
+}
+.rpSlider.slick-initialized .rp-slide-item{
+	display: block!important;
+}
+
+

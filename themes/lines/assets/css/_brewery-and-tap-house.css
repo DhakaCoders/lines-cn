@@ -167,12 +167,12 @@
 .table tr td span.blue{
 	background: #3498E2;
 }
-.active{
+/*.active{
 	display: block;
 }
 .hide{
 	display: none;
-}
+}*/
 .table{
 	margin: 0;
 }
@@ -305,5 +305,12 @@
     max-height: 120px;
     max-width: 100%;
     width: 100%;
+}
+
+.bth-tab-content{
+	display: none;
+}
+.bth-tab-content.current{
+	display: block;
 }
 
