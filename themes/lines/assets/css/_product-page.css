@@ -48,10 +48,20 @@
 	margin-bottom: 30px;
 }
 .pp-con{
-	padding-bottom: 30px;
+	padding-right: 90px;
 }
 .pp-con p{
-	margin-bottom: 25px;
+	margin-bottom: 38px;
+	line-height: 1.7;
+}
+.pp-con p a{
+	font-size: 16px;
+	font-weight: 700;
+	color: #F6ECE0;
+	text-transform: uppercase;
+}
+.pp-con p a:hover{
+	color: #FF7274;
 }
 
 
