@@ -4,7 +4,7 @@ All Transitions
 a,input,img,textarea,button,svg,
 nav.main-nav > ul > li > a:before,
 .hm-cat-item,
-.menu-closebtn,.pro-img img{
+.menu-closebtn,.pro-img img,.fls-product-item-fea-img-bx{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

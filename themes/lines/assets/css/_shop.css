@@ -46,7 +46,12 @@
 .pro-img {
 	overflow: hidden;
 }
-
+.fls-product-item:hover .fls-product-item-fea-img-bx{
+	border-color: #dc1c27;
+}
+.fls-pro-yellow .fls-product-item:hover .fls-product-item-fea-img-bx{
+	border-color: #d8a819;
+}
 .pro-img-angle{
 	position: absolute;
 	min-width: 109px;
