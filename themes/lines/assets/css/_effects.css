@@ -3,7 +3,8 @@ All Transitions
 */
 a,input,img,textarea,button,svg,
 nav.main-nav > ul > li > a:before,
-.hm-cat-item{
+.hm-cat-item,
+.menu-closebtn{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
