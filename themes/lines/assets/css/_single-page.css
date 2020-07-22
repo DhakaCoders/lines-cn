@@ -199,3 +199,12 @@
 .sl-pg-lines-cntlr{
 	padding: 0;
 }
+.sl-pg-articles .sl-pg-lines-stories-innr{
+	background: #080808;
+}
+.sl-pg-stories-title{
+	font-size: 47px;
+	text-transform: uppercase;
+	line-height: 1;
+	color: #fff;
+}

@@ -47,12 +47,10 @@
 	padding-left: 65px;
 }
 .banner-page-story-desc-title{
-
-}
-.banner-page-story-desc-title h1{
 	font-size: 60px;
 	line-height: 1;
 	margin-bottom: 33px;
+	text-transform: uppercase;
 }
 .banner-page-story-desc p{
 	line-height: 40px;
@@ -79,10 +77,11 @@
 	padding-right: 72px;
 	padding-top: 10px;
 }
-.lines-system-desc h2{
+.lines-system-desc-title{
 	font-size: 47px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	text-transform: uppercase;
 }
 .lines-system-desc p{
 	line-height: 40px;
@@ -127,10 +126,11 @@
 .eco-brewing-desc-title{
 
 }
-.eco-brewing-desc-title h2{
+.eco-brewing-desc-title{
 	font-size: 47px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	text-transform: uppercase;
 }
 .eco-brewing-desc p{
 	line-height: 40px;
