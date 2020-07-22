@@ -7,7 +7,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 2px;
 }
 .lines-stories-innr{
   position: relative;
@@ -129,4 +129,15 @@
   color: #fff;
   border-color: #FF7274;
   background-color: #FF7274;
+}
+
+.news-events-grds-top-anlge{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -126px;
+  z-index: 6;
+}
+.news-events-grds-sec .lines-stories-innr{
+  background: #000;
 }
