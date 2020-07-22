@@ -3,7 +3,7 @@
 	position: relative;
 }
 .page-bnr-shop-con{
-	min-height: 600x;
+	min-height: 600px;
 	height: 100%;
 	padding: 110px 0 150px;
 }
@@ -43,6 +43,10 @@
 	align-items: center;
 	justify-content: center;
 }
+.pro-img {
+	overflow: hidden;
+}
+
 .pro-img-angle{
 	position: absolute;
 	min-width: 109px;
@@ -93,6 +97,9 @@
 }
 .flspid-title a{
 	color: #fff;
+}
+.flspid-title a:hover{
+	color: #FF7274;
 }
 .fls-price{
 	font-family: 'CenturyGothic-Bold';

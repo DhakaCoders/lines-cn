@@ -4,7 +4,7 @@ All Transitions
 a,input,img,textarea,button,svg,
 nav.main-nav > ul > li > a:before,
 .hm-cat-item,
-.menu-closebtn{
+.menu-closebtn,.pro-img img{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -15,7 +15,12 @@ nav.main-nav > ul > li > a:before,
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 }
-
+.fls-product-item-fea-img-bx:hover .pro-img img{
+	transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-o-transform: scale(1.03);
+}
 /**
 All Hovers
 */
