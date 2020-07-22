@@ -91,20 +91,18 @@
 }
 
 
-.lb-inputfields-row{
-	width: 100%;
-}
-.diveder2{
+.diveder2 .lb-inputfield{
 	float: left;
 	width: 50%;
 }
 .lb-inputfield{
+	width: 100%;
 	margin-bottom: 25px;
 }
 .lb-inputfield input{
 	width: 100%;
 }
-.diveder2 input[type=text]{
+.diveder2 .lb-inputfield input[type=text]{
 	width: 330px!important;
 }
 .lb-inputfield input[type=text],
@@ -272,54 +270,42 @@
 }
 
 
-.firstname input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.lb-inputfield input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
-.firstname input[type=text]::-moz-placeholder { /* Firefox 19+ */
+.lb-inputfield input[type=text]::-moz-placeholder { /* Firefox 19+ */
   opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
-.firstname input[type=text]:-ms-input-placeholder { /* IE 10+ */
+.lb-inputfield input[type=text]:-ms-input-placeholder { /* IE 10+ */
   opacity: 1;
-  color: #37302a;
-}
-.firstname input[type=text]:-moz-placeholder { /* Firefox 18- */
-  opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
 
-.firstname input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.lb-inputfield input[type=email]::-moz-placeholder { /* Firefox 19+ */
   opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
-.firstname input[type=email]::-moz-placeholder { /* Firefox 19+ */
+.lb-inputfield input[type=email]:-ms-input-placeholder { /* IE 10+ */
   opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
-.firstname input[type=email]:-ms-input-placeholder { /* IE 10+ */
+.lb-inputfield input[type=email]:-webkit-placeholder { /* Firefox 18- */
   opacity: 1;
-  color: #37302a;
-}
-.firstname input[type=email]:-moz-placeholder { /* Firefox 18- */
-  opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
 
 
-.msg textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.lb-inputfield textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
-.msg textarea::-moz-placeholder { /* Firefox 19+ */
+.lb-inputfield textarea::-moz-placeholder { /* Firefox 19+ */
   opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
-.msg textarea:-ms-input-placeholder { /* IE 10+ */
+.lb-inputfield textarea:-ms-input-placeholder { /* IE 10+ */
   opacity: 1;
-  color: #37302a;
-}
-.msg textarea:-moz-placeholder { /* Firefox 18- */
-  opacity: 1;
-  color: #37302a;
+  color: #2F2E2E;
 }
