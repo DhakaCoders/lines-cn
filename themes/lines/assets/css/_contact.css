@@ -91,33 +91,24 @@
 }
 
 
-.name,
-.mail,
-.subject,
-.msg{
-	margin-bottom: 25px;
+.lb-inputfields-row{
+	width: 100%;
 }
-.firstname{
+.diveder2{
 	float: left;
 	width: 50%;
 }
-.lastname{
-	float: right;
-	width: 50%;
+.lb-inputfield{
+	margin-bottom: 25px;
 }
-.firstname input[type=text],
-.lastname input[type=text]{
-	width: 330px;
-	height: 60px;
-	padding-left: 22px;
-	color: #2F2E2E;
-	text-transform: uppercase;
-	font-style: italic;
-	background: #F6ECE0;
-	border: 1px solid #F6ECE0;
+.lb-inputfield input{
+	width: 100%;
 }
-.mail input[type=text],
-.subject input[type=text]{
+.diveder2 input[type=text]{
+	width: 330px!important;
+}
+.lb-inputfield input[type=text],
+.lb-inputfield input[type=email]{
 	width: 680px;
 	height: 60px;
 	padding-left: 22px;
@@ -127,7 +118,7 @@
 	background: #F6ECE0;
 	border: 1px solid #F6ECE0;
 }
-.msg textarea{
+.lb-inputfield textarea{
 	width: 680px;
 	height: 358px;
 	padding-left: 22px;
@@ -139,11 +130,9 @@
 	background: #F6ECE0;
 	border: 1px solid #F6ECE0;
 }
-.firstname input:focus,
-.lastname input:focus,
-.mail input:focus,
-.subject input:focus,
-.msg textarea:focus{
+.lb-inputfield input[type=text]:focus,
+.lb-inputfield input[type=email]:focus,
+.lb-inputfield textarea:focus{
 	border-color: #FF7274;
 }
 .cnt-btn input[type=submit]{
@@ -165,6 +154,7 @@
 	border-color: #FF7274;
     background-color: #FF7274;
 }
+
 
 .lb-cnt-google-map-sec{
 	position: relative;
@@ -221,7 +211,7 @@
 	display: block;
 	font-size: 47px;
 	line-height: 1;
-	margin-bottom: 38px;
+	margin-bottom: 32px;
 	font-weight: 400;
 	font-family: 'CenturyGothic';
 	text-transform: capitalize;
@@ -270,6 +260,8 @@
 }
 .lb-cnt-page-socials-media ul li a{
 	display: inline-block;
+	vertical-align: baseline;
+	font-size: 30px;
 	color: #fff;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
