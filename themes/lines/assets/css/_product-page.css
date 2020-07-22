@@ -111,14 +111,14 @@
 .pp-social-medias ul li{
 	display: inline-block;
 	vertical-align: baseline;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 .pp-social-medias ul li:first-child{
 	padding-left: 15px;
 }
 .pp-social-medias ul li a{
-	font-size: 16px;
+	font-size: 22px;
 	color: #fff;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -206,13 +206,20 @@
 	text-transform: uppercase;
 	color: #F6ECE0;
 }
-.pp-migration-des p{
-	font-size: 16px;
-	margin-bottom: 28px;
+
+.pp-migration-con{
+	padding-right: 20px;
 }
-.pp-migration-des strong{
+.pp-migration-con p{
+	font-size: 16px;
+	margin-bottom: 40px;
+	line-height: 2;
+}
+.pp-migration-con strong{
+	display: block;
 	font-size: 16px;
 	font-weight: 700;
+	margin-bottom: 10px;
 }
 
 .pp-mig-rgt-des{
