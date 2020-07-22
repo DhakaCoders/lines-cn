@@ -1,7 +1,7 @@
 
 .lines-stories{
   padding: 0 0 121px 0;
-  
+  position: relative;
 }
 .lines-stories-sec-btm-angle{
   position: absolute;
