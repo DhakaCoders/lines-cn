@@ -1,6 +1,6 @@
 .lb-cntinfo-sec{
 	margin-top: 100px;
-	margin-bottom: 65px;
+	margin-bottom: 10px;
 }
 .lb-cntinfo-leftsidebar{
 	float: left;
@@ -158,7 +158,7 @@
 
 .lb-cnt-google-map-sec{
 	position: relative;
-	padding: 105px 0 121px;
+	padding: 0;
 }
 .lb-cnt-google-map-sec iframe{
 	width: 100%;
@@ -169,14 +169,14 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 104px;
+	top: -1px;
 }
 
 .lb-cnt-gm-btm-angle{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 103px;
+	bottom: 3px;
 }
 
 /*banner page*/
@@ -325,6 +325,10 @@
   color: #2F2E2E;
 }
 
+
+.contact-ctlr .footer-wrp {
+    padding: 45px 0 0;
+}
 
 
 
