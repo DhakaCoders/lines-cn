@@ -284,7 +284,16 @@
   opacity: 1;
   color: #2F2E2E;
 }
+.lb-inputfield input[type=text]:-moz-placeholder { /* Firefox 18- */
+  opacity: 1;
+  color: #2F2E2E;
+}
 
+
+.lb-inputfield input[type=email]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  opacity: 1;
+  color: #2F2E2E;
+}
 .lb-inputfield input[type=email]::-moz-placeholder { /* Firefox 19+ */
   opacity: 1;
   color: #2F2E2E;
@@ -293,7 +302,7 @@
   opacity: 1;
   color: #2F2E2E;
 }
-.lb-inputfield input[type=email]:-webkit-placeholder { /* Firefox 18- */
+.lb-inputfield input[type=email]:-moz-placeholder { /* Firefox 18- */
   opacity: 1;
   color: #2F2E2E;
 }
@@ -311,3 +320,13 @@
   opacity: 1;
   color: #2F2E2E;
 }
+.lb-inputfield textarea:-moz-placeholder { /* Firefox 18- */
+  opacity: 1;
+  color: #2F2E2E;
+}
+
+
+
+
+
+
