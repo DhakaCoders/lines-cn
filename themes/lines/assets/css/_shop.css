@@ -3,7 +3,7 @@
 	position: relative;
 }
 .page-bnr-shop-con{
-	min-height: 600x;
+	min-height: 600px;
 	height: 100%;
 	padding: 110px 0 150px;
 }
@@ -42,6 +42,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.pro-img {
+	overflow: hidden;
+}
+.fls-product-item:hover .fls-product-item-fea-img-bx{
+	border-color: #dc1c27;
+}
+.fls-pro-yellow .fls-product-item:hover .fls-product-item-fea-img-bx{
+	border-color: #d8a819;
 }
 .pro-img-angle{
 	position: absolute;
@@ -93,6 +102,9 @@
 }
 .flspid-title a{
 	color: #fff;
+}
+.flspid-title a:hover{
+	color: #FF7274;
 }
 .fls-price{
 	font-family: 'CenturyGothic-Bold';
