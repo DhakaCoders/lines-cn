@@ -118,20 +118,20 @@
 	color: #FF7274;
 }
 
-.pp-quantity span{
+.pp-quantity label{
 	display: block;
 	font-size: 13px;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
-
-.pp-quantity-left{
-	float: left;
-	margin-left: -5px;
+.pp-quantity-row{
+	display: flex;
+	align-items: center;
 }
+
+
 .pp-quantity-btn{
-	float: left;
-	margin-left: -7px;
+	
 }
 .pp-quantity-btn button{
 	width: 215px;
@@ -148,8 +148,9 @@
 	-ms-transition: all 0.5s;
 }
 .pp-quantity-btn button:hover{
-	border-color: #FF7274;
-	color: #FF7274;
+	border-color: #fff;
+	background-color: #fff;
+	color: #dc1c27;
 }
 
 

@@ -24,3 +24,6 @@ Text Domain: clipfresh
 	max-height: 100%;
 	width: auto;
 }
+body.contact{
+	background: #292728;
+}
