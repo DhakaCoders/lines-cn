@@ -277,6 +277,9 @@ nav.main-nav ul.sub-menu li:hover:after {
 .menu-closebtn{
 	float: right;
 }
+.menu-closebtn:hover{
+	opacity: .7;
+}
 .main-nav-menu-bar-xs > div{
 	display: flex;
 	align-items: center;
