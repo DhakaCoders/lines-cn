@@ -170,6 +170,25 @@ if( $('.rpSlider').length ){
       slidesToScroll: 1,
       prevArrow: $('.rp-slider-arrow .rp-slider-left'),
       nextArrow: $('.rp-slider-arrow .rp-slider-rgt'),
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
 }
 
