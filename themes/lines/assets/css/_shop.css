@@ -255,3 +255,145 @@
 .shop-filter-menu ul li:hover a span:after{
 	width: 100%;
 }
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+	.pbs-title {
+	    font-size: 57px;
+	}
+	.sabs-hdr-title {
+	    font-size: 45px;
+	}
+}
+
+@media(max-width: 1199px){
+	.page-bnr-shop-con {
+	    padding: 100px 0 120px;
+	}
+	.pbs-title {
+	    font-size: 52px;
+	    margin: 0 0 40px 0;
+	}
+	.main-shop-bnr-menu ul li span, 
+	.main-shop-bnr-menu ul li a {
+	    font-size: 42px;
+	}
+	.shop-all-beers-sec {
+	    padding: 90px 0 35px;
+	}
+	.shop-all-beers-sec-hdr {
+	    padding-bottom: 35px;
+	}
+	.sabs-hdr-title {
+	    font-size: 40px;
+	}
+	.flspid-title {
+	    margin: 0 0 18px 0;
+	    font-size: 22px;
+	}
+}
+
+@media(max-width: 991px){
+	.page-bnr-shop-con {
+	    padding: 90px 0 90px;
+	}
+	.pbs-title {
+	    font-size: 46px;
+	    margin: 0 0 30px 0;
+	}
+	.main-shop-bnr-menu ul {
+	    padding-bottom: 25px;
+	}
+	.main-shop-bnr-menu ul li span, 
+	.main-shop-bnr-menu ul li a {
+	    font-size: 38px;
+	    padding: 8px 15px;
+	}
+	.shop-all-beers-sec {
+	    padding: 75px 0 20px;
+	}
+	.shop-all-beers-sec-hdr {
+	    padding-bottom: 30px;
+	}
+	.sabs-hdr-title {
+	    font-size: 35px;
+	}
+	.shop-all-beers-sec-grds ul {
+	    margin: 0 -20px;
+	}
+	.shop-all-beers-sec-grds ul li {
+	    width: 50%;
+	    padding: 0 20px 45px;
+	}
+	.flspid-title {
+	    margin: 0 0 15px 0;
+	    font-size: 20px;
+	}
+	.shop-pre-footer-sec {
+	    padding-top: 90px;
+	    padding-bottom: 100px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.pbs-title {
+	    font-size: 40px;
+	    margin: 0 0 25px 0;
+	}
+	.main-shop-bnr-menu ul {
+	    padding-bottom: 20px;
+	}
+	.main-shop-bnr-menu ul li span, 
+	.main-shop-bnr-menu ul li a {
+	    font-size: 32px;
+	    padding: 8px 10px;
+	}
+	.sabs-hdr-title {
+	    font-size: 32px;
+	}
+	.shop-all-beers-sec-grds ul {
+	    margin: 0;
+	    padding: 0 0px;
+	}
+	.shop-all-beers-sec-grds ul li {
+	    width: 100%;
+	    padding: 0 0px 30px;
+	}
+	.fls-product-item{
+		max-width: 300px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+}
+
+@media(max-width: 575px){
+	.main-shop-bnr-menu ul li span, 
+	.main-shop-bnr-menu ul li a {
+	    font-size: 25px;
+	    padding: 8px 8px;
+	}
+	.sabs-hdr-title {
+	    font-size: 28px;
+	}
+
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

@@ -100,3 +100,79 @@
 	padding-bottom: 90px;
 	background: #080808;
 }
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+	.core-beers-section {
+	    padding: 100px 0 110px;
+	}
+	.cbihdr-title {
+	    font-size: 48px;
+	}
+	.core-beer-item-hdr span {
+	    font-size: 30px;
+	}
+	.hm-beer-list-sec-hdr-title {
+	    margin-bottom: 48px;
+
+	}
+	.hm-beer-list-sec {
+	    padding: 110px 0 110px;
+	}
+}
+
+@media(max-width: 1199px){
+	.core-beers-section {
+	    padding: 80px 0 90px;
+	}
+	.cbihdr-title {
+	   font-size: 42px;
+	} 
+	.core-beer-item-hdr span {
+	    font-size: 27px;
+	    margin-bottom: 30px;
+	}
+	.hm-beer-list-sec-hdr-title {
+	    margin-bottom: 42px;
+	}
+
+@media(max-width: 991px){
+	.cbihdr-title {
+	    font-size: 36px;
+	}
+	.core-beer-item-hdr span {
+	    font-size: 24px;
+	    margin-bottom: 25px;
+	}
+	.hm-beer-list-sec-hdr-title {
+	    margin-bottom: 35px;
+	}
+
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
