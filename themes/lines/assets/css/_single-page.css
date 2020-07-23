@@ -190,7 +190,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 1px;
 }
 .sl-pg-lines-stories-innr{
 	padding-top: 30px;
