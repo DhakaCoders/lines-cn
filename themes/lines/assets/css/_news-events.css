@@ -27,13 +27,15 @@
 .lines-stories-items-wrap >ul{
   margin-left: -30px;
   margin-right: -30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .lines-stories-items-wrap > ul >li{
   width: 33.33%;
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 95px;
-  float: left;
 }
 .lines-stories-items-wrap > ul >li:nth-child(3n+1){
   clear: left;
@@ -81,12 +83,15 @@
 .lines-stories-items-hedding{
 
 }
-.lines-stories-items-hedding h4{
+.lines-stories-items-title{
   letter-spacing: 0.50px;
   font-weight: 400;
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
 }
 .lines-stories-items-hedding h4 a{
   display: inline-block;
@@ -152,17 +157,29 @@
   br{
     display: none;
   }
+  .lines-stories-cntlr{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .lines-stories-items-wrap > ul{
     margin: 0 -20px;
   }
   .lines-stories-items-wrap > ul >li{
     padding: 0 20px;
+    margin-bottom: 80px;
   }
   .lines-stories-items-desc p{
     padding-right: 0;
   }
 }
 @media(max-width: 991px){
+  .lines-stories-sec-btm-angle{
+    bottom: 30px;
+  }
+  .lines-stories-cntlr{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .lines-stories-items-wrap > ul{
     margin: 0 -30px;
     padding: 0 50px;
@@ -170,6 +187,7 @@
   .lines-stories-items-wrap > ul >li{
     width:50%;
     padding: 0 30px;
+    margin-bottom: 70px;
   }
   .lines-stories-items-wrap > ul >li:nth-child(3n+1){
     clear: initial;
@@ -178,19 +196,56 @@
     clear: left;
   }
   .lines-stories-items-desc p{
-    padding-right: 10;
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .lines-stories-button >a{
+    margin-top: 35px;
   }
 }
 @media(max-width: 767px){
+  .lines-stories-items-desc p{
+    font-size: 16px;
+    line-height: 30px;
+  }
   .lines-stories-items-wrap > ul{
     padding: 0;
+  }
+  .lines-stories-button >a{
+    margin-top: 30px;
+  }
+}
+@media(max-width: 639px){
+  .lines-stories-items-wrap > ul{
+    margin: 0;
+  }
+  .lines-stories-items-wrap > ul >li{
+    width:100%;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  .lines-stories-items-wrap > ul >li:nth-child(2n+1){
+    clear: initial;
+  }
+  .lines-stories-items{
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  .sl-pg-grid-btn{
+    padding: 0!important;
+  }
+  .lines-stories-button >a{
+    margin-top: 25px;
+  }
 }
 @media(max-width: 575px){
 
 }
 @media(max-width: 479px){
-
-}
-@media(max-width: px){
-
+  .lines-stories-button >a{
+    padding: 6.5px 90px;
+    margin-top: 20px;
+  }
 }

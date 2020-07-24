@@ -325,7 +325,9 @@ body{
 	width: 25%;
 	padding: 0 15px 30px;
 }
-
+.hm-cat-secton ul li:nth-child(4n+1){
+	clear: left;
+}
 .hm-cat-item strong{
 	font-size: 41px;
 	line-height: 1.2;
@@ -482,6 +484,9 @@ body{
 	float: left;
 	width: 20%;
 }
+.hm-gallery-img-cntlr ul li:nth-child(5n+){
+	clear: left;
+}
 .hm-gallery-item{
 	height: 320px;
 	cursor: pointer;
@@ -630,6 +635,9 @@ body{
 	float: left;
 	width: 25%;
 }
+.eco-brewing-gallery-images ul li:nth-child(4n+1){
+	clear: left;
+}
 
 
 @media(min-width: 1700px){
@@ -762,11 +770,21 @@ body{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.hm-beer-list-grd-title{
+		display: flex;
+		justify-content: center;
+	}
 	.hm-latest-news-item-des-title{
 		font-size: 35px;
 	}
 	.hm-cat-secton ul li{
 		width: 50%;
+	}
+	.hm-cat-secton ul li:nth-child(4n+1){
+		clear: initial;
+	}
+	.hm-cat-secton ul li:nth-child(2n+1){
+		clear: left;
 	}
 }
 
@@ -779,6 +797,12 @@ body{
 	}
 	.hm-gallery-img-cntlr ul li{
 		width: 33.3333%;
+	}
+	.hm-gallery-img-cntlr ul li:nth-child(5n+){
+		clear: initial;
+	}
+	.hm-gallery-img-cntlr ul li:nth-child(3n+){
+		clear: left;
 	}
 	.hm-gallery-sec-bg{
 		padding-bottom: 35px;
@@ -822,6 +846,12 @@ body{
 	.eco-brewing-gallery-images ul li{
 		width: 50%;
 	}
+	.eco-brewing-gallery-images ul li:nth-child(4n+1){
+		clear: initial;
+	}
+	.eco-brewing-gallery-images ul li:nth-child(2n+1){
+		clear: left;
+	}
 	.eco-brewing-gallery-img {
 	    height: 175px;
 	}
@@ -864,11 +894,20 @@ body{
 	.hm-gallery-img-cntlr ul li{
 		width: 50%;
 	}
+	.hm-gallery-img-cntlr ul li:nth-child(3n+){
+		clear: initial;
+	}
+	.hm-gallery-img-cntlr ul li:nth-child(2n+){
+		clear: left;
+	}
 	.hm-latest-news-item-des-title {
 	    font-size: 24px;
 	}
 	.hm-cat-secton ul li{
 		width: 100%;
+	}
+	.hm-cat-secton ul li:nth-child(2n+1){
+		clear: initial;
 	}
 	.hm-cat-item{
 		max-width: 250px;
