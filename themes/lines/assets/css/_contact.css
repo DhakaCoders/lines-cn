@@ -218,16 +218,6 @@
 	color: #F6ECE0;
 }
 
-/*.lb-cnt-page-btm-border{
-	background: url('../images/lb-cnt-page-btm-border.png');
-	background-repeat: repeat-x;
-    background-position: center bottom;
-    height: 83px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-}*/
 .lb-cnt-page-btm-border svg.lb-cnt-page-btm-border-svg{
 	position: absolute;
     left: 0;
@@ -331,6 +321,222 @@
 }
 
 
+@media(max-width: 1499px){
 
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+	.cnt-banner-page-title {
+	    font-size: 57px;
+	    margin-bottom: 44px;
+	}
+	.lb-cnt-page-title {
+	    font-size: 45px;
+	    margin-bottom: 30px;
+	}
+	.lb-cntinf-ls-title, 
+	.lb-cntinf-rf-title {
+	    font-size: 45px;
+	    margin-bottom: 60px;
+	}
+}
+
+@media(max-width: 1199px){
+	.cnt-banner-page-title {
+	    font-size: 52px;
+	    margin-bottom: 38px;
+	}
+	.lb-cnt-page-title {
+	    font-size: 40px;
+	}
+	.lb-cntinf-ls-title, 
+	.lb-cntinf-rf-title {
+	    font-size: 40px;
+	    margin-bottom: 50px;
+	}
+	.lb-cnt-adr-title, 
+	.lb-cnt-phn-title, 
+	.lb-cnt-mail-title, 
+	.lb-cnt-hour-title {
+	    font-size: 28px;
+	}
+}
+
+@media(max-width: 991px){
+	.cnt-banner-page-title {
+	    font-size: 46px;
+	    margin-bottom: 30px;
+	}
+	.lb-cnt-page-title {
+	    font-size: 36px;
+	    margin-bottom: 25px;
+	}
+	.lb-cnt-page-socials-media ul li a{
+		font-size: 27px;
+	}
+	.lb-cntinfo-leftsidebar {
+	    width: 50%;
+	    padding-right: 10px;
+	}
+	.lb-cntinf-ls-title, 
+	.lb-cntinf-rf-title {
+	    font-size: 36px;
+	    margin-bottom: 42px;
+	}
+	.lb-cnt-adr-title, 
+	.lb-cnt-phn-title, 
+	.lb-cnt-mail-title, 
+	.lb-cnt-hour-title {
+	    font-size: 25px;
+	}
+	.lb-cntinfo-leftsidebar-adrs i, 
+	.lb-cntinfo-leftsidebar-phn i, 
+	.lb-cntinfo-leftsidebar-mail i, 
+	.lb-cntinfo-leftsidebar-hours i {
+	    font-size: 38px;
+	}
+	.lb-cntinfo-leftsidebar-adrs a, 
+	.lb-cntinfo-leftsidebar-phn a,
+	.lbcntinls-gen a, 
+	.lbcntinls-sal a, 
+	.lbcntinls-shop a,
+	.lb-cntinfo-leftsidebar-hours span {
+	    line-height: 30px;
+	}
+	.lb-cntinfo-leftsidebar-adrs, 
+	.lb-cntinfo-leftsidebar-phn, 
+	.lb-cntinfo-leftsidebar-mail, 
+	.lb-cntinfo-leftsidebar-hours {
+	    padding-left: 55px;
+	    padding-bottom: 45px;
+	}
+	.lb-cntinf-right-form {
+	    width: 50%;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.page-banner-cnt-des {
+	    min-height: 400px;
+	    height: 100%;
+	}
+	.cnt-banner-page-title {
+	    font-size: 38px;
+	    margin-bottom: 25px;
+	}
+	.lb-cnt-page-title {
+	    font-size: 32px;
+	    margin-bottom: 22px;
+	}
+	.lb-cntinfo-leftsidebar {
+	    width: 100%;
+	    padding-right: 0px;
+	}
+	.lb-cntinf-right-form {
+	    width: 100%;
+	    padding-bottom: 30px;
+	}
+	.lb-cntinf-ls-title, .lb-cntinf-rf-title {
+	    font-size: 32px;
+	    margin-bottom: 35px;
+	}
+	.lb-cnt-adr-title, 
+	.lb-cnt-phn-title, 
+	.lb-cnt-mail-title, 
+	.lb-cnt-hour-title {
+	    font-size: 22px;
+	}
+	.lb-cntinfo-leftsidebar-adrs i, 
+	.lb-cntinfo-leftsidebar-phn i, 
+	.lb-cntinfo-leftsidebar-mail i, 
+	.lb-cntinfo-leftsidebar-hours i {
+	    font-size: 32px;
+	}
+	.lb-cntinfo-leftsidebar-adrs, 
+	.lb-cntinfo-leftsidebar-phn, 
+	.lb-cntinfo-leftsidebar-mail, 
+	.lb-cntinfo-leftsidebar-hours {
+	    padding-left: 45px;
+	    padding-bottom: 38px;
+	}
+	.lb-cntinf-ls-title{
+	    margin-bottom: 40px;
+	}
+	.lb-inputfields-row.diveder2 {
+	    margin-left: 0px;
+	    margin-right: 0px;
+	}
+	.diveder2 .lb-inputfield {
+	    width: 100%;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.lb-inputfield {
+	    margin-bottom: 20px;
+	}
+}
+
+@media(max-width: 575px){
+	.cnt-banner-page-title {
+	    font-size: 30px;
+	    margin-bottom: 22px;
+	}
+	.lb-cnt-page-title {
+	    font-size: 28px;
+	    margin-bottom: 15px;
+	}
+	.lb-cnt-page-socials-media ul li {
+	    padding-left: 8px;
+	    padding-right: 8px;
+	}
+	.lb-cnt-page-socials-media ul li a {
+	    font-size: 22px;
+	}
+	.lb-cntinf-ls-title, .lb-cntinf-rf-title {
+	    font-size: 28px;
+	    margin-bottom: 30px;
+	}
+	.lb-cntinf-ls-title {
+	    margin-bottom: 35px;
+	}
+	.lb-cnt-adr-title, 
+	.lb-cnt-phn-title, 
+	.lb-cnt-mail-title, 
+	.lb-cnt-hour-title {
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	}
+	.lb-cntinfo-leftsidebar-adrs a, 
+	.lb-cntinfo-leftsidebar-phn a, 
+	.lbcntinls-gen a, .lbcntinls-sal a, 
+	.lbcntinls-shop a, 
+	.lb-cntinfo-leftsidebar-hours span {
+	    line-height: 20px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.lb-cnt-page-title {
+	    font-size: 24px;
+	    margin-bottom: 15px;
+	}
+	.lb-cntinf-ls-title, 
+	.lb-cntinf-rf-title {
+	    font-size: 25px;
+	}
+
+}
+
+@media(max-width: 359px){
+	.cnt-btn input[type=submit]{
+		width: 290px;
+	}
+}
 
 
