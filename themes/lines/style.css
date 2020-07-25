@@ -27,3 +27,7 @@ Text Domain: linesbrew
 body.contact{
 	background: #292728;
 }
+
+.hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr{
+	background: rgba(8, 8, 8, 0.7);
+}
