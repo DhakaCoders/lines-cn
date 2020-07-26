@@ -128,13 +128,13 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: -5px;
 }
 .security-sec-btm-anlge{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 40px;
+	bottom: 0px;
 }
 .shop-pre-ftr-inr{
 	padding: 35px 0 0;

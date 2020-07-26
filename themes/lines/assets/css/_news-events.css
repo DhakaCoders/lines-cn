@@ -10,7 +10,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 2px;
+  bottom: 1px;
 }
 .lines-stories-innr{
   position: relative;
@@ -143,7 +143,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: -126px;
+  top: -145px;
   z-index: 6;
 }
 .news-events-grds-sec .lines-stories-innr{
