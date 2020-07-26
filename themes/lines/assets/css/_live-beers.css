@@ -127,6 +127,9 @@
 	.hm-beer-list-sec {
 	    padding: 110px 0 110px;
 	}
+	.page-bnr-line-beers {
+	    min-height: 700px;
+	}
 }
 
 @media(max-width: 1199px){
@@ -143,6 +146,10 @@
 	.hm-beer-list-sec-hdr-title {
 	    margin-bottom: 42px;
 	}
+	.page-bnr-line-beers {
+	    min-height: 650px;
+	}
+}
 
 @media(max-width: 991px){
 	.cbihdr-title {
@@ -161,6 +168,9 @@
 	}
 	.hm-beer-list-grds-cntlr ul li:nth-child(2n+1){
 		clear: left;
+	}
+	.page-bnr-line-beers {
+	    min-height: 600px;
 	}
 	
 }
@@ -186,10 +196,15 @@
 	    font-size: 20px;
 	    margin-bottom: 20px;
 	}
+	.page-bnr-line-beers {
+	    min-height: 500px;
+	}
 }
 
 @media(max-width: 575px){
-	
+	.page-bnr-line-beers {
+	    min-height: 400px;
+	}
 
 }
 
@@ -197,7 +212,9 @@
 	.core-beer-item-btm-con ul li {
 	    padding: 0 10px 30px;
 	}
-
+	.page-bnr-line-beers {
+	    min-height: 350px;
+	}
 }
 
 @media(max-width: 359px){
