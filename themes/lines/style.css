@@ -34,3 +34,7 @@ body.contact,.eco-brewing-innr,
 .sl-pg-articles .sl-pg-lines-stories-innr{
 	background: rgba(8, 8, 8, 0.7)!important;
 }
+
+.home-overlay{
+	display: none;
+}

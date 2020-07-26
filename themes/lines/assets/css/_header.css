@@ -506,7 +506,9 @@ li.menu-item-has-children > a.sub-menu-active:after{
 }
 
 @media(max-width: 575px){
-	
+	.hdr-humbergur-btn{
+		width: 50px;
+	}
 
 }
 
