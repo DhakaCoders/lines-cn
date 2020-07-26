@@ -518,6 +518,9 @@
 	.lb-cntinfo-leftsidebar-hours span {
 	    line-height: 20px;
 	}
+	.lb-cntinfo-sec {
+	    margin-top: 70px;
+	}
 
 }
 

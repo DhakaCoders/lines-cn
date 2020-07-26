@@ -424,6 +424,9 @@
 	.bth-rp-sec {
 	    padding: 0 0 100px;
 	}
+	.page-banner-bth-des{
+		min-height: 1000px;
+	}
 }
 
 @media(max-width: 991px){
@@ -524,8 +527,45 @@
 	    padding-left: 12px;
 	    padding-bottom: 25px;
 	}
+	.bth-rp-img ul li:nth-child(2n+1){
+		clear: initial;
+	}
 	.bth-rp-img ul li:nth-child(3n+1){
 		clear: left;
+	}
+	.bth-rp-des-top-left-btn {
+	    float: initial;
+	    width: initial;
+	    display: inline-block;
+	    max-width: 230px;
+	    width: 100%;
+	    margin-right: 10px;
+	}
+	.bth-rp-des-top-rgt-btn {
+	    float: initial;
+	    width: initial;
+	    display: inline-block;
+	    max-width: 230px;
+	    width: 100%;
+	    margin-left: 10px;
+	}
+	.bth-tap-sec .table{
+		overflow-x: scroll;
+	}
+	.bth-tab-btn ul li button {
+	    font-size: 16px;
+	    padding: 8px 6px;
+	}
+	.table tr td {
+	    padding: 20px;
+	    font-size: 18px;
+	}
+	.bth-rp-sec-inr {
+	    padding-top: 0px;
+	}
+	.page-banner-bth-des {
+	    padding-top: 100px;
+	    padding-bottom: 100px;
 	}
 }
 
@@ -537,12 +577,9 @@
 	    margin-bottom: 30px;
 	}
 	.bth-des-title {
-	    font-size: 38px;
+	    font-size: 32px;
 	    margin-bottom: 20px;
 	}
-	
-	
-	
 	.bth-tap-des-title {
 	    font-size: 32px;
 	    margin-bottom: 20px;
@@ -567,15 +604,15 @@
 	.bth-tab-content {
 	    margin-top: 30px;
 	}
-	.table tr td {
+	/*.table tr td {
 	    padding: 15px;
 	    font-size: 20px;
 	}
 	.table tr td span {
 	    margin-left: 0px;
-	}
+	}*/
 	.bth-tap-sec-des {
-	    padding-bottom: 40px;
+	    padding-bottom: 50px;
 	}
 	.bth-rp-des-title {
 	    font-size: 32px;
@@ -584,7 +621,23 @@
 	.bth-rp-des p {
 	    margin-bottom: 18px;
 	}
-	
+	.bth-left-img-1 {
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.bth-left-img-2 {
+	    width: 100%;
+	    padding-left: 0;
+	}
+	.bth-rp-img ul li {
+	    width: 50%;
+	}
+	.bth-rp-img ul li:nth-child(3n+1){
+		clear: initial;
+	}
+	.bth-rp-img ul li:nth-child(2n+1){
+		clear: left;
+	}
 	
 }
 
@@ -617,11 +670,29 @@
 	.bth-rp-des p {
 	    margin-bottom: 15px;
 	}
-
+	.bth-rp-des-top-left-btn {
+		display: block;
+	    margin-right: 0px;
+	    margin-bottom: 10px;
+	}
+	.bth-rp-des-top-rgt-btn {
+		display: block;
+	    margin-left: 0;
+	    margin-top: 10px;
+	}
 }
 
 @media(max-width: 479px){
-
+	.bth-rp-img ul {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.bth-rp-img ul li {
+	    width: 100%;
+	}
+	.bth-rp-img ul li img{
+		width: 100%;
+	}
 
 }
 

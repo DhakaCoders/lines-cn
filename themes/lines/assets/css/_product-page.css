@@ -634,6 +634,9 @@
 		width: 100%;
 		margin: 0 auto;
 	}
+	.pp-migration-sec {
+	    padding: 100px 0 100px;
+	}
 }
 
 @media(max-width: 575px){
