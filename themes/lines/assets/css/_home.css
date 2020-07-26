@@ -24,6 +24,10 @@ body{
 	height: 100vh;
 	z-index: 9999;
 }
+.logo-overlay a{
+	display: inline-block;
+	vertical-align: baseline;
+}
 .home-overlay-inr{
 	
 }
@@ -56,7 +60,9 @@ body{
 }
 .home-overlay-des p{
 	font-size: 32px;
-	line-height: 1;
+	line-height: 1.2;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .home-overlay-des > a{
 	background: url(../images/enter-now-btn-bg.png);
@@ -908,6 +914,9 @@ body{
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.home-overlay-des p{
+		font-size: 25px;
+	}
 
 }
 @media(max-width: 575px){
@@ -929,6 +938,15 @@ body{
 	}
 	.hm-latest-news-sec{
 		padding-top: 80px;
+	}
+	.home-overlay-des p{
+		font-size: 22px;
+	}
+	.logo-overlay a{
+		max-width: 200px;
+	}
+	.home-overlay-des > a{
+		font-size: 38px;
 	}
 	
 }
@@ -987,3 +1005,56 @@ body{
 @media(max-width: 359px){
 	
 }
+
+
+@media(max-height: 700px){
+	.logo-overlay a{
+		max-width: 200px;
+	}
+	.home-overlay-des p{
+		font-size: 30px;
+	}
+}
+
+@media(max-height: 600px){
+	.logo-overlay a{
+		max-width: 170px;
+	}
+	.home-overlay-des p {
+	    font-size: 22px;
+	}
+	.home-overlay-des > a{
+		font-size: 40px;
+		max-width: 375px;
+		height: 120px;
+	}
+}
+
+@media(max-height: 500px){
+	.logo-overlay a {
+	    max-width: 135px;
+	}
+	.home-overlay-des p {
+	    font-size: 20px;
+	}
+	.home-overlay-des > a {
+	    font-size: 35px;
+	    max-width: 350px;
+	    height: 115px;
+	}
+}
+
+@media(max-height: 500px){
+	.logo-overlay a {
+	    max-width: 95px;
+	}
+	.home-overlay-des p {
+	    font-size: 19px;
+	}
+	.home-overlay-des > a {
+	    font-size: 30px;
+	    max-width: 300px;
+	    height: 110px;
+	}
+}
+
