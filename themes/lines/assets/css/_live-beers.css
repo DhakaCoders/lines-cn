@@ -127,6 +127,9 @@
 	.hm-beer-list-sec {
 	    padding: 110px 0 110px;
 	}
+	.page-bnr-line-beers {
+	    min-height: 700px;
+	}
 }
 
 @media(max-width: 1199px){
@@ -143,6 +146,10 @@
 	.hm-beer-list-sec-hdr-title {
 	    margin-bottom: 42px;
 	}
+	.page-bnr-line-beers {
+	    min-height: 650px;
+	}
+}
 
 @media(max-width: 991px){
 	.cbihdr-title {
@@ -155,22 +162,59 @@
 	.hm-beer-list-sec-hdr-title {
 	    margin-bottom: 35px;
 	}
-
+	.hm-beer-list-grds-cntlr ul li {
+	    width: 50%;
+	    padding-bottom: 40px;
+	}
+	.hm-beer-list-grds-cntlr ul li:nth-child(2n+1){
+		clear: left;
+	}
+	.page-bnr-line-beers {
+	    min-height: 600px;
+	}
 	
 }
 
 @media(max-width: 767px){
-	
+	.hm-beer-list-sec-hdr {
+	    margin-top: -70px;
+	}
+	.hm-beer-list-sec-hdr-title {
+	    margin-bottom: 30px;
+	}
+	.hm-beer-list-grds-cntlr ul {
+	    margin: 0px 0px;
+	}
+	.hm-beer-list-grds-cntlr ul li {
+	    width: 100%;
+	    padding: 0 0 40px 0;
+	}
+	.cbihdr-title {
+	    font-size: 32px;
+	}
+	.core-beer-item-hdr span {
+	    font-size: 20px;
+	    margin-bottom: 20px;
+	}
+	.page-bnr-line-beers {
+	    min-height: 500px;
+	}
 }
 
 @media(max-width: 575px){
-	
+	.page-bnr-line-beers {
+	    min-height: 400px;
+	}
 
 }
 
 @media(max-width: 479px){
-
-
+	.core-beer-item-btm-con ul li {
+	    padding: 0 10px 30px;
+	}
+	.page-bnr-line-beers {
+	    min-height: 350px;
+	}
 }
 
 @media(max-width: 359px){
