@@ -14,6 +14,19 @@
 .core-beer-item{
 	text-align: center;
 }
+.core-beer-item-fea-img a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.core-beer-item-fea-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.core-beer-item-fea-img img{
+	width: 100%;
+}
 .cbihdr-title{
 	display: block;
 	text-transform: uppercase;
