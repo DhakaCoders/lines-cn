@@ -120,21 +120,24 @@
 
 
 .shop-pre-footer-sec{
-	padding-top: 140px;
-	padding-bottom: 120px;
+	margin-top: 145px;
+	margin-bottom: 120px;
 	position: relative;
 }
 .security-sec-top-anlge{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -5px;
+	bottom: 100%;
+}
+.shop-pre-ftr-inr{
+	position: relative;
 }
 .security-sec-btm-anlge{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0px;
+	top: 100%;
 }
 .shop-pre-ftr-inr{
 	padding: 35px 0 0;
@@ -273,9 +276,6 @@
 	.sabs-hdr-title {
 	    font-size: 45px;
 	}
-	/*.security-sec-top-anlge {
-	    top: -4px;
-	}*/
 }
 
 @media(max-width: 1199px){
