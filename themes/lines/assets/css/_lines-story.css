@@ -142,7 +142,7 @@
 		padding-right: 35px;
 	}
 	.lines-system {
-	    padding: 115px 0 100px 0;
+	    padding: 115px 0 90px 0;
 	}
 	.eco-brewing-desc{
 		padding-left: 40px;
@@ -186,7 +186,7 @@
 		padding-right: 0;
 	}
 	.lines-system {
-	    padding: 105px 0 85px 0;
+	    padding: 95px 0 75px 0;
 	}
 	.eco-brewing-img{
 		max-width: 100%;
@@ -218,7 +218,7 @@
 	  	margin-bottom: 20px;
 	}
 	.lines-system {
-	    padding: 90px 0 75px 0;
+	    padding: 80px 0 60px 0;
 	}
 	.eco-brewing-cntlr{
 		padding-top: 20;
@@ -266,7 +266,7 @@
 		min-height: 180px;
 	}
 	.lines-system {
-	    padding: 75px 0 60px 0;
+	    padding: 65px 0 45px 0;
 	}
 }
 @media(max-width: 359px){

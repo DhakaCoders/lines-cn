@@ -173,9 +173,9 @@
   }
 }
 @media(max-width: 991px){
-  .lines-stories-sec-btm-angle{
-    bottom: 30px;
-  }
+/*   .lines-stories-sec-btm-angle{
+  bottom: 30px;
+} */
   .lines-stories-cntlr{
     padding-top: 10px;
     padding-bottom: 10px;
