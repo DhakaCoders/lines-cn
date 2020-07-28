@@ -349,14 +349,17 @@ body{
 
 .hm-beer-list-sec{
 	position: relative;
-	padding: 140px 0 140px;
+	padding: 0;
+	margin-top: 140px;
+	margin-bottom: 140px;
 }
 /*.beer-list-sec-top-angle svg.beer-list-sec-btm-angle-svg{
     top: -9px;
 }*/
 .beer-list-sec-top-angle{
 	position: absolute;
-	top: -5px;
+	top: auto;
+	bottom: 100%;
 	left: 0;
 	right: 0;
 }
@@ -364,7 +367,8 @@ body{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: auto;
+    top: 100%;
    /* height: 70px;*/
 /*    background: url(../images/beer-list-sec-btm-angle.png);
     background-repeat: repeat-x;

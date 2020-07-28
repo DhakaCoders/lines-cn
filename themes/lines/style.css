@@ -19,6 +19,14 @@ Text Domain: linesbrew
 	top: 0;
 	left: 0;
 	text-align: center;
+	opacity: 0;
+	transition: all 0.5s;
+	transform: scale(0.9) rotate(-15deg);
+}
+.globe-active .section-graphics-top,
+.home .section-graphics-top{
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
 }
 .section-graphics-top img{
 	max-height: 100%;

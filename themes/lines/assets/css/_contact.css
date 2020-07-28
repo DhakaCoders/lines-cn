@@ -163,6 +163,7 @@
 .lb-cnt-google-map-sec iframe{
 	width: 100%;
 	height: 620px;
+	vertical-align: top;
 }
 
 .lb-cnt-gm-top-angle{
@@ -176,7 +177,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 5px;
+	bottom: 0;
 }
 
 /*banner page*/

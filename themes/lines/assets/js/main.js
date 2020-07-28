@@ -29,6 +29,16 @@ if($('.mHc5').length){
   $('.mHc5').matchHeight();
 };
 
+var itemH = $('.df-page-bnr').height();
+console.log(itemH);
+$(window).scroll(function(){
+  console.log($(document).scrollTop());
+  if( $(document).scrollTop() > itemH ){
+    $('body').addClass('globe-active');
+  }else{
+    $('body').removeClass('globe-active');
+  }
+});
 
 //$('[data-toggle="tooltip"]').tooltip();
 

@@ -348,3 +348,6 @@ form .dropdown-menu li a{
 	border-color: #FF7274;
 	background-color: #FF7274;
 }
+.hasBg{
+	background: rgba(8, 8, 8, 0.7)!important;
+}

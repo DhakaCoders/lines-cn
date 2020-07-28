@@ -77,8 +77,10 @@
 	margin-bottom: 18px;
 }
 .eco-brewing{
-	padding: 144px 0 120px 0;
+	padding: 0;
 	position: relative;
+	margin-top: 144px;
+	margin-bottom: 120px;
 }
 .eco-brewing-innr{
 	position: relative;
@@ -89,13 +91,15 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: -1px;
+	top: auto;
+	bottom: 100%;
 }
 .lines-story-eco-brewing-btm-angle{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: auto;
+	top: 100%;
 }
 .eco-brewing-cntlr{
 	padding-bottom: 40px;

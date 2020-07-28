@@ -143,11 +143,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: -145px;
+  top: auto;
+  bottom: 100%;
   z-index: 6;
 }
 .news-events-grds-sec .lines-stories-innr{
-  background: #000;
+  background: transparent!important;
 }
 /* responsive */
 @media(max-width: 1299px){
