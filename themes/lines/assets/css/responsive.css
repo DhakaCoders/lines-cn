@@ -99,8 +99,8 @@
 	h5{
 		font-size: 20px;
 	}
-	p{
-		line-height: 26px;
+	p,.banner-page-story-desc p{
+		line-height: 27px;
 	}
 }
 
