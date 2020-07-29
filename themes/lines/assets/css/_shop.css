@@ -303,6 +303,14 @@
 	    margin: 0 0 18px 0;
 	    font-size: 22px;
 	}
+	.shop-all-beers-sec-grds ul{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.shop-all-beers-sec-grds ul li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media(max-width: 991px){
@@ -328,7 +336,7 @@
 	    padding-bottom: 30px;
 	}
 	.sabs-hdr-title {
-	    font-size: 35px;
+	    font-size: 37px;
 	}
 	.shop-all-beers-sec-grds ul {
 	    margin: 0 -20px;
@@ -344,7 +352,12 @@
 	.shop-filter-menu ul li a{
 		font-size: 19px;
 	}
-	
+	.shop-pre-ftr-inr{
+		padding-top: 0;
+	}
+	.shop-pre-ftr-cntlr ul li {
+	    padding: 0 12px 40px;
+	}
 }
 
 @media(max-width: 767px){
@@ -361,16 +374,13 @@
 	    padding: 8px 10px;
 	}
 	.sabs-hdr-title {
-	    font-size: 32px;
+	    font-size: 35px;
 	}
 	.shop-all-beers-sec-grds ul {
 	    margin: 0;
 	    padding: 0 0px;
 	}
-	.shop-all-beers-sec-grds ul li {
-	    width: 100%;
-	    padding: 0 0px 30px;
-	}
+	
 	.fls-product-item{
 		max-width: 300px;
 	    width: 100%;
@@ -381,8 +391,33 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+	.shop-all-beers-sec-grds ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.shop-all-beers-sec-grds ul{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.shop-pre-ftr-cntlr ul li{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.shop-pre-ftr-cntlr ul li:last-child{
+		padding-bottom: 0;
+	}
+	.shop-pre-ftr-cntlr{
+		margin-top: -30px;
+	}
 }
-
+@media(max-width: 639px){
+	.shop-all-beers-sec-grds ul li {
+	    width: 100%;
+	    padding: 0 0px 30px;
+	}
+}
 @media(max-width: 575px){
 	.main-shop-bnr-menu ul li span, 
 	.main-shop-bnr-menu ul li a {
