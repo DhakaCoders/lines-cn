@@ -1,5 +1,5 @@
 .page-bnr-product{
-	min-height: 510px;
+	min-height: 310px;
 	height: 100%;
 }
 .product-passage-sec{
@@ -8,6 +8,7 @@
 .pp-img-sec{
 	float: left;
 	width: 50%;
+	padding-right: 20px;
 }
 .pp-des{
 	float: right;
@@ -201,6 +202,10 @@
 	float: left;
 	width: 33.3333%;
 }
+.pp-mig-img{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 .pp-mig-des-title,
 .pp-mig-rgt-title{
@@ -306,6 +311,12 @@
 
 .rp-slide-img-ctlr{
 	position: relative;
+}
+.rp-slide-img{
+	text-align: center;
+}
+.rp-slide-img img{
+	display: inline-block!important;
 }
 /*.rp-slide-img{
 	min-height: 480px;
@@ -438,7 +449,6 @@
 	}
 	.pp-mig-des-title, 
 	.pp-mig-rgt-title {
-	    font-size: 30px;
 	    margin-bottom: 25px;
 	}
 	.pp-migration-con p {
@@ -513,7 +523,6 @@
 		padding-left: 6px;
 	}
 	.pp-mig-des-title, .pp-mig-rgt-title {
-	    font-size: 26px;
 	    margin-bottom: 20px;
 	}
 	.pp-migration-con p {
@@ -602,7 +611,6 @@
 	}
 	.pp-mig-des-title, 
 	.pp-mig-rgt-title {
-	    font-size: 22px;
 	    margin-bottom: 15px;
 	}
 	.pp-migration-con {
@@ -624,7 +632,6 @@
 	    margin-bottom: 0;
 	}
 	.rp-slider-title {
-	    font-size: 30px;
 	    margin-bottom: 50px;
 	}
 	.rp-slide-des {
@@ -656,14 +663,30 @@
 	    font-size: 25px;
 	}
 	.rp-slider-title {
-	    font-size: 26px;
+	    font-size: 30px;
 	    margin-bottom: 40px;
 	}
-
+	.pp-category{
+		padding-left: 0;
+	}
+	.pp-category label{
+		position: static;
+		display: block;
+	}
+	.pp-category ul{
+		margin-left: -6px;
+		margin-right: -6px;
+	}
+	.rp-slider-ctlr{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media(max-width: 479px){
-
+	.pp-quantity-btn button{
+		width: 193px;
+	}
 
 }
 
