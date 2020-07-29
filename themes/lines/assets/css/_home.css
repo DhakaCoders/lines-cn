@@ -344,6 +344,8 @@ body{
 	display: block;
 	font-weight: normal;
 	font-family: 'CenturyGothic';
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -390,9 +392,11 @@ body{
 
 .hm-beer-list-grds-cntlr ul{
 	margin: 0 -40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .hm-beer-list-grds-cntlr ul li{
-	float: left;
 	width: 33.3333%;
 	padding: 0 40px 0;
 }
@@ -821,6 +825,10 @@ body{
 	.mainSlideItem-des span {
 	    font-size: 24px;
 	}
+	.hm-cat-secton ul{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 }
 
 @media(max-width: 767px){
@@ -838,9 +846,6 @@ body{
 	}
 	.hm-gallery-img-cntlr ul li:nth-child(3n+){
 		clear: left;
-	}
-	.hm-gallery-sec-bg{
-		padding-bottom: 35px;
 	}
 	.hm-beer-list-grds-cntlr ul li{
 		width: 100%;
@@ -864,7 +869,7 @@ body{
 		text-align: left;
 	}
 	.hm-beer-list-grds-cntlr ul li{
-		padding-bottom: 50px;
+		padding-bottom: 55px;
 	}
 	.hm-beer-list-grds-cntlr ul li:last-child{
 		padding-bottom: 0;
@@ -896,6 +901,13 @@ body{
 	.mainSlideItem-des{
 		margin-top: 0;
 	}
+	.hm-cat-secton ul{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.eco-brewing-sec-hdr {
+	    margin-top: -75px;
+	}
 }
 @media(max-width: 639px){
 	.eco-brewing-gallery-images ul li{
@@ -922,12 +934,9 @@ body{
 		font-size: 25px;
 	}
 
+
 }
 @media(max-width: 575px){
-	
-	.hm-gallery-sec-bg{
-		padding-bottom: 25px;
-	}
 	.available-title, .in-the-tank-title, .concept-title {
 	    font-size: 22px;
 	}
@@ -939,9 +948,7 @@ body{
 	}
 	.hm-latest-news-sec-hdr-title{
 		margin-bottom: 25px;
-	}
-	.hm-latest-news-sec{
-		padding-top: 80px;
+		padding-top: 0;
 	}
 	.home-overlay-des p{
 		font-size: 22px;
@@ -952,7 +959,9 @@ body{
 	.home-overlay-des > a{
 		font-size: 38px;
 	}
-	
+	.eco-brewing-sec-hdr {
+	    margin-top: -64px;
+	}
 }
 
 @media(max-width: 479px){

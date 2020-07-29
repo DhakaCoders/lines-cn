@@ -465,7 +465,18 @@ li.menu-item-has-children > a.sub-menu-active:after{
 }
 /*menu end */
 
+.xs-main-nav li.menu-item-has-children > a:after{
+	color: #000;
+	top: 2px;
+}
 
+.xs-main-nav li.menu-item-has-children > a:after {
+    content: "\f107"!important;
+}
+.xs-main-nav li.menu-item-has-children > a.sub-menu-active:after {
+    content: "\f106"!important;
+    top: 3px;
+}
 @media(max-width: 1499px){
 	nav.main-nav > ul > li{
 		padding-left: 10px;
@@ -493,7 +504,7 @@ li.menu-item-has-children > a.sub-menu-active:after{
 	.main-nav{
 		display: none;
 	}
-
+	
 }
 
 @media(max-width: 991px){

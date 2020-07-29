@@ -2,7 +2,8 @@
 	padding: 125px 0 130px;
 }
 .page-bnr-line-beers{
-	min-height: 755px;
+	min-height: 615px;
+	padding-top: 70px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -131,9 +132,6 @@
 	    margin-bottom: 48px;
 
 	}
-	.page-bnr-line-beers {
-	    min-height: 700px;
-	}
 }
 
 @media(max-width: 1199px){
@@ -150,8 +148,11 @@
 	.hm-beer-list-sec-hdr-title {
 	    margin-bottom: 42px;
 	}
-	.page-bnr-line-beers {
-	    min-height: 650px;
+	.page-bnr-line-beers{
+		padding-top: 0;
+		min-height: auto;
+		padding-top: 50px;
+		padding-bottom: 0;
 	}
 }
 
@@ -172,9 +173,6 @@
 	}
 	.hm-beer-list-grds-cntlr ul li:nth-child(2n+1){
 		clear: left;
-	}
-	.page-bnr-line-beers {
-	    min-height: 600px;
 	}
 	.hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr {
 	    padding-bottom: 45px;
@@ -203,20 +201,23 @@
 	    font-size: 20px;
 	    margin-bottom: 20px;
 	}
-	.page-bnr-line-beers {
-	    min-height: 500px;
-	}
 	.hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr {
 	    padding-bottom: 0px;
+	}
+	.core-beers-section{
+		padding-bottom: 10px;
+	}
+	.core-beer-item{
+		padding-bottom: 50px;
 	}
 }
 
 @media(max-width: 575px){
-	.page-bnr-line-beers {
-	    min-height: 400px;
+	.core-beers-section{
+		padding-top: 50px;
 	}
-	.line-beer-list-sec .beer-list-sec-top-angle {
-	    top: -4px;
+	.core-beer-item-btns .cbibtn-1 a{
+		min-width: 160px;
 	}
 }
 
@@ -224,9 +225,7 @@
 	.core-beer-item-btm-con ul li {
 	    padding: 0 10px 30px;
 	}
-	.page-bnr-line-beers {
-	    min-height: 350px;
-	}
+
 }
 
 @media(max-width: 359px){
