@@ -75,6 +75,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	font-weight: normal;
 }
 .pp-category label,
 .pp-social-medias label{

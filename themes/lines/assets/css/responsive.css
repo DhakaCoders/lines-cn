@@ -100,7 +100,8 @@
 		font-size: 20px;
 	}
 	p,.banner-page-story-desc p,
-	.bth-des p{
+	.bth-des p,
+	.sl-pg-post-content-inr > p{
 		line-height: 27px;
 	}
 }
