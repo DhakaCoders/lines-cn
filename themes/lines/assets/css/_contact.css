@@ -5,10 +5,12 @@
 .lb-cntinfo-leftsidebar{
 	float: left;
 	width: 40.3508%;
+	padding-right: 30px;
 }
 .lb-cntinf-right-form{
 	float: right;
 	width: 59.6491%;
+	padding-bottom: 50px;
 }
 
 .lb-cntinf-ls-title,
@@ -66,7 +68,7 @@
 .lbcntinls-gen,
 .lbcntinls-sal,
 .lbcntinls-shop{
-	padding-left: 12px;
+	padding-left: 0;
 }
 .lbcntinls-gen span{
 	line-height: 35px;
@@ -87,7 +89,7 @@
 .lb-cntinfo-leftsidebar-hours span{
 	display: block;
 	line-height: 35px;
-	padding-left: 12px;
+	padding-left: 0;
 }
 
 .lb-inputfields-row.diveder2{
@@ -123,6 +125,8 @@
 	height: 358px;
 	padding-left: 22px;
 	padding-top: 25px;
+	padding-right: 15px;
+	padding-bottom: 15px;
 	color: #2F2E2E;
 	text-transform: uppercase;
 	font-style: italic;
@@ -381,7 +385,6 @@
 	}
 	.lb-cntinfo-leftsidebar {
 	    width: 50%;
-	    padding-right: 10px;
 	}
 	.lb-cntinf-ls-title, 
 	.lb-cntinf-rf-title {
@@ -431,7 +434,7 @@
 	    margin-bottom: 25px;
 	}
 	.lb-cnt-page-title {
-	    font-size: 32px;
+	    font-size: 30px;
 	    margin-bottom: 22px;
 	}
 	.lb-cntinfo-leftsidebar {
@@ -440,7 +443,7 @@
 	}
 	.lb-cntinf-right-form {
 	    width: 100%;
-	    padding-bottom: 30px;
+	    padding-bottom: 70px;
 	}
 	.lb-cntinf-ls-title, .lb-cntinf-rf-title {
 	    font-size: 32px;
@@ -480,11 +483,18 @@
 	.lb-inputfield {
 	    margin-bottom: 20px;
 	}
+	.cnt-btn input[type=submit]{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.lb-cntinf-rf-title,
+	.lb-cntinf-ls-title{
+		text-align: center;
+	}
 }
 
 @media(max-width: 575px){
 	.cnt-banner-page-title {
-	    font-size: 30px;
 	    margin-bottom: 22px;
 	}
 	.lb-cnt-page-title {
@@ -499,7 +509,7 @@
 	    font-size: 22px;
 	}
 	.lb-cntinf-ls-title, .lb-cntinf-rf-title {
-	    font-size: 28px;
+	    font-size: 32px;
 	    margin-bottom: 30px;
 	}
 	.lb-cntinf-ls-title {
@@ -522,6 +532,19 @@
 	.lb-cntinfo-sec {
 	    margin-top: 70px;
 	}
+	.lb-inputfield textarea{
+		height: 300px;
+		padding: 15px;
+	}
+	.lb-inputfield input[type=text], .lb-inputfield input[type=email],
+	.lb-inputfield textarea{
+		padding: 15px;
+		font-size: 16px;
+		line-height: 1;
+	}
+	.lb-inputfield input[type=text], .lb-inputfield input[type=email]{
+		height: 55px;
+	}
 
 }
 
@@ -530,10 +553,7 @@
 	    font-size: 24px;
 	    margin-bottom: 15px;
 	}
-	.lb-cntinf-ls-title, 
-	.lb-cntinf-rf-title {
-	    font-size: 25px;
-	}
+
 
 }
 
