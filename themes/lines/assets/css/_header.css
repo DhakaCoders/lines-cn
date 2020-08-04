@@ -1,9 +1,15 @@
 .header{
 	padding: 0 0 0;
-	position: relative;
+	position: fixed;
 	z-index: 100;
+	left: 0;
+	right: 0;
+	top: 0;
 }
-body.hasSticky header.header{
+.hdr-gap{
+	min-height: 130px;
+}
+/*body.hasSticky header.header{
 	top: 0;
 	left: 0;
 	right: 0;
@@ -74,7 +80,7 @@ body.hasSticky #fixedHeader{
 	right: 0;
 	top: -5px;
 }
-
+*/
 
 
 .hdr-bg{
@@ -91,7 +97,7 @@ body.hasSticky #fixedHeader{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -42px;
+	bottom: -39px;
 }
 .hdr-lft{
 	float: left;

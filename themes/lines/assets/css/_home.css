@@ -962,6 +962,9 @@ body{
 	.eco-brewing-sec-hdr {
 	    margin-top: -64px;
 	}
+	.hm-cat-item strong {
+	    font-size: 25px;
+	}
 }
 
 @media(max-width: 479px){
@@ -980,12 +983,7 @@ body{
 	.hm-latest-news-item-des-title {
 	    font-size: 24px;
 	}
-	.hm-cat-secton ul li{
-		width: 100%;
-	}
-	.hm-cat-secton ul li:nth-child(2n+1){
-		clear: initial;
-	}
+
 	.hm-cat-item{
 		max-width: 250px;
 		width: 100%;
@@ -1010,13 +1008,18 @@ body{
 	.mainSlideItem-des span {
 	    font-size: 18px;
 	}
+	.hm-cat-item {
+	    height: 170px;
+	}
 	
 }
 @media(max-width: 450px){
 	
 }
 @media(max-width: 359px){
-	
+	.hm-cat-item strong {
+	    font-size: 21px;
+	}
 }
 
 
