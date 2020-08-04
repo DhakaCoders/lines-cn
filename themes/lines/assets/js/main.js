@@ -64,14 +64,14 @@ if( $('.main-slider-sec').length ){
     }
   });
 }
-$(window).scroll(function(){
+/*$(window).scroll(function(){
   console.log($(document).scrollTop());
   if( $(document).scrollTop() > 400 ){
     $('body').addClass('has-fixed-menu');
   }else{
     $('body').removeClass('has-fixed-menu');
   }
-});
+});*/
 //$('[data-toggle="tooltip"]').tooltip();
 
 //banner animation

@@ -1,7 +1,7 @@
 .header{
 	padding: 0 0 0;
 	position: fixed;
-	z-index: 100;
+	z-index: 98;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -98,6 +98,7 @@ body.hasSticky #fixedHeader{
 	left: 0;
 	right: 0;
 	bottom: -39px;
+
 }
 .hdr-lft{
 	float: left;
@@ -445,7 +446,7 @@ body.active-scroll-off{
 	overflow: hidden!important;
 }
 .bdoverlay.active {
-    z-index: 99;
+    z-index: 98;
     opacity: 1;
 }
 .bdoverlay {
@@ -620,14 +621,33 @@ li.menu-item-has-children > a.sub-menu-active:after{
 }
 
 @media(max-width: 767px){
-	
+	.hdr-humbergar{
+		padding-top: 47px;
+	}
 }
 
 @media(max-width: 575px){
 	.hdr-humbergur-btn{
 		width: 50px;
 	}
-
+	.logo a{
+		max-width: 90px;
+	}
+	.hdr-humbergar {
+		padding-top: 27px;
+	}
+	.hdr-gap {
+	    min-height: 110px;
+	}
+	.header-inr {
+	    min-height: 110px;
+	}
+	.logo{
+		top: 13px;
+	}
+	.hdr-humbergar {
+	    padding-top: 46px;
+	}
 }
 
 @media(max-width: 479px){

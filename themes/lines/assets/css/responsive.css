@@ -72,7 +72,20 @@
 	h5{
 		font-size: 20px;
 	}
+	.svg-cntlr {
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		width: auto;
+		max-width: initial;
+	}
 }
+@media(max-width: 639px){
+
+}
+
 
 @media(max-width: 575px){
 	.hide-xs{
