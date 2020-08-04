@@ -656,7 +656,49 @@ body{
 	clear: left;
 }
 
-
+.header{
+	background: #000;
+}
+/*.main-slider-sec{
+	padding-top: 40px;
+}
+.hdr-btm-angle{
+	bottom: -35px;
+}*/
+.main-slider-sec{
+	background-size: cover!important;
+	max-height: 800px;
+}
+.sections-cntlr  .hm-cat-secton{
+	position: relative;
+	background: #000;
+	z-index: 3;
+	padding-bottom: 30px;
+}
+.hmSlideDivTop{
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	top: -100px;
+	transform: rotate(180deg);
+}
+.hmSlideDivBottom {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: -70px;
+}
+.mainSlider.slick-slider ul.slick-dots{
+	bottom: 90px;
+}
+.hm-beer-list-sec{
+	margin-top: 0;
+}
+.hm-beer-list-sec-inr{
+	padding-top: 190px;
+}
 @media(min-width: 1700px){
 	.hm-gallery-item{
 		height: 355px;

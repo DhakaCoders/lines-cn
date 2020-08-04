@@ -1,8 +1,6 @@
 <?php
 defined( 'ABSPATH' ) || exit;
-
 /*Remove Archive Woocommerce Hooks & Filters are below*/
-
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
@@ -16,7 +14,6 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-
 
 add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary', 5);
 if (!function_exists('add_custom_box_product_summary')) {

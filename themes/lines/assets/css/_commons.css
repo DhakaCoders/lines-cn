@@ -351,3 +351,6 @@ form .dropdown-menu li a{
 .hasBg{
 	background: rgba(8, 8, 8, 0.7)!important;
 }
+.post-more-btn {
+    text-align: center;
+}

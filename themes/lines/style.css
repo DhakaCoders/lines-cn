@@ -23,14 +23,14 @@ Text Domain: linesbrew
 	transition: all 0.5s;
 	transform: scale(0.9) rotate(-15deg);
 }
-.globe-active .section-graphics-top,
-.home .section-graphics-top{
+.globe-active .section-graphics-top{
 	opacity: 1;
 	transform: scale(1) rotate(0deg);
 }
 .section-graphics-top img{
 	max-height: 100%;
 	width: auto;
+	margin-top: -150px;
 }
 
 
@@ -45,4 +45,59 @@ body.contact,.eco-brewing-innr,
 
 .hm-gallery-sec-bg{
 	background: rgba(0, 0, 0, 0.7)!important;
+}
+
+.story-page-2 .banner-page-story{
+	background-attachment: fixed;
+	background-color: #000;
+	background-color: transparent;
+}
+.story-page-2 .lines-system{
+	background: rgb(8, 8, 8);
+	padding-top: 110px;
+}
+.story-page-2 .lines-system .lines-story-eco-brewing-top-angle{
+	bottom: auto;
+	top: -60px;
+}
+.story-page-2 .lines-system .lines-story-eco-brewing-btm-angle{
+	bottom: 0;
+	top: auto;
+}
+.story-page-2 .eco-brewing {
+    background: rgb(8, 8, 8);
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.story-page-2 .eco-brewing .lines-story-eco-brewing-btm-angle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    top: auto;
+    bottom: -70px;
+}
+/*.story-page-2 .lines-system .lines-system-img img,
+.story-page-2 .eco-brewing .eco-brewing-img img{
+	opacity: 0;
+}
+.story-page-2 .lines-system .lines-system-img{
+	background: url(assets/images/sl-pg-desc-img-001.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;	
+    background-position: center right;
+}
+.story-page-2 .eco-brewing .eco-brewing-img{
+	background: url(assets/images/sl-pg-desc-img-001.jpg);
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;	
+}*/
+.story-page-2 .footer-wrp {
+    padding: 150px 0 0;
+}
+.parallax-mirror img{
+	transition: none;
 }
