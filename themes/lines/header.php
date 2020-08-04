@@ -16,8 +16,17 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+$logoObj = get_field('hdlogo', 'options');
+if( is_array($logoObj) ){
+  $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+}else{
+  $logo_tag = '';
+}
+?>
 <div class="bdoverlay"></div>
 
+<?php if( is_front_page() ): ?>
 <div class="home-overlay">
   <div class="home-overlay-inr">
     <span class="home-overlay-graphics">
@@ -32,7 +41,7 @@
     </div>
   </div>
 </div> 
-
+<?php endif; ?>
 <header class="header">
   <span class="hdr-btm-angle">
     <svg class="hdr-btm-angle-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600.195" height="170.094" viewBox="0 0 1600.195 170.094">
@@ -52,30 +61,23 @@
             <div class="header-inr clearfix">
               <div class="hdr-lft">
                 <div class="logo">
-                  <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
                 </div>
               </div>
               <div class="hdr-rgt">
                 <div class="hdr-rgt-inr">
                   <nav class="main-nav">
-                    <ul class="clearfix reset-list">
-                      <li class="current-menu-item"><a href="#">HOME</a></li>
-                      <li class="menu-item-has-children">
-                        <a href="#">BEERS</a>
-                        <ul class="sub-menu">
-                          <li><a href="#">Sub menu item 1</a></li>
-                          <li><a href="#">Sub menu item 2</a></li>
-                          <li><a href="#">Sub menu item 3</a></li>
-                          <li><a href="#">Sub menu item 4</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">BREWERY<br>
-                        & TAP ROOM</a></li>
-                      <li><a href="#">NEWS &<br>
-                          EVENTS</a></li>
-                      <li><a href="#">SHOP</a></li>
-                      <li><a href="#">CONTACT</a></li>
-                    </ul>
+                  <?php 
+                    $menuOptions = array( 
+                        'theme_location' => 'cbv_main_menu', 
+                        'menu_class' => 'clearfix reset-list',
+                        'container' => '',
+                        'container_class' => ''
+                      );
+                    wp_nav_menu( $menuOptions ); 
+                  ?>
                   </nav>
                   <div class="hdr-humbergar">
                     <div class="hdr-humbergur-btn">
@@ -109,22 +111,15 @@
         </div>
       </div>
       <div class="xs-main-nav">
-        <ul class="clearfix reset-list">
-          <li class="current-menu-item"><a href="#">HOME</a></li>
-          <li class="menu-item-has-children">
-            <a href="#">BEERS</a>
-            <ul class="sub-menu">
-              <li><a href="#">Sub menu item 1</a></li>
-              <li><a href="#">Sub menu item 2</a></li>
-              <li><a href="#">Sub menu item 3</a></li>
-              <li><a href="#">Sub menu item 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#">BREWERY & TAP ROOM</a></li>
-          <li><a href="#">NEWS & EVENTS</a></li>
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
+        <?php 
+          $menuOptions = array( 
+              'theme_location' => 'cbv_main_menu', 
+              'menu_class' => 'clearfix reset-list',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $menuOptions ); 
+        ?>
       </div>
       <div class="xs-popup-btm-content">
         <ul class="reset-list">
