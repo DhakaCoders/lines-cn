@@ -8,6 +8,15 @@ $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
+/*$(window).scroll(function(){
+  var sticky = $('header.header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 300) $('body').addClass('hasSticky');
+  else $('body').removeClass('hasSticky');
+});
+  */
+
   
 //matchHeightCol
 if($('.mHc').length){
