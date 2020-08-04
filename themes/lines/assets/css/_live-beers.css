@@ -1,9 +1,37 @@
-.core-beers-section{
-	padding: 125px 0 130px;
+.core-beers-section {
+    padding: 90px 0 60px;
+    background: #231f20;
+    z-index: 6!important;
+}
+.live-beers-angle1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -70px;
+}
+.live-beers-angle2{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -70px;
+	transform: rotate(180deg);	
+}
+.live-beers-page .line-beer-list-sec{
+	padding-top: 60px;
+}
+.live-beers-page .line-beer-list-sec .hm-beer-list-sec-inr {
+    padding-top: 180px;
+    padding-bottom: 90px;
+    background: #080808;
+    margin-top: -80px;
+}
+.live-beers-page .line-beer-list-sec .hm-beer-list-sec-hdr{
+	margin-top: 0;
 }
 .page-bnr-line-beers{
 	min-height: 615px;
 	padding-top: 70px;
+	padding-bottom: 50px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -103,12 +131,6 @@
 .core-beer-item-btns .cbibtn-1 a:hover{
 	background: #685445;
 }
-.hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr{
-	padding-top: 30px;
-	padding-bottom: 90px;
-	background: #080808;
-}
-
 
 @media(max-width: 1499px){
 

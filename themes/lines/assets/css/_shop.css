@@ -1,4 +1,3 @@
-
 .page-bnr-shop{
 	position: relative;
 }
@@ -13,8 +12,10 @@
 	height: 100%;*/
 }
 
-.shop-all-beers-sec{
-	padding: 110px 0 35px;
+.shop-all-beers-sec {
+    padding: 110px 0 35px;
+    background: rgb(8,8,8);
+    z-index: 6!important;
 }
 .shop-all-beers-sec-hdr{
 	padding-bottom: 45px;
@@ -120,7 +121,7 @@
 
 
 .shop-pre-footer-sec{
-	margin-top: 145px;
+	margin-top: 0;
 	margin-bottom: 120px;
 	position: relative;
 }
@@ -140,7 +141,7 @@
 	top: 100%;
 }
 .shop-pre-ftr-inr{
-	padding: 35px 0 0;
+	padding: 180px 0 0;
 	background-image: url(../images/Middle.png);
 	background-color: #000;
 	background-repeat: no-repeat;
@@ -259,7 +260,19 @@
 	width: 100%;
 }
 
-
+.shop-top-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -70px;
+}
+.shop-bottom-angle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -70px;
+    transform: rotate(180deg);
+}
 
 @media(max-width: 1499px){
 

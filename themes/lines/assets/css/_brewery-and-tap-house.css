@@ -82,10 +82,10 @@
     border-color: #FF7274;
     background-color: #FF7274; 
 }
-
-.bth-tap-sec{
-	padding-top: 70px;
-    padding-bottom: 140px;
+.bth-tap-sec {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    z-index: 6!important;
 }
 .bth-tap-sec-des{
 	padding-bottom: 95px;
@@ -203,7 +203,7 @@
 }
 .bth-rp-sec-inr{
 	background: #000;
-	padding-top: 50px;
+	padding-top: 150px;
 	position: relative;
 	z-index: 6;
 }
@@ -332,6 +332,22 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+.bth-top-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -70px;
+}
+.bth-bottom-angle{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -70px;	
+	transform: rotate(180deg);
+}
+.bth-tap-sec{
+	background: rgb(8, 8, 8);
 }
 
 

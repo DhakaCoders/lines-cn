@@ -342,7 +342,7 @@ nav.main-nav ul.sub-menu li:hover:after {
     left: 0px;
     height: 4px;
     width: 100%;
-    background: #000;
+    background: #fff;
     top: 0;
     display: block;
     position: absolute;
@@ -386,8 +386,8 @@ body.active-scroll-off{
     top: 0;
     right: -250px;
     bottom: 0;
-    background: #fff;
-    color: #000;
+    background: #000;
+    color: #fff;
     font-size: 18px;
     line-height: 20px;
     max-width: 350px;
@@ -414,14 +414,15 @@ body.active-scroll-off{
 	width: 100%;
 }
 .xs-main-nav ul li{
-	padding: 10px 5px;
+	padding: 20px 5px;
 	border-bottom: 1px solid #ccc;
 }
-.xs-main-nav ul li a{
-	font-size: 16px;
-	color: #000;
-	display: block;
-	position: relative;
+.xs-main-nav ul li a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    position: relative;
+    font-weight: 700;
 }
 .xs-main-nav > ul > li:hover > a,
 .xs-main-nav > ul > li.current-menu-item > a{
@@ -476,6 +477,20 @@ li.menu-item-has-children > a.sub-menu-active:after{
 .xs-main-nav li.menu-item-has-children > a.sub-menu-active:after {
     content: "\f106"!important;
     top: 3px;
+}
+#fixedHeader{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -250px;
+	z-index: 101;
+	transition: all 0.4s ease;
+}
+.has-fixed-menu #fixedHeader{
+	top: 0;
+}
+.has-fixed-menu .hdr-btm-angle{
+	bottom: -35px;
 }
 @media(max-width: 1499px){
 	nav.main-nav > ul > li{
