@@ -317,4 +317,52 @@ $('.qty').each(function() {
 
 });
 
+
+if($("#catID").length){
+  var catID = $("#catID").data('id');
+}
+
+$("#loadMore").on('click', function(e) {
+    e.preventDefault();
+    var catid = '';
+    if(catID != ''){
+      catid = catID;
+    }
+    //init
+    var that = $(this);
+    var page = $(this).data('page');
+    var newPage = page + 1;
+    var ajaxurl = that.data('url');
+    console.log(newPage);
+    //ajax call
+    $.ajax({
+        url: ajaxurl,
+        type: 'post',
+        data: {
+            page: page,
+            catid: catid,
+            action: 'ajax_post_script_load_more'
+        },
+        beforeSend: function ( xhr ) {
+            $('#ajxaloader').show();
+        },
+        error: function(response) {
+            console.log(response);
+        },
+        success: function(response) {
+            console.log(response);
+            //check
+            if (response == 0) {
+                $('#loadMore').hide();
+                $('#ajxaloader').hide();
+            } else {
+                $('#ajxaloader').hide();
+                that.data('page', newPage);
+                $('#post-content').append(response.substr(response.length-1, 1) === '0'? response.substr(0, response.length-1) : response);
+            }
+        }
+    });
+});
+
+
 })(jQuery);

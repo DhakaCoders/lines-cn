@@ -1,4 +1,8 @@
-  <?php get_header(); ?>
+  <?php 
+  get_header(); 
+  $cterm = get_queried_object();
+  ?>
+  <span id="catID" data-id="<?php echo $cterm->term_id; ?>" style="display: none;"></span>
   <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div> 
   <section class="page-bnr-shop news-events-banner df-page-bnr">
     <div class="page-bnr-shop-con bg-position-btm news-events-banner-con" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/page-bnr-news-events.png');">

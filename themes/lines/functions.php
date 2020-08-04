@@ -47,12 +47,7 @@ if( !function_exists('cbv_theme_setup') ){
 		) );
 
 		register_nav_menus( array(
-            'cbv_top_menu' => __( 'Top Menu', THEME_NAME ),
-            'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-            'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
-            'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
-            'cbv_ftc_menu' => __( 'Footer Menu 3', THEME_NAME ),
-            'cbv_ftd_menu' => __( 'Footer Menu 4', THEME_NAME ),
+            'cbv_main_menu' => __( 'Main Menu', THEME_NAME )
 		) );
 
 	}
@@ -84,6 +79,7 @@ Includes->>
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
+include_once(THEME_DIR .'/inc/posts-load.php');
 include_once(THEME_DIR .'/inc/wc-functions.php');
 /**
 ACF Option pages->>
