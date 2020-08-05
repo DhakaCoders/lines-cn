@@ -1,62 +1,49 @@
 <?php get_header(); ?>
   <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>
+  <?php 
+    $hslides = get_field('slide', HOMEID);
+    $hbimage = get_field('hbimage', HOMEID);
+    if( !empty($hslide['image']) ) 
+    { 
+      $parallaxImg = cbv_get_image_src($hbimage);
+    } else{
+      $parallaxImg = THEME_URI .'/assets/images/s-ilustrationbg.png';
+    }
+  ?>
   <section data-parallax="scroll" class="main-slider-sec"
-  data-image-src="<?php echo THEME_URI; ?>/assets/images/s-ilustrationbg.png">
+  data-image-src="<?php echo $parallaxImg; ?>">
+  <?php if($hslides): ?>
     <div class="main-slider mainSlider">
+      <?php foreach( $hslides as $hslide ): ?>
       <div class="mainSlideItem bg-position-btm">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="mainSlideItemInr">
                 <div class="mainSlideItem-fea-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/main-slide-fea-img-01.png">
+                  <?php if( !empty($hslide['image']) ) echo cbv_get_image_tag($hslide['image'], 'homeslide'); ?>
                 </div>
                 <div class="mainSlideItem-des">
-                  <strong>MIGRATION</strong>
-                  <span>NEW BATCH COMING SOON!</span>
+                  <?php 
+                  if( !empty($hslide['title']) ) printf('<strong>%s</strong>', $hslide['title']);
+                  if( !empty($hslide['subtitle']) ) printf('<span>%s</span>', $hslide['subtitle']);
+                  ?>
                 </div>
               </div>
             </div>
           </div>
         </div> 
       </div>
-      <div class="mainSlideItem bg-position-btm">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mainSlideItemInr">
-                <div class="mainSlideItem-fea-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/main-slide-fea-img-01.png">
-                </div>
-                <div class="mainSlideItem-des">
-                  <strong>MIGRATION</strong>
-                  <span>NEW BATCH COMING SOON!</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </div>
-      <div class="mainSlideItem bg-position-btm">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mainSlideItemInr">
-                <div class="mainSlideItem-fea-img">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/main-slide-fea-img-01.png">
-                </div>
-                <div class="mainSlideItem-des">
-                  <strong>MIGRATION</strong>
-                  <span>NEW BATCH COMING SOON!</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> 
-      </div>
+      <?php endforeach; ?>
     </div>   
+    <?php endif; ?>
   </section>
-
+<?php
+  $showhide_usps = get_field('showhide_usps', HOMEID);
+  if( $showhide_usps ):
+    $husps = get_field('usps', HOMEID);
+    if($husps):
+?>
   <section class="hm-cat-secton">
     <span class="hmSlideDivTop">
       <svg class="hmSlideDiv-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="119.887" viewBox="0 0 1600 119.887">
@@ -77,40 +64,33 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <?php if( $husps ){ ?>
           <ul class="clearfix reset-list">
+            <?php 
+            $uspImg = '';
+            foreach( $husps as $husp ):
+            if( !empty($husp['image']) ) 
+            { 
+              $uspImg = cbv_get_image_src($husp['image']);
+            } 
+            ?>
             <li>
-              <div class="hm-cat-item inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/cat-box-img-01.jpg);">
-                <a class="overlay-link" href="#"></a>
-                <strong>LINES’<br>
-                  STORY</strong>
+              <div class="hm-cat-item inline-bg" style="background: url(<?php echo $uspImg; ?>);">
+                <?php if( !empty($husp['link']) ): ?>
+                <a class="overlay-link" href="<?php echo $husp['link']; ?>"></a>
+                <?php endif; ?>
+                <?php if( !empty($husp['title']) ) printf('<strong>%s</strong>', $husp['title']); ?>
               </div>
             </li>
-            <li>
-              <div class="hm-cat-item inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/cat-box-img-02.jpg);">
-                <a class="overlay-link" href="#"></a>
-                <strong>LIVE<br>
-                  BEER</strong>
-              </div>
-            </li>
-            <li>
-              <div class="hm-cat-item inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/cat-box-img-03.jpg);">
-                <a class="overlay-link" href="#"></a>
-                <strong>HOME<br>
-                  DELIVERY</strong>
-              </div>
-            </li>
-            <li>
-              <div class="hm-cat-item inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/cat-box-img-04.jpg);">
-                <a class="overlay-link" href="#"></a>
-                <strong>MERCH</strong>
-              </div>
-            </li>
+            <?php endforeach; ?>
           </ul>
+          <?php } ?>
         </div>
       </div>
     </div>    
   </section>
-
+  <?php endif; ?>
+  <?php endif; ?>
 
   <section class="hm-beer-list-sec">
     <span class="beer-list-sec-btm-angle">
@@ -268,7 +248,13 @@
       </div> 
     </div>   
   </section>
-
+  <?php
+    $showhide_gallery = get_field('showhide_gallery', HOMEID);
+    if( $showhide_gallery ):
+      $hgallery = get_field('hgallery', HOMEID);
+      if($hgallery):
+        $hgalleries = $hgallery['gallery'];
+  ?>
   <section class="hm-gallery-sec">
     <span class="gallery-sec-btm-anlge">
       <svg class="gallery-sec-btm-anlge-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="119.887" viewBox="0 0 1600 119.887">
@@ -283,110 +269,101 @@
         <div class="row">
           <div class="col-md-12">
             <div class="hm-latest-news-sec-hdr">
-              <h2 class="hm-latest-news-sec-hdr-title">GALLERY</h2>
+              <?php if( !empty($hgallery['title']) ) printf('<h2 class="hm-latest-news-sec-hdr-title">%s</h2>', $hgallery['title']); ?>
             </div>
           </div>
         </div>
       </div>
+      <?php if(  $hgalleries ): ?>
       <div class="hm-gallery-sec-bg">
         <div class="hm-gallery-img-cntlr">
           <ul class="clearfix reset-list">
+            <?php 
+            $gfull = $gthum = '';
+            foreach( $hgalleries as $hgallery ):
+            if( !empty($hgallery['id']) ) 
+            { 
+              $gfull = cbv_get_image_src($hgallery['id']);
+              $gthum = cbv_get_image_src($hgallery['id'], 'hgallery');
+            } 
+            ?>
             <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-01.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-01.jpg);"></div>
+              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo $gfull; ?>">
+                <div class="hm-gallery-item-img" style="background: url(<?php echo $gthum; ?>);"></div>
               </div>
             </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-02.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-02.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-03.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-03.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-04.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-04.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-05.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-05.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-06.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-06.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-07.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-07.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-08.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-08.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-09.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-09.jpg);"></div>
-              </div>
-            </li>
-            <li>
-              <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-10.jpg">
-                <div class="hm-gallery-item-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-gallery-item-img-10.jpg);"></div>
-              </div>
-            </li>
-
+            <?php endforeach; ?>
           </ul>
         </div>
       </div>
+      <?php endif; ?>
     </div>   
   </section>
+  <?php endif; ?>
+  <?php endif; ?>
+  <?php 
 
-
+    $Query = new WP_Query(array(
+      'post_type' => 'post',
+      'posts_per_page'=> 1,
+      'orderby' => 'date',
+      'order'=> 'DESC'
+    ));
+    if( $Query->have_posts() ):
+  ?>
   <section class="hm-latest-news-sec">
     <div class="hm-latest-news-sec-inr">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="hm-latest-news-sec-hdr">
-              <h2 class="hm-latest-news-sec-hdr-title">LATEST NEWS</h2>
+              <h2 class="hm-latest-news-sec-hdr-title">S<?php _e('LATEST NEW', THEME_NAME); ?></h2>
             </div>
           </div>
           <div class="col-md-12">
+          <?php 
+            while($Query->have_posts()): $Query->the_post();
+              $thumb_id = get_post_thumbnail_id(get_the_ID());
+          ?>
             <div class="hm-latest-news-item">
               <div class="hm-latest-news-item-fea-img">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/hm-latest-news-fea-img.jpg"></a>
+                <a href="<?php the_permalink();?>">
+                  <?php if(!empty($thumb_id)){
+                    echo cbv_get_image_tag($thumb_id, 'hbloggrid');
+                  }else{?>
+                  <img src="<?php echo THEME_URI; ?>/assets/images/hm-latest-news-fea-img.jpg">
+                  <?php } ?>
+                </a>
               </div>
               <div class="hm-latest-news-item-des">
-                <h3 class="hm-latest-news-item-des-title">TOM GOES AWOL IN BRISTOL</h3>
+                <h3 class="hm-latest-news-item-des-title"><?php the_title(); ?></h3>
                 <div>
-                  <strong>Posted Sun 24 May 2020 - 15:04</strong>
+                  <strong>Posted <?php echo get_the_date('l j F Y - g:i'); ?></strong>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                <?php echo wpautop( cbv_get_excerpt() ); ?>
               </div>
               <div class="hm-latest-news-item-btns">
                 <div class="hm-lnib-1">
-                  <a class="fl-btn" href="#">SEE ALL NEWS</a>
+                  <a class="fl-btn" href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><?php _e('SEE ALL NEWS', THEME_NAME); ?></a>
                 </div>
                 <div class="hm-lnib-2">
-                  <a class="fl-btn" href="#">READ MORE</a>
+                  <a class="fl-btn" href="<?php the_permalink();?>"><?php _e('READ MORE', THEME_NAME); ?></a>
                 </div>
               </div>
             </div>
+            <?php endwhile; ?>
           </div>
         </div>
       </div> 
     </div>   
   </section>
-
-
+<?php endif; wp_reset_postdata(); ?>  
+  <?php
+    $showhide_eco = get_field('showhide_eco', HOMEID);
+    if( $showhide_eco ):
+      $ecobrewing = get_field('ecobrewing', HOMEID);
+      if($ecobrewing):
+  ?>
   <section class="eco-brewing-sec">
     <span class="eco-brewing-sec-top-anlge">
       <svg class="eco-brewing-sec-top-anlge-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="144.534" viewBox="0 0 1600 144.534">
@@ -409,7 +386,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="eco-brewing-sec-hdr">
-              <h2 class="eco-brewing-sec-hdr-title">ECO-BREWING</h2>
+              <?php if( !empty($ecobrewing['title']) ) printf('<h2 class="eco-brewing-sec-hdr-title"">%s</h2>', $ecobrewing['title']); ?>
             </div>
           </div>
         </div>
@@ -442,11 +419,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="eco-brewing-sec-des">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+              <?php if( !empty($ecobrewing['description']) ) echo wpautop( $ecobrewing['description'] ); ?>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+    <?php endif; ?>
+  <?php endif; ?>
   <?php get_footer(); ?>

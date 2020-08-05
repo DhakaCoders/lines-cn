@@ -22,15 +22,11 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        add_image_size( 'hbloggrid', 374, 370, true );
-        add_image_size( 'hpromo', 742, 756, true );
-        add_image_size( 'historygrid', 460, 372, true );
-        add_image_size( 'dfpageg1', 452, 368, true );
-        add_image_size( 'dfpageg2', 442, 300, true );
-        add_image_size( 'dfpageg3', 498, 388, true );
-        add_image_size( 'hproductgrid', 284, 346, true );
-        add_image_size( 'contimg', 422, 680, true );
-        add_image_size( 'homeslide', 1464, 900, true );
+        add_image_size( 'hbloggrid', 1170, 510, true );
+        add_image_size( 'hgallery', 270, 320, true );
+        add_image_size( 'brewerygallery', 586, 386, true );
+        add_image_size( 'linesgallery', 590, 340, true );
+        add_image_size( 'linesgallery2', 278, 200, true );
         
 
 		

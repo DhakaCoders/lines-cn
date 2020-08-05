@@ -7,13 +7,6 @@
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
               <h1 class="pbs-title">SHOP</h1>
-              <div class="main-shop-bnr-menu">
-                <ul class="reset-list">
-                  <li class="active"><span>BEERS</span></li>
-                  <li><span>MERCH</span></li>
-                  <li><span>HOME DELIVERY</span></li>
-                </ul>
-              </div>
              <?php 
               $terms = get_terms( array(
                 'taxonomy' => 'category',
@@ -23,7 +16,7 @@
             ?>
               <div class="shop-filter-menu">
                 <ul class="reset-list">
-                  <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL BEERS</span></a></li>
+                  <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL</span></a></li>
                   <?php 
                   if( $terms ):
                   foreach( $terms as $term ):

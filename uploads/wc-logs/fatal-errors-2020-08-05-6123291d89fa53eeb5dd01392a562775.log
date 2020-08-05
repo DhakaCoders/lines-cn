@@ -1,0 +1,16 @@
+2020-08-05T09:18:39+00:00 CRITICAL syntax error, unexpected 'cbv_get_image_src' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\page-lines-story.php on line 36
+
+2020-08-05T09:19:21+00:00 CRITICAL syntax error, unexpected 'cbv_get_image_src' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\page-lines-story.php on line 36
+
+2020-08-05T09:21:43+00:00 CRITICAL syntax error, unexpected ';' in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\page-lines-story.php on line 37
+
+2020-08-05T11:00:23+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\page-brewery-tap-house.php on line 300
+
+2020-08-05T15:41:57+00:00 CRITICAL Uncaught Error: Call to undefined function do_shotcode() in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\page-contact.php:51
+Stack trace:
+#0 C:\xampp\htdocs\2020\08\lines\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\08\lines\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\08\lines\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\page-contact.php on line 51
+
