@@ -364,5 +364,19 @@ $("#loadMore").on('click', function(e) {
     });
 });
 
+$('#hasList li').each(function(index, el){
+  if( index >= 5 ){
+    var ind = index - 5;
+    var val = 0.4;
+    var val2 = val * ind;
+    var val3 = val2+'s'; 
+  }else{
+    var val = 0.4;
+    var val2 = val * index;
+    var val3 = val2+'s';
+  }
+  $(this).attr('data-wow-delay', val3);
+});
 
+new WOW().init();
 })(jQuery);
