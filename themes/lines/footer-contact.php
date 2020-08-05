@@ -36,14 +36,13 @@
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="ftr-col ftr-visit-col">
-              <h5 class="ftr-col-title">VISIT OUR SHOP</h5>
-              <p>For pick-up or deli
-              very beer and merch, please visit our SHOP Please note we are only delivering beer to Phoenix and East Valley with a $30 minimum order!  </p>
+              <h5 class="ftr-col-title"><?php _e('VISIT OUR SHOP', THEME_NAME); ?></h5>
+              <?php if( !empty($fttab['visit_our_shop']) ) echo wpautop($fttab['visit_our_shop']); ?>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="ftr-col">
-              <h5 class="ftr-col-title">CONTACT US</h5>
+              <h5 class="ftr-col-title"><?php _e('CONTACT US', THEME_NAME); ?></h5>
               <p>
                 <span>Gilbert Brewpub:</span> <a href="#">480-497-2739</a> 
                 <?php if( !empty( $show_telefoon1 ) ) printf('<span>Gilbert Brewpub:</span><a href="tel:%s">%s</a>', $telefoon1, $show_telefoon1);  ?>
@@ -55,10 +54,8 @@
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="ftr-col">
-              <h5 class="ftr-col-title">CURRENT INITIATIVES</h5>
-              <p>In our efforts to become a more cognizant and sustainable business, we’ve partner with Recycled City who’s vision of “Farmland for the Future” is som
-              ething we passionately support! </p>
-              <p>100% of the food waste collected by Recycled City goes towards building local-fertile farmland.</p>
+              <h5 class="ftr-col-title"><?php _e('CURRENT INITIATIVES', THEME_NAME); ?></h5>
+              <?php if( !empty($fttab['current_initiatives']) ) echo wpautop($fttab['current_initiatives']); ?>
             </div>
           </div>
         </div>

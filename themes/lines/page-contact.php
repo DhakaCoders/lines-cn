@@ -11,11 +11,13 @@
   $continfo = get_field('continfo', $thisID);
   $instagram = get_field('instagram_url', 'options');
   $facebook = get_field('facebook_url', 'options');
-  $twitter = get_field('twitter_url', 'options'); 
+  $twitter = get_field('twitter_url', 'options');
+  $pageTitle = get_the_title(get_the_ID());
+  $custom_page_title = get_field('custom_page_title', get_the_ID());
+  if(!empty(str_replace(' ', '', $custom_page_title))){
+    $pageTitle = $custom_page_title;
+  } 
 ?>
-<div class="sections-cntlr hasBg">
-  <div class="section-graphics-top"><img src="assets/images/section-graphics-top.png"></div>
-
   <section class="page-banner-cnt df-page-bnr">
     <div class="page-banner-cnt-controller" style="overflow: hidden;">
       <div class="page-banner-cnt-des bg-position-btm" style="background: url('assets/images/cnt-page-banner.png');">
@@ -23,7 +25,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="page-banner-cnt-des-inner">
-                <h1 class="cnt-banner-page-title">CONTACT US</h1>
+                <h1 class="cnt-banner-page-title"><?php echo $pageTitle; ?></h1>
                 <div class="lb-cnt-page-des">
                   <h2 class="lb-cnt-page-title">Phone, Email, Message</h2>
                 </div>

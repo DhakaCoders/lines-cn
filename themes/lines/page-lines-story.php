@@ -6,8 +6,6 @@
   $thisID = get_the_ID();
   $intro = get_field('introsec', $thisID);
 ?>
-
-  <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>
   <?php
     if( $intro ):
       $bgimg = $intro['background_image'];

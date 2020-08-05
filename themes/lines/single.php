@@ -2,15 +2,10 @@
   get_header(); 
   while ( have_posts() ) :
   the_post();
-  $thumb_id = get_post_thumbnail_id(get_the_ID());
-  if(!empty($thumb_id)){
-    $thumb = cbv_get_image_src($thumb_id);
-  } else {
-    $thumb = THEME_URI.'/assets/images/hdflt-img.jpg';
-  }
+  $pagebanner = get_field('bannerimage', get_the_ID());
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/event-banner-slider.png';
   ?>
-  <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div> 
-  <section class="sl-pg-banner bg-position-btm df-page-bnr" style="background-image: url('<?php echo $thumb; ?>');">
+  <section class="sl-pg-banner bg-position-btm df-page-bnr" style="background-image: url('<?php echo $pagebanner; ?>');">
     <div class="container">
       <div class="row">
         <div class="col-md-12">

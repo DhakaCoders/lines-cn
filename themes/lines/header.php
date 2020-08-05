@@ -133,4 +133,12 @@ if( is_array($logoObj) ){
     </div>
   </div>
 </header>
-<div class="sections-cntlr">
+<?php 
+if( is_page('contact') ){
+  $bgclass = ' hasBg';
+} else {
+  $bgclass = '';
+}
+?>
+<div class="sections-cntlr<?php echo $bgclass;?>">
+<div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>

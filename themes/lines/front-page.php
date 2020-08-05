@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-  <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>
   <?php 
     $hslides = get_field('slide', HOMEID);
     $hbimage = get_field('hbimage', HOMEID);
