@@ -379,4 +379,28 @@ $('#hasList li').each(function(index, el){
 });
 
 new WOW().init();
+
+
+/*$("document").ready(function(){
+  "use strict";
+  $(window).on("scroll",function(e){scrollTimer||(scrollTimer=!0,requestAnimationFrame(handleScroll))})});
+var scrollTimer=!1;
+function handleScroll(){
+  var e=$(".slideContentInner"),
+  t=$(".bannerContentInner"),
+  i=$(".slideBg img"),
+  n=$(".bannerBg img"),
+  s=Math.max($(".sliderContainer").height(),100),
+  o=(Math.max($(".banner").height(),100),$(window).height()),
+  r=$(window).scrollTop(),a=Math.round(300*(r-$("#header").outerHeight())/o),
+  l=1-.003*r,
+  c=!($("#header").outerHeight()>r);
+  0<$(".flyoutActive").length||("ontouchstart"in document.documentElement==!1&&
+    $(".siteWrapper ").outerHeight()>s+o&&
+    (!1===c&&(a=0,l=1),
+      n.css({transform:"translateY("+a+"px)"}),
+      i.css({transform:"translate(-50%, "+a+"px)"}),
+      e.css({opacity:l}),t.css({opacity:l})),
+    $(".js_scrollFadeIn").not(".fadeIn").each(function(e,t){hasReached(t)&&($(t).removeClass("js_scrollFadeIn").addClass("js_fadeIn"),fadeInBlock($(t)))}),scrollTimer=!1)}function siteWideMessage(){"use strict";var e=$(".siteWideMessage");matchesMediaQuery("mobile")?e.hasClass("slick-initialized")&&e.slick("unslick"):e.hasClass("slick-initialized")||e.slick({initialSlide:1,infinite:!0,arrows:!1,dots:!1,autoplay:!0,autoplaySpeed:3500,slidesToShow:1,slidesToScroll:1,adaptiveHeight:!0})}
+*/
 })(jQuery);
