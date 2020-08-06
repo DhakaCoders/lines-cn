@@ -85,7 +85,7 @@ body{
 	color: #FF7274;
 }
 
-.home-overlay-graphics{
+.home-overlay-graphics, .section-graphics-top{
   -webkit-animation: rotating 30s linear infinite;
   -moz-animation: rotating 30s linear infinite;
   -ms-animation: rotating 30s linear infinite;
@@ -324,7 +324,7 @@ body{
 	position: relative;
 }
 .hm-cat-item:hover{
-	border-color: #cb6366;
+	border-color: #985001;
 }
 .hm-cat-secton ul{
 	margin: 0 -15px;
