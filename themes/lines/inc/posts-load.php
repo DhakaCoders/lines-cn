@@ -1,5 +1,3 @@
-
-
 <?php
 /*
  * initial posts dispaly

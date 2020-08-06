@@ -158,3 +158,8 @@ function hex_to_rgb( $hex ){
     return false;
   }
 }
+
+function redirect_after_add_to_cart( $url ) {
+    return esc_url( get_permalink( get_page_by_title( 'cart' ) ) );
+}
+add_filter( 'woocommerce_add_to_cart_redirect', 'redirect_after_add_to_cart', 99 );

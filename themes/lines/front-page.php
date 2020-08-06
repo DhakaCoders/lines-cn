@@ -90,7 +90,15 @@
   </section>
   <?php endif; ?>
   <?php endif; ?>
-
+<?php
+    $showhide_beerlist = get_field('showhide_beerlist', HOMEID);
+    if( $showhide_beerlist ):
+    $beerlist = get_field('beerlist', HOMEID);
+    if($beerlist):
+     $availables = $beerlist['selectavailable'];
+     $tanks = $beerlist['selecttank'];
+     $concepts = $beerlist['selectconcept'];
+?> 
   <section class="hm-beer-list-sec">
     <span class="beer-list-sec-btm-angle">
       <svg class="svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="119.887" viewBox="0 0 1600 119.887">
@@ -105,141 +113,141 @@
         <div class="row">
           <div class="col-md-12">
             <div class="hm-beer-list-sec-hdr">
-              <h2 class="hm-beer-list-sec-hdr-title">BEER LIST</h2>
+              <?php if( !empty($beerlist['title']) ) printf('<h2 class="hm-beer-list-sec-hdr-title">%s</h2>', $beerlist['title']); ?>
             </div>
           </div>
           <div class="col-md-12">
             <div class="hm-beer-list-grds-cntlr">
               <ul class="reset-list clearfix">
+                <?php if( $availables ): ?>
                 <li>
                   <div class="hm-beer-list-grd-title">
                     <h3 class="available-title">AVAILABLE</h3>
                   </div>
+                  <?php 
+                  foreach( $availables as $avail ): 
+                    setup_postdata($avail);
+                    global $product;
+                    $thumb_id = get_post_thumbnail_id($avail);
+                    $spacifi = get_field('right_col', $avail->ID);
+                    
+                  ?>
                   <div class="fl-product-item red-product clearfix">
                     <div class="fl-product-item-fea-img">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/pro-img-01.png"></a>
+                      <a href="<?php echo esc_url( get_permalink($avail) ); ?>">
+                        <?php 
+                        if(!empty($thumb_id)){
+                          echo cbv_get_image_tag($thumb_id, 'hproductgrid');
+                        } else { ?>
+                          <img src="<?php echo THEME_URI; ?>/assets/images/pro-img-01.png">
+                        <?php } ?>
+                        
+                      </a>
                     </div>
                     <div class="fl-product-item-des">
-                      <h4>MIGRATION</h4>
-                      <p>ABV: 4.5%</p>
-                      <p>Style: Bohemian Pale Ale</p>
-                      <p>Line: Belgian <i></i></p>
+                      <h4><?php echo $avail->post_title;?></h4>
+                      <?php if( !empty($spacifi['abv']) ): ?><p>ABV: <?php echo $spacifi['abv'];?>%</p><?php endif; ?>
+                      <?php if( !empty($spacifi['style']) ): ?><p>Style: <?php echo $spacifi['style'];?></p><?php endif; ?>
+                      <?php if( !empty($spacifi['line']) ): ?><p>Line: <?php echo $spacifi['line'];?> <i></i></p><?php endif; ?>
                       <div class="fl-product-bts">
                         <div>
-                          <a class="fl-btn" href="#">LEARN MORE</a>
+                          <a class="fl-btn" href="<?php echo esc_url( get_permalink($avail) ); ?>">LEARN MORE</a>
                         </div>
                         <div>
-                          <a class="fl-btn" href="#">BUY</a>
+                          <a class="fl-btn" data-quantity="<?php echo isset( $args['quantity'] ) ? $args['quantity'] : 1 ; ?>" href="<?php echo $product->add_to_cart_url(); ?>">BUY</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="fl-product-item yellow-product clearfix">
-                    <div class="fl-product-item-fea-img">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/pro-img-02.png"></a>
-                    </div>
-                    <div class="fl-product-item-des">
-                      <h4>MIGRATION</h4>
-                      <p>ABV: 4.5%</p>
-                      <p>Style: Bohemian Pale Ale</p>
-                      <p>Line: Belgian <i></i></p>
-                      <div class="fl-product-bts">
-                        <div>
-                          <a class="fl-btn" href="#">LEARN MORE</a>
-                        </div>
-                        <div>
-                          <a class="fl-btn" href="#">BUY</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <?php endforeach; ?>
                 </li>
+                <?php endif; ?>
+                <?php if( $tanks ): ?>
                 <li>
                   <div class="hm-beer-list-grd-title">
                     <h3 class="in-the-tank-title">IN THE TANK</h3>
                   </div>
+                  <?php 
+                  foreach( $tanks as $tank ): 
+                    setup_postdata($tank);
+                    global $product;
+                    $thumb_id = get_post_thumbnail_id($tank);
+                    $spacifi = get_field('right_col', $tank->ID);
+                    
+                  ?>
                   <div class="fl-product-item red-product clearfix">
                     <div class="fl-product-item-fea-img">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/pro-img-01.png"></a>
+                      <a href="<?php echo esc_url( get_permalink($tank) ); ?>">
+                        <?php 
+                        if(!empty($thumb_id)){
+                          echo cbv_get_image_tag($thumb_id, 'hproductgrid');
+                        } else { ?>
+                          <img src="<?php echo THEME_URI; ?>/assets/images/pro-img-01.png">
+                        <?php } ?>
+                        
+                      </a>
                     </div>
                     <div class="fl-product-item-des">
-                      <h4>MIGRATION</h4>
-                      <p>ABV: 4.5%</p>
-                      <p>Style: Bohemian Pale Ale</p>
-                      <p>Line: Belgian <i></i></p>
+                      <h4><?php echo $tank->post_title;?></h4>
+                      <?php if( !empty($spacifi['abv']) ): ?><p>ABV: <?php echo $spacifi['abv'];?>%</p><?php endif; ?>
+                      <?php if( !empty($spacifi['style']) ): ?><p>Style: <?php echo $spacifi['style'];?></p><?php endif; ?>
+                      <?php if( !empty($spacifi['line']) ): ?><p>Line: <?php echo $spacifi['line'];?> <i></i></p><?php endif; ?>
                       <div class="fl-product-bts">
                         <div>
-                          <a class="fl-btn" href="#">LEARN MORE</a>
+                          <a class="fl-btn" href="<?php echo esc_url( get_permalink($tank) ); ?>">LEARN MORE</a>
                         </div>
                         <div>
-                          <a class="fl-btn" href="#">BUY</a>
+                          <a class="fl-btn" data-quantity="<?php echo isset( $args['quantity'] ) ? $args['quantity'] : 1 ; ?>" href="<?php echo $product->add_to_cart_url(); ?>">BUY</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="fl-product-item yellow-product clearfix">
-                    <div class="fl-product-item-fea-img">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/pro-img-02.png"></a>
-                    </div>
-                    <div class="fl-product-item-des">
-                      <h4>MIGRATION</h4>
-                      <p>ABV: 4.5%</p>
-                      <p>Style: Bohemian Pale Ale</p>
-                      <p>Line: Belgian <i></i></p>
-                      <div class="fl-product-bts">
-                        <div>
-                          <a class="fl-btn" href="#">LEARN MORE</a>
-                        </div>
-                        <div>
-                          <a class="fl-btn" href="#">BUY</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <?php endforeach; ?>
                 </li>
+                <?php endif; ?>
+                <?php if( $concepts ): ?>
                 <li>
                   <div class="hm-beer-list-grd-title">
                     <h3 class="concept-title">CONCEPT</h3>
                   </div>
+                  <?php 
+                  foreach( $concepts as $concept ): 
+                    setup_postdata($concept);
+                    global $product;
+                    $thumb_id = get_post_thumbnail_id($concept);
+                    $spacifi = get_field('right_col', $concept->ID);
+                    
+                  ?>
                   <div class="fl-product-item red-product clearfix">
                     <div class="fl-product-item-fea-img">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/pro-img-01.png"></a>
+                      <a href="<?php echo esc_url( get_permalink($concept) ); ?>">
+                        <?php 
+                        if(!empty($thumb_id)){
+                          echo cbv_get_image_tag($thumb_id, 'hproductgrid');
+                        } else { ?>
+                          <img src="<?php echo THEME_URI; ?>/assets/images/pro-img-01.png">
+                        <?php } ?>
+                        
+                      </a>
                     </div>
                     <div class="fl-product-item-des">
-                      <h4>MIGRATION</h4>
-                      <p>ABV: 4.5%</p>
-                      <p>Style: Bohemian Pale Ale</p>
-                      <p>Line: Belgian <i></i></p>
+                      <h4><?php echo $concept->post_title;?></h4>
+                      <?php if( !empty($spacifi['abv']) ): ?><p>ABV: <?php echo $spacifi['abv'];?>%</p><?php endif; ?>
+                      <?php if( !empty($spacifi['style']) ): ?><p>Style: <?php echo $spacifi['style'];?></p><?php endif; ?>
+                      <?php if( !empty($spacifi['line']) ): ?><p>Line: <?php echo $spacifi['line'];?> <i></i></p><?php endif; ?>
                       <div class="fl-product-bts">
                         <div>
-                          <a class="fl-btn" href="#">LEARN MORE</a>
+                          <a class="fl-btn" href="<?php echo esc_url( get_permalink($concept) ); ?>">LEARN MORE</a>
                         </div>
                         <div>
-                          <a class="fl-btn" href="#">BUY</a>
+                          <a class="fl-btn" data-quantity="<?php echo isset( $args['quantity'] ) ? $args['quantity'] : 1 ; ?>" href="<?php echo $product->add_to_cart_url(); ?>">BUY</a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="fl-product-item yellow-product clearfix">
-                    <div class="fl-product-item-fea-img">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/pro-img-02.png"></a>
-                    </div>
-                    <div class="fl-product-item-des">
-                      <h4>MIGRATION</h4>
-                      <p>ABV: 4.5%</p>
-                      <p>Style: Bohemian Pale Ale</p>
-                      <p>Line: Belgian <i></i></p>
-                      <div class="fl-product-bts">
-                        <div>
-                          <a class="fl-btn" href="#">LEARN MORE</a>
-                        </div>
-                        <div>
-                          <a class="fl-btn" href="#">BUY</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <?php endforeach; ?>
                 </li>
+                <?php endif; ?>
               </ul>
             </div>
           </div>
@@ -247,6 +255,9 @@
       </div> 
     </div>   
   </section>
+  <?php endif; ?>
+  <?php endif; ?>
+
   <?php
     $showhide_gallery = get_field('showhide_gallery', HOMEID);
     if( $showhide_gallery ):
