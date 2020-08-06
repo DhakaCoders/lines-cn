@@ -42,6 +42,7 @@ if( is_array($logoObj) ){
   </div>
 </div> 
 <?php endif; ?>
+<div class="hdr-gap"></div>
 <header class="header">
   <span class="hdr-btm-angle">
     <svg class="hdr-btm-angle-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600.195" height="170.094" viewBox="0 0 1600.195 170.094">
