@@ -46,10 +46,12 @@ $shopID = get_option( 'woocommerce_shop_page_id' );
   </section>
 
 <?php 
+  $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
   $query = new WP_Query(array( 
       'post_type'=> 'product',
       'post_status' => 'publish',
-      'posts_per_page' => -1,
+      'posts_per_page' => 1,
+      'paged' => $paged,
       'orderby' => 'date'
     ) 
   );
@@ -106,6 +108,26 @@ $shopID = get_option( 'woocommerce_shop_page_id' );
               <?php endwhile; ?>
             </ul>
           </div>
+          <div class="pagination">
+              <?php
+                global $wp_query;
+
+                $big = 999999999; // need an unlikely integer
+                $query->query_vars['paged'] > 1 ? $current = $query->query_vars['paged'] : $current = 1;
+
+                echo paginate_links( array(
+                  'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                  'type'      => 'list',
+                  'prev_text' => __('«'),
+                  'next_text' => __('»'),
+                  'format'    => '?paged=%#%',
+                  'current'   => $current,
+                  'total'     => $query->max_num_pages
+                ) );
+              ?>
+          </div>
+        <?php }else{?>
+          <div class="notfound">No Result!</div>
         <?php } wp_reset_postdata(); ?>
         </div>
       </div>
