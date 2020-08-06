@@ -116,10 +116,7 @@
 	display: inline-block;
 	vertical-align: baseline;
 }
-.pp-category ul li a:hover{
-	border: 2px solid #FF7274;
-	color: #FF7274;
-}
+
 
 .pp-social-medias ul li{
 	display: inline-block;
@@ -137,9 +134,7 @@
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 }
-.pp-social-medias ul li a:hover{
-	color: #FF7274;
-}
+
 
 .pp-quantity label{
 	display: block;
@@ -179,22 +174,23 @@
 
 .pp-migration-sec{
 	margin-top: 82px;
-	padding: 144px 0 121px;
+	/*padding: 144px 0 121px;*/
 	position: relative;
+	margin:144px 0 120px;
 }
 
 .pp-migration-sec-top-angle-svg{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	bottom: 100%;
 }
 
 .pp-migration-sec-btm-angle{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 0px;
+	top: 100%;
 }
 .pp-migration-sec-inr{
 	background: #000000;
@@ -306,9 +302,7 @@
 .rp-slide-des-title a{
 	color: #fff;
 }
-.rp-slide-des-title a:hover{
-	color: #FF7274;
-}
+
 .rp-slide-des p{
 	font-size: 16px;
 	color: #F6ECE0;

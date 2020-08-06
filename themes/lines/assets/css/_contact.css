@@ -79,13 +79,7 @@
 	color: #fff;
 	line-height: 35px;
 }
-.lb-cntinfo-leftsidebar-adrs a:hover,
-.lb-cntinfo-leftsidebar-phn a:hover,
-.lbcntinls-gen a:hover,
-.lbcntinls-sal a:hover,
-.lbcntinls-shop a:hover{
-	color: #FF7274;
-}
+
 .lb-cntinfo-leftsidebar-hours span{
 	display: block;
 	line-height: 35px;
@@ -134,11 +128,7 @@
 	background: #F6ECE0;
 	border: 1px solid #F6ECE0;
 }
-.lb-inputfield input[type=text]:focus,
-.lb-inputfield input[type=email]:focus,
-.lb-inputfield textarea:focus{
-	border-color: #FF7274;
-}
+
 .cnt-btn input[type=submit]{
 	font-size: 14px;
 	width: 300px;
@@ -153,10 +143,6 @@
 	font-weight: 700;
 	letter-spacing: 2px;
 	cursor: pointer;
-}
-.cnt-btn input[type=submit]:hover{
-	border-color: #FF7274;
-    background-color: #FF7274;
 }
 
 
@@ -261,9 +247,6 @@
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
-}
-.lb-cnt-page-socials-media ul li a:hover{
-	color: #FF7274;
 }
 
 

@@ -97,9 +97,7 @@
   display: inline-block;
   color: rgb(255, 255, 255);
 }
-.lines-stories-items-hedding h4 a:hover{
-    color: #FF7274;
-}
+
 .lines-stories-items-hedding h4:after{
   position: absolute;
   content: "";
@@ -133,11 +131,7 @@
   padding: 6.5px 102px;
   text-align: center;
 }
-.lines-stories-button >a:hover{
-  color: #fff;
-  border-color: #FF7274;
-  background-color: #FF7274;
-}
+
 
 .news-events-grds-top-anlge{
   position: absolute;

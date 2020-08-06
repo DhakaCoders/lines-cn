@@ -75,13 +75,7 @@
 	letter-spacing: 2px;
 	margin-top: 20px;
 }
-.bth-tap-des-img a:hover,
-.bth-rp-des-top-left-btn a:hover,
-.bth-rp-des-top-rgt-btn a:hover,
-.bth-rp-des-btm-btn a:hover{
-    border-color: #FF7274;
-    background-color: #FF7274; 
-}
+
 .bth-tap-sec {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -198,7 +192,7 @@
 
 
 .bth-rp-sec{
-	padding: 0 0 120px;
+	margin-bottom: 120px;
 	position: relative;
 }
 .bth-rp-sec-inr{
@@ -294,13 +288,13 @@
 	position: absolute;
 	left: 0;
 	top: 20px;
-	right: 0;
+	bottom: 100%;
 }
 .bth-rp-btm-angle-svg{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 1px;
+	top: 100%;
 }
 
 
