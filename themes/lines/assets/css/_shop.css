@@ -74,10 +74,18 @@
 	background-size: 100% 100%;
 	
 }
+.fls-no-pro-center-img .pro-img-angle{
+	background: url(../images/angle-gray.png);
+	background-size: 100% 100%;
+	padding-left: 15px;
+}
 .pro-img-angle strong{
 	font-size: 16px;
 	line-height: 1;
 	font-family: 'CenturyGothic-Bold';
+}
+.fls-no-pro-center-img .pro-img{
+	display: none;
 }
 
 .shop-all-beers-sec-grds ul{
