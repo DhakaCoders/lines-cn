@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="single-product-des">
+	<div class="pp-des">
 		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.

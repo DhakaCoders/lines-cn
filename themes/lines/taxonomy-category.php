@@ -1,6 +1,12 @@
   <?php 
   get_header(); 
   $cterm = get_queried_object();
+  $thisID = get_option('page_for_posts ');
+  $pageTitle = get_the_title($thisID);
+  $custom_page_title = get_field('custom_page_title', $thisID);
+  if(!empty(str_replace(' ', '', $custom_page_title))){
+    $pageTitle = $custom_page_title;
+  }
   ?>
   <span id="catID" data-id="<?php echo $cterm->term_id; ?>" style="display: none;"></span>
   <section class="page-bnr-shop news-events-banner df-page-bnr">
@@ -9,14 +15,25 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
-              <h1 class="pbs-title">SHOP</h1>
+              <h1 class="pbs-title"><?php echo $pageTitle; ?></h1>
+               <?php 
+                $tterms = get_terms( array(
+                  'taxonomy' => 'news_type',
+                  'hide_empty' => false,
+                  'parent' => 0
+                ) ); 
+                if( $tterms ):  
+              ?>
               <div class="main-shop-bnr-menu">
                 <ul class="reset-list">
-                  <li class="active"><span>BEERS</span></li>
-                  <li><span>MERCH</span></li>
-                  <li><span>HOME DELIVERY</span></li>
+                  <?php foreach( $tterms as $tterm ):
+
+                  if( $tterm->slug !='uncategorized' ): ?>
+                  <li class="active"><span><?php echo $tterm->name; ?></span></li>
+                  <?php endif; endforeach; ?>
                 </ul>
               </div>
+            <?php endif; ?>
              <?php 
               $terms = get_terms( array(
                 'taxonomy' => 'category',

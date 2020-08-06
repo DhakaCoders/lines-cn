@@ -1,4 +1,12 @@
-  <?php get_header(); ?>
+  <?php 
+    get_header();
+    $thisID = get_option('page_for_posts ');
+    $pageTitle = get_the_title($thisID);
+    $custom_page_title = get_field('custom_page_title', $thisID);
+    if(!empty(str_replace(' ', '', $custom_page_title))){
+      $pageTitle = $custom_page_title;
+    }  
+  ?>
   <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div> 
   <section class="page-bnr-shop news-events-banner df-page-bnr">
     <div class="page-bnr-shop-con bg-position-btm news-events-banner-con" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/page-bnr-news-events.png');">
@@ -6,7 +14,26 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
-              <h1 class="pbs-title">SHOP</h1>
+              <h1 class="pbs-title"><?php echo $pageTitle; ?></h1>
+               <?php 
+                $tterms = get_terms( array(
+                  'taxonomy' => 'news_type',
+                  'hide_empty' => false,
+                  'parent' => 0
+                ) ); 
+                if( $tterms ):  
+              ?>
+              <div class="main-shop-bnr-menu">
+                <ul class="reset-list">
+                  <?php $i = 1; foreach( $tterms as $tterm ):
+
+                   if( $tterm->slug !='uncategorized' ): 
+                  ?>
+                  <li class="<?php echo ($i == 1)?'active':'';?>"><a href="?category=<?php echo $tterm->term_id; ?>"><?php echo $tterm->name; ?></a></li>
+                  <?php $i++; endif; endforeach; ?>
+                </ul>
+              </div>
+            <?php endif; ?>
              <?php 
               $terms = get_terms( array(
                 'taxonomy' => 'category',
@@ -16,7 +43,7 @@
             ?>
               <div class="shop-filter-menu">
                 <ul class="reset-list">
-                  <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL</span></a></li>
+                  <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL Posts</span></a></li>
                   <?php 
                   if( $terms ):
                   foreach( $terms as $term ):

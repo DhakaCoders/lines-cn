@@ -20,11 +20,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-<section class="single-product-sec" id="single-product">
+  <section class="page-bnr-product bg-position-btm df-page-bnr" style="background: url('<?php echo THEME_URI; ?>/assets/images/product-page-bnr.png');">
+    <div class="page-bnr-shop-con">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-bnr-shop-inr">
+              <h1 class="pbs-title">SHOP</h1>
+              <div class="main-shop-bnr-menu">
+                <ul class="reset-list">
+                  <li class="active"><span>BEERS</span></li>
+                  <li><span>MERCH</span></li>
+                  <li><span>HOME DELIVERY</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="product-passage-sec" id="single-product">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="single-product-inner  clearfix"> 
+      <div class="col-md-12">
+        <div class="product-passage-sec-inr clearfix">
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -159,7 +179,6 @@ if($query->have_posts()):
   </div>
 </section>
 <?php endif; wp_reset_postdata(); endif;?>
-<?php get_template_part('templates/footer', 'top'); ?>
 <?php
 get_footer( 'shop' );
 

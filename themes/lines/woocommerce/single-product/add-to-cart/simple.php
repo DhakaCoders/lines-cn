@@ -35,11 +35,12 @@ if ( $product->is_in_stock() ) : ?>
 	<?php
 	do_action( 'woocommerce_before_add_to_cart_quantity' );
 	?>
-	<div class="custom-quantity">
-		<span class="d-an">Aantal</span>
-        <div class="pro-counter clearfix"> 
+	<div class="pp-quantity clearfix">
+		<label>SINGLE QTY</label>
+        <div class="pp-quantity-row">
+        	<div class="mini-cart-qty">
 			<div class="qty">
-		    <span class="minus"> <i class="fa fa-minus"></i> </span>
+		    <span class="minus">-</span>
 		    <?php
 			woocommerce_quantity_input(
 				array(
@@ -49,31 +50,19 @@ if ( $product->is_in_stock() ) : ?>
 				)
 			);
 			?>
-			<span class="plus"><i class="fa fa-plus"></i> </span>
+			<span class="plus">+</span>
 			</div>
-		</div>
-	</div>
+			</div>
+	
 	<?php
 
 	do_action( 'woocommerce_after_add_to_cart_quantity' );
 	?>
 
-		
-	<div class="sp-single-form-wrp">
-		<h4 class="sp-single-form-title">Persoonlijk shirt</h4>
-		<div class="sp-d2-frm-fields clearfix">
-			<div class="sp-d2-frm-field">
-			  <label>Naam</label>
-			  <input type="text" name="email" placeholder="Naam">
-			</div>
-			<div class="sp-d2-frm-field">
-			  <label>Nummer</label>
-			  <input type="text" name="email" placeholder="Nummer">
-			</div>
-		</div>
-		<div class="sp-frm-submit clearfix">
-			<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt sp-frm-submit-bdr"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-		</div>
+	<div class="pp-quantity-btn">
+		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button button alt sp-frm-submit-bdr"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	</div>
+	</div>
 	</div>
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>

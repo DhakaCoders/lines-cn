@@ -1,0 +1,8 @@
+2020-08-06T04:29:09+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\inc\wc-functions.php on line 27
+
+2020-08-06T04:43:58+00:00 CRITICAL Object of class WP_Term could not be converted to string in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\inc\wc-functions.php on line 33
+
+2020-08-06T04:48:17+00:00 CRITICAL syntax error, unexpected '$output' (T_VARIABLE), expecting ',' or ';' in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\inc\wc-functions.php on line 34
+
+2020-08-06T04:52:58+00:00 CRITICAL syntax error, unexpected '$terms' (T_VARIABLE) in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\inc\wc-functions.php on line 31
+

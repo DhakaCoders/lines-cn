@@ -80,13 +80,16 @@ $shopID = get_option( 'woocommerce_shop_page_id' );
                 } else {
                   $thumbtag = '<img src="'.THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg">';
                 }
+                $spacifi = get_field('right_col');
               ?>
               <li class="fls-pro-red">
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/product-img-bg.jpg);">
                     <a class="overlay-link" href="<?php the_permalink();?>"></a>
                     <div class="pro-img-angle">
-                      <strong>ABV: &nbsp;4.5%</strong>
+                      <?php if( $spacifi ): ?>
+                      <?php if( !empty($spacifi['abv']) ): ?><strong>ABV: &nbsp;<?php echo $spacifi['abv'];?>%</strong><?php endif; ?>
+                      <?php endif; ?>
                     </div>
                     <div class="pro-img">
                       <?php echo $thumbtag; ?>

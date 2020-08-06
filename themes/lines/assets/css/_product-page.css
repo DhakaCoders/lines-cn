@@ -64,7 +64,9 @@
 .pp-con p a:hover{
 	color: #FF7274;
 }
-
+.pp-des strong span {
+    display: inline-block;
+}
 
 .pp-category{
 	padding-bottom: 30px;

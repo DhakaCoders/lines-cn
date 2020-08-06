@@ -22,19 +22,48 @@ if (!function_exists('add_custom_box_product_summary')) {
         $sh_desc = '';
         $page_url = get_permalink();
         if( !empty($sh_desc) ) $sh_desc = $sh_desc;
-        $sh_desc = $product->get_description();
-        $output = '<div class="single-product-des-top">';
-          $output .= '<div class="single-product-des-top-innr"> ';
-            $output .= '<h2 class="single-product-title">Enim lobortis faucibus neque vitae congue</h2>';
-            $output .= '<div class="single-product-price">';
-               $output .= '<strong>€ 58</strong>
-             <strong>€ 48</strong>';
+        $sh_desc = $product->get_short_description();
+        $categories = get_the_terms( $product->get_id(), 'product_cat' );
+        $randValue = '';
+        if ( ! empty( $categories ) ) {
+          $terms = json_decode(json_encode($categories), true);
+          $randIndex = array_rand($terms, 1);
+          $randarray[] = $terms[$randIndex];
+          $randValue = $randarray[0]['name'];
+        }
+        
+        $output = '<h2 class="pp-des-title">';
+        $output .= get_the_title();
+        if(!empty($randValue)) $output .= '<strong>'.$randValue.'</strong>'; 
+        $output .='</h2>';
+          $output .= '<span>BOHEMIAN PALE ALE|4.5%|330ML</span>';
+            $output .= '<strong>'.$product->get_price_html().'</strong>';
+            $output .= '<div class="pp-con">';
+               $output .= '<p>'.$sh_desc.'... <a href="#">READ MORE</a></p>';
             $output .= '</div>';
-            $output .= $sh_desc;
-          $output .= '</div>';
-        $output .= '</div>';
+
+            if ( ! empty( $categories ) ) {
+            $output .= '<div class="pp-category">';
+            $output .= '<label>CATEGORY:</label>';
+            $output .= '<ul class="reset-list">';
+              foreach( $categories as $category ) {
+                $output .= '<li><a href="'.get_term_link($category).'">'.$category->name.'</a></li>';
+              }
+            $output .= '</ul>';
+            $output .= '</div>';
+            }
+        $output .= '<div class="pp-social-medias">
+                <label>SHARE PRODUCT:</label>
+                <ul class="reset-list">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>';
         echo  $output;
-        woocommerce_template_single_add_to_cart();
+          woocommerce_template_single_add_to_cart();
+
         
     }
 }
