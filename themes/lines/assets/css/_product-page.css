@@ -2,7 +2,8 @@
 	min-height: 310px;
 	height: 100%;
 }
-.product-passage-top-anlge{
+.product-passage-top-anlge,
+.sl-pg-post-content-top-anlge{
 	position: absolute;
 	left: 0;
 	right: 0;
