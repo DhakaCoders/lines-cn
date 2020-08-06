@@ -31,12 +31,18 @@ if (!function_exists('add_custom_box_product_summary')) {
           $randarray[] = $terms[$randIndex];
           $randValue = $randarray[0]['name'];
         }
+
+        $spacifi = get_field('right_col', $product->get_id());
         
         $output = '<h2 class="pp-des-title">';
         $output .= get_the_title();
         if(!empty($randValue)) $output .= '<strong>'.$randValue.'</strong>'; 
         $output .='</h2>';
-          $output .= '<span>BOHEMIAN PALE ALE|4.5%|330ML</span>';
+        if( $spacifi ):
+          $output .= '<span>';
+          $output .= ( !empty($spacifi['style']) )? $spacifi['style']: '';$output .= ( !empty($spacifi['abv']) )? '|'.$spacifi['abv'].'%': '';$output .= ( !empty($spacifi['capacity']) )? '|'.$spacifi['capacity']: '';
+          $output .= '</span>';
+        endif;
             $output .= '<strong>'.$product->get_price_html().'</strong>';
             $output .= '<div class="pp-con">';
                $output .= '<p>'.$sh_desc.'... <a href="#">READ MORE</a></p>';
@@ -71,5 +77,5 @@ if (!function_exists('add_custom_box_product_summary')) {
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text', 10, 2 );
 
 function woo_custom_cart_button_text() {
-return __('Bestellen', 'woocommerce');
+return __('ADD TO BASKET', 'woocommerce');
 }

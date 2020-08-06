@@ -65,7 +65,9 @@
 	color: #FF7274;
 }
 .pp-des strong span {
-    display: inline-block;
+	display: inline-block;
+    margin: 0;
+    font-size: inherit;
 }
 
 .pp-category{
