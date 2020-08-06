@@ -1,6 +1,13 @@
 .lb-cntinfo-sec{
-	margin-top: 100px;
+	margin-top: 0;
 	margin-bottom: 10px;
+	padding-top: 0;
+}
+.lb-cntinfo-sec-top-angle{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
 }
 .lb-cntinfo-leftsidebar{
 	float: left;
@@ -181,8 +188,9 @@
 }
 
 .page-banner-cnt-des{
-	min-height: 540px;
+	min-height: 620px;
 	height: 100%;
+	background-attachment: fixed;
 }
 
 .page-banner-cnt-des-inner{
@@ -512,9 +520,7 @@
 	.lb-cntinfo-leftsidebar-hours span {
 	    line-height: 20px;
 	}
-	.lb-cntinfo-sec {
-	    margin-top: 70px;
-	}
+
 	.lb-inputfield textarea{
 		height: 300px;
 		padding: 15px;
