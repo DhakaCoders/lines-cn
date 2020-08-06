@@ -309,6 +309,10 @@
 	}
 }
 @media(max-width: 575px){
+	.sl-pg-page-title{
+		font-size: 30px;
+    	margin-bottom: 30px;
+	}
 	.sl-pg-post-content{
 		padding-bottom: 60px;
 	}

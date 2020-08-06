@@ -253,11 +253,11 @@ body.woocommerce-order-received h2.woocommerce-column__title {
     color: #43587B !important;
 }
 .woocommerce-MyAccount-navigation ul li.is-active a{
-    border-left: 3px solid #F6C042;
+    border-left: 3px solid #AA8262 ;
     padding-left: 10px;
 }
 .woocommerce-MyAccount-navigation ul li a{
-    color: #43587B !important;
+    color: #fff !important;
     font-weight: 600;
     padding: 5px 0;
 }
@@ -279,19 +279,19 @@ body.woocommerce-order-received h2.woocommerce-column__title {
 .woocommerce-account .woocommerce-EditAccountForm legend {
     padding-top: 20px;
     font-weight: 500;
-    color: #7B8CA8;
+    color: #AA8262;
     font-size: 24px;
     margin-bottom: 20px;
     padding-bottom: 15px;
 }
 .woocommerce-account .addresses .title a.edit {
-    background: #F6C042;
+    background: #AA8262 ;
     color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
 }
 .woocommerce-account .addresses .title a.edit:hover{
-    background: #000;
+    background: #985001;
 }
 .woocommerce div.product form.cart .reset_variations{
     display: none!important;

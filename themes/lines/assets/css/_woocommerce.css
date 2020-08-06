@@ -57,7 +57,7 @@ body.single-product .pro-cart-btn button:hover svg{
 
 .woocommerce .product-name a,
 .woocommerce-LostPassword.lost_password a{
-	color: #000;
+	color: #fff;
 }
 
 .woocommerce #coupon_code{
@@ -168,7 +168,7 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 	color: #F6C042;
 }
 .woocommerce-MyAccount-content p a{
-	color: #000;
+	color: #AA8262;
 }
 .select2-container--default .select2-selection--single{
 	height: 56px!important;
