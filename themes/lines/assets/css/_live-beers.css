@@ -118,19 +118,15 @@
 	font-family: 'CenturyGothic-Bold';
 }
 .core-beer-item-btns .cbibtn-2 a{
-	background: #685445;
+	background: #AA8262 ;
 	margin: 0 8px 16px;
 }
-.core-beer-item-btns .cbibtn-2 a:hover{
-	background: #FF7274;
-}
+
 .core-beer-item-btns .cbibtn-1 a{
 	min-width: 185px;
 	background: transparent;
 }
-.core-beer-item-btns .cbibtn-1 a:hover{
-	background: #685445;
-}
+
 
 @media(max-width: 1499px){
 

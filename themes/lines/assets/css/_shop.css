@@ -2,9 +2,9 @@
 	position: relative;
 }
 .page-bnr-shop-con{
-	min-height: 300px;
+	min-height: 400px;
 	height: 100%;
-	padding: 110px 0 150px;
+	padding: 180px 0 150px;
 }
 .page-bnr-shop img{
 	width: 100%;
@@ -16,6 +16,7 @@
     padding: 110px 0 35px;
     background: rgb(8,8,8);
     z-index: 6!important;
+    margin-bottom: 150px;
 }
 .shop-all-beers-sec-hdr{
 	padding-bottom: 45px;
@@ -104,9 +105,7 @@
 .flspid-title a{
 	color: #fff;
 }
-.flspid-title a:hover{
-	color: #FF7274;
-}
+
 .fls-price{
 	font-family: 'CenturyGothic-Bold';
 	font-size: 24px;
@@ -121,7 +120,7 @@
 
 
 .shop-pre-footer-sec{
-	margin-top: 0;
+	margin-top: 180px;
 	margin-bottom: 120px;
 	position: relative;
 }
@@ -141,7 +140,7 @@
 	top: 100%;
 }
 .shop-pre-ftr-inr{
-	padding: 180px 0 0;
+	padding: 0 0 0;
 	background-image: url(../images/Middle.png);
 	background-color: #000;
 	background-repeat: no-repeat;
@@ -250,7 +249,6 @@
 	height: 3px;
 	left: 0;
 	width: 0;
-	background: #f9efe3;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

@@ -13,9 +13,7 @@
 	text-decoration: underline;
 	color: #fff;
 }
-.sl-pg-page-inr-desc-cntlr a:hover{
-	color: #FF7274;
-}
+
 .sl-pg-post-content-top{
 	display: flex;
 	align-items: center;
@@ -35,10 +33,7 @@
     padding-bottom: 5px;
 	border-bottom: 1px solid #fff;
 }
-.sl-pg-post-content-top-left > ul > li >a:hover{
-	color: #FF7274;
-	border-color: #FF7274;
-}
+
 .sl-pg-post-content-top-left > ul >li:first-child{
 	padding-right: 48px;
 	font-weight: 700;
@@ -152,9 +147,7 @@
 	font-family: FontAwesome;
 	font-size: 20px;
 }
-.sl-pg-social-link > ul > li >a:hover{
-	color: #FF7274;
-}
+
 .sl-pg-stories-hedding{
 	text-align: center;
 	padding-bottom: 80px;
@@ -177,11 +170,7 @@
 	background: #aa8262;
 	border: 1px solid #fff;
 }
-.sl-pg-grid-btn a:hover{
-	background: #FF7274;
-	color: #fff;
-	border-color: #FF7274;
-}
+
 
 .lines-stories-innr{
 	position: relative;

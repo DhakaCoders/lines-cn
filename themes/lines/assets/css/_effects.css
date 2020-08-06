@@ -35,3 +35,73 @@ nav.main-nav ul li.current-menu-item a{
 
 }
 
+
+
+
+
+/*hover color */
+.bth-tap-des-img a:hover,
+.bth-rp-des-top-left-btn a:hover,
+.bth-rp-des-top-rgt-btn a:hover,
+.bth-rp-des-btm-btn a:hover,
+.cnt-btn input[type=submit]:hover,
+.core-beer-item-btns .cbibtn-1 a:hover,
+.core-beer-item-btns .cbibtn-2 a:hover,
+.sl-pg-grid-btn a:hover,
+.lines-stories-button > a:hover,
+.pp-category ul li a:hover{
+    border-color: #985001;
+    background-color: #985001; 
+}
+
+
+.pp-category ul li a:hover{
+	border: 2px solid #985001;
+	color: #fff;
+}
+
+
+
+
+.xs-main-nav > ul > li:hover > a,
+.xs-main-nav > ul > li.current-menu-item > a,
+.xs-popup-btm-content ul li a:hover,
+.ftr-col p a:hover,
+.ftr-socila ul li a:hover,
+.lb-cnt-page-socials-media ul li a:hover,
+.lb-cntinfo-leftsidebar-adrs a:hover,
+.lb-cntinfo-leftsidebar-phn a:hover,
+.lbcntinls-gen a:hover,
+.lbcntinls-sal a:hover,
+.lbcntinls-shop a:hover,
+.lines-stories-items-hedding h4 a:hover,
+.pp-social-medias ul li a:hover,
+.rp-slide-des-title a:hover,
+.flspid-title a:hover,
+.sl-pg-page-inr-desc-cntlr a:hover,
+.sl-pg-social-link > ul > li >a:hover{
+	color: #985001;
+}
+
+
+.lb-inputfield input[type=text]:focus,
+.lb-inputfield input[type=email]:focus,
+.lb-inputfield textarea:focus{
+	border-color: #985001;
+}
+
+
+.shop-filter-menu ul li a span:after{
+	background: #985001;
+}
+
+.shop-filter-menu ul li.active a,
+.shop-filter-menu ul li:hover a{
+	color: #985001;
+}
+
+
+.sl-pg-post-content-top-left > ul > li >a:hover{
+	color: #985001;
+	border-color: #985001;
+}
