@@ -15,6 +15,7 @@
 .qty .minus{
 	opacity: 1;
   color: #fff;
+  margin-bottom: 0!important;
 }
 .qty:hover .plus,
 .qty:hover .minus,
@@ -200,4 +201,17 @@ span{
     left: 3px;
     font-size: 18px;
     line-height: 20px;
+}
+
+
+.mini-cart-qty .quantity{
+  width: 100%;
+}
+
+.woocommerce .pp-quantity-row .mini-cart-qty .quantity .qty{
+  width: 100%;
+  height: 100%;
+}
+.woocommerce .pp-quantity-row div.quantity{
+  float: none!important;
 }
