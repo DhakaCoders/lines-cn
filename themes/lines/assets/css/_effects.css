@@ -77,7 +77,9 @@ nav.main-nav ul li.current-menu-item a{
 .lines-stories-items-hedding h4 a:hover,
 .pp-social-medias ul li a:hover,
 .rp-slide-des-title a:hover,
-.flspid-title a:hover{
+.flspid-title a:hover,
+.sl-pg-page-inr-desc-cntlr a:hover,
+.sl-pg-social-link > ul > li >a:hover{
 	color: #985001;
 }
 
@@ -96,4 +98,10 @@ nav.main-nav ul li.current-menu-item a{
 .shop-filter-menu ul li.active a,
 .shop-filter-menu ul li:hover a{
 	color: #985001;
+}
+
+
+.sl-pg-post-content-top-left > ul > li >a:hover{
+	color: #985001;
+	border-color: #985001;
 }
