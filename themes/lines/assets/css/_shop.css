@@ -2,9 +2,10 @@
 	position: relative;
 }
 .page-bnr-shop-con{
-	min-height: 400px;
+	min-height: 550px;
 	height: 100%;
 	padding: 100px 0 150px;
+	background-attachment: fixed;
 }
 .page-bnr-shop img{
 	width: 100%;
