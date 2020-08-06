@@ -1,4 +1,5 @@
-    <section class="shop-pre-footer-sec">
+<div style="height: 1px"></div>
+<section class="shop-pre-footer-sec">
     <span class="security-sec-top-anlge">
       <svg class="security-sec-top-anlge-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="144.534" viewBox="0 0 1600 144.534">
         <g id="Top" transform="translate(0 -1790.092)">
