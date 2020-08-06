@@ -31,7 +31,15 @@
               <?php echo $pageTitle; ?>
             </h2>
             <div class="default-page">
-              <?php if( !empty($cont) ) echo wpautop($cont); ?>
+
+              <?php 
+              if( is_cart() OR is_checkout() OR is_account_page()){
+                the_content();
+              }else{
+                if( !empty($cont) ) echo wpautop($cont);
+              }
+              
+               ?>
             </div>
           </div>
         </div>
