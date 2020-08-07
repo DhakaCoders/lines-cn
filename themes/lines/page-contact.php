@@ -17,7 +17,7 @@
   if(!empty(str_replace(' ', '', $custom_page_title))){
     $pageTitle = $custom_page_title;
   } 
-  $pagebanner = get_field('bannerimage', $shopID);
+  $pagebanner = get_field('bannerimage', $thisID);
 if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/cnt-page-banner-v2.jpg';
 ?>
   <section class="page-banner-cnt df-page-bnr">
