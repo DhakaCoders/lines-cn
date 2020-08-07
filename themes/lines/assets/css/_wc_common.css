@@ -338,10 +338,16 @@ ul.select2-results__options li{
 	color: #000;
 	font-size: 16px;
 }
-
-.single-product .pp-migration-sec{
-	margin-bottom: 215px;
+.woocommerce-page div.product div.images,
+.woocommerce-product-gallery__image{
+	width: 100%;
+	text-align: center;
 }
+.woocommerce-product-gallery__image a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{
 		padding-left: 15px;

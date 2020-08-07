@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="pp-des">
+	<div class="pp-des wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
 		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
