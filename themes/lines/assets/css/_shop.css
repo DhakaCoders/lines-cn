@@ -212,7 +212,8 @@
 	font-family: 'CenturyGothic-Bold';
 }
 
-.main-shop-bnr-menu ul li.active span{
+.main-shop-bnr-menu ul li.active span,
+.main-shop-bnr-menu ul li.active a{
 	background: #f6ece0;
 	border-color: #f6ece0;
 	color: #000000;
