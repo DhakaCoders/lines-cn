@@ -21,7 +21,7 @@
   $smedias = get_field('socialmedia', 'options');
 ?>
   <footer class="footer-wrp">
-    <div class="footer-top-sec">
+    <div class="footer-top-sec wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-12">

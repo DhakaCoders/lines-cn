@@ -14,15 +14,13 @@
     if( !empty($bgimg) ){
       $parallaxImg = cbv_get_image_src($bgimg);
     }else{
-      $parallaxImg = THEME_URI .'/assets/images/story-page-banner-1.png';
+      $parallaxImg = THEME_URI .'/assets/images/bth-page-banner.png';
     }
 ?> 
   <section class="page-banner-bth df-page-bnr">
     <div class="page-banner-bth-controller" style="overflow: hidden;">
       
-      <div class="page-banner-bth-des" 
-      data-parallax="scroll" 
-  data-image-src="<?php echo $parallaxImg; ?>">
+      <div class="page-banner-bth-des" data-parallax="scroll" data-image-src="<?php echo $parallaxImg; ?>">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -31,16 +29,17 @@
                   <div class="bth-left-img clearfix">
                     <?php if( $galleies ): ?>
                     <?php
-                      $i = 1; 
+                      $i = 1;
+                      $n = 0.3; 
                       foreach( $galleies as $gallery ): 
                     ?>
-                    <div class="bth-left-img-<?php echo $i; ?>">
+                    <div class="bth-left-img-<?php echo $i; ?> wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $n; ?>s">
                       <?php echo !empty($gallery['id'])? cbv_get_image_tag($gallery['id'], 'brewerygallery') : ''; ?>
                     </div>
-                    <?php $i++; endforeach; ?>
+                    <?php $i++; $n+=0.2; endforeach; ?>
                     <?php endif; ?>
                   </div>
-                  <div class="bth-des">
+                  <div class="bth-des wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.8s">
                     <?php if( !empty($rightcol['title']) ) printf('<h1 class="bth-des-title">%s</h1>', $rightcol['title']); ?>
                     <?php if( !empty($rightcol['description']) ) echo wpautop( $rightcol['description'] ); ?>
                   </div>
@@ -82,7 +81,7 @@
                 $brewh = get_field('brewhousesec', $thisID);
                 if($brewh):
             ?> 
-              <div class="bth-tap-sec-des clearfix">
+              <div class="bth-tap-sec-des clearfix wow fadeInUpShort" data-wow-duration="0.8s" data-wow-delay="0.5s">
                 <div class="bth-tap-des-img">
                 <?php 
                   if( !empty($brewh['image']) ):
@@ -115,7 +114,7 @@
                    $tabs = $ontaps['alltaps'];
               ?>
               <?php if( $tabs ): ?>
-              <div class="bth-tab-btn">
+              <div class="bth-tab-btn wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
                 <?php if( !empty($ontaps['title']) ) printf('<span>%s</span>', $ontaps['title']); ?>
                 <ul class="ulc">
                   <?php $i = 1; foreach( $tabs as $tab ): ?>
@@ -128,7 +127,7 @@
                 </ul>
                 
               </div>
-              <div class="bth-tab-des">
+              <div class="bth-tab-des wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.8s">
                 <?php 
                 $i = 1; foreach( $tabs as $tab ):
                 $tapitems = $tab['tapitems'];
@@ -183,13 +182,13 @@
               <div class="bth-rp-img">
                 <?php if( $tgalleies ): ?>
                 <ul class="ulc clearfix">
-                  <?php foreach( $tgalleies as $tgallery ): ?>
-                  <li><?php echo !empty($tgallery['id'])? cbv_get_image_tag($tgallery['id'], 'linesgallery') : ''; ?></li>
-                  <?php endforeach; ?>
+                  <?php $i= 0.5; foreach( $tgalleies as $tgallery ): ?>
+                  <li class="wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>s"><?php echo !empty($tgallery['id'])? cbv_get_image_tag($tgallery['id'], 'linesgallery') : ''; ?></li>
+                  <?php $i+=0.3; endforeach; ?>
                 </ul>
                 <?php endif; ?>
               </div>
-              <div class="bth-rp-des"> 
+              <div class="bth-rp-des wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
                 <?php if( !empty($rhtcol['title']) ) printf('<h2 class="bth-rp-des-title">%s</h2>', $rhtcol['title']); ?>
                 <?php if( !empty($rhtcol['description']) ) echo wpautop( $rhtcol['description'] ); ?>
                 <div class="bth-rp-des-btn">

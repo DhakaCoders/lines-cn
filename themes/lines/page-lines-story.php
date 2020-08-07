@@ -32,7 +32,7 @@
                   $i = 1; foreach( $galleies as $gallery ): 
                   if( $i <= 1 ){
                 ?>
-                <div class="banner-page-story-gelery-title-img inline-bg" style="background-image: url(<?php echo !empty($gallery['id'])? cbv_get_image_src($gallery['id'], 'linesgallery') : ''; ?>);">
+                <div class="banner-page-story-gelery-title-img inline-bg wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s" style="background-image: url(<?php echo !empty($gallery['id'])? cbv_get_image_src($gallery['id'], 'linesgallery') : ''; ?>);">
 
                 </div>
                 <?php
@@ -45,19 +45,19 @@
                 <?php if($btmgalleries): ?>
                 <div class="banner-page-story-gelery-items-cntlr">
                   <ul class="reset-list">
-                    <?php foreach( $btmgalleries as $btmgallery ): ?>
-                    <li>
+                    <?php  $i= 0.6; foreach( $btmgalleries as $btmgallery ): ?>
+                    <li class="wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>s">
                       <div class="banner-page-story-gelery-items inline-bg" style="background-image: url(<?php echo !empty($btmgallery['id'])? cbv_get_image_src($btmgallery['id'], 'linesgallery2'): ''; ?>);">
 
                       </div>
                     </li>
-                    <?php endforeach; ?>
+                    <?php $i+=0.3; endforeach; ?>
                   </ul>
                 </div>
                 <?php endif; ?>
                 <?php endif; ?>
               </div>
-              <div class="banner-page-story-desc">
+              <div class="banner-page-story-desc wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">
                 <?php if( !empty($rightcol['title']) ) printf('<h1 class="banner-page-story-desc-title">%s</h1>', $rightcol['title']); ?>
                 <?php if( !empty($rightcol['description']) ) echo wpautop( $rightcol['description'] ); ?>
               </div>
@@ -96,14 +96,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="lines-system-cntlr clearfix">
-              <div class="lines-system-img">
+              <div class="lines-system-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">
                 <?php 
                   if( !empty($linessystem['image']) ):
                     echo cbv_get_image_tag($linessystem['image'], 'storygrid');
                   endif; 
                 ?>
               </div>
-              <div class="lines-system-desc">
+              <div class="lines-system-desc wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">
                 <?php if( !empty($linessystem['title']) ) printf('<h2 class="lines-system-desc-title">%s</h2>', $linessystem['title']); ?>
                 <?php if( !empty($linessystem['description']) ) echo wpautop( $linessystem['description'] ); ?>
               </div>
@@ -135,14 +135,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="eco-brewing-cntlr clearfix">
-              <div class="eco-brewing-img">
+              <div class="eco-brewing-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">
                 <?php 
                   if( !empty($echobrewing['image']) ):
                     echo cbv_get_image_tag($echobrewing['image'], 'storygrid');
                   endif; 
                 ?>
               </div>
-              <div class="eco-brewing-desc">
+              <div class="eco-brewing-desc ow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">
                 <?php if( !empty($echobrewing['title']) ) printf('<h2 class="eco-brewing-desc-title">%s</h2>', $echobrewing['title']); ?>
                 <?php if( !empty($echobrewing['description']) ) echo wpautop( $echobrewing['description'] ); ?>
               </div>

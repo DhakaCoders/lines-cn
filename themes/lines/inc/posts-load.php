@@ -15,7 +15,7 @@ function post_script_load_more($args = array()) {
  
   echo '<div class="post-more-btn">
   <div class="ajaxloading" id="ajxaloader" style="display:none"><img src="'.THEME_URI.'/assets/images/loading.gif" alt="loader"></div>
-   <div class="lines-stories-button"><a href="#" id="loadMore"  data-page="1" data-url="'.admin_url("admin-ajax.php").'" >LOAD MORE</a></div>';
+   <div class="lines-stories-button wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="0.5s"><a href="#" id="loadMore"  data-page="1" data-url="'.admin_url("admin-ajax.php").'" >LOAD MORE</a></div>';
    echo '</div>';
 
 }
@@ -77,7 +77,7 @@ function ajax_post_script_load_more($args, $termID = '') {
      }
 
     if($query->have_posts()):
-
+      $i= 0.2;
     while($query->have_posts()): $query->the_post();
       $thumb_id = get_post_thumbnail_id(get_the_ID());
       if(!empty($thumb_id)){
@@ -86,7 +86,7 @@ function ajax_post_script_load_more($args, $termID = '') {
         $thumb = THEME_URI.'/assets/images/hdflt-img.jpg';
       }
         ?>
-        <li>
+        <li class="wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="<?php echo $i;?>s">
           <div class="lines-stories-items">
             <div class="lines-stories-items-img-cntlr">
               <div class="lines-stories-items-img inline-bg" style="background-image: url('<?php echo $thumb; ?>');">
@@ -107,7 +107,7 @@ function ajax_post_script_load_more($args, $termID = '') {
           </div>
         </li>
         <?php
-    endwhile; 
+    $i+=0.2; endwhile; 
     endif;  
     
     wp_reset_postdata();

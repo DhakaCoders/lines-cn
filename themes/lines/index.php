@@ -14,7 +14,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
-              <h1 class="pbs-title"><?php echo $pageTitle; ?></h1>
+              <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
                <?php 
                 $tterms = get_terms( array(
                   'taxonomy' => 'news_type',
@@ -23,7 +23,7 @@
                 ) ); 
                 if( $tterms ):  
               ?>
-              <div class="main-shop-bnr-menu">
+              <div class="main-shop-bnr-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
                 <ul class="reset-list">
                   <?php $i = 1; foreach( $tterms as $tterm ):
 
@@ -41,7 +41,7 @@
                 'parent' => 0
               ) );   
             ?>
-              <div class="shop-filter-menu">
+              <div class="shop-filter-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.9s">
                 <ul class="reset-list">
                   <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL Posts</span></a></li>
                   <?php 

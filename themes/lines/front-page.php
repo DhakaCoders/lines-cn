@@ -9,7 +9,7 @@
       $parallaxImg = THEME_URI .'/assets/images/s-ilustrationbg.png';
     }
   ?>
-  <section data-parallax="scroll" class="main-slider-sec"
+  <section data-parallax="scroll" data-bleed="90" class="main-slider-sec"
   data-image-src="<?php echo $parallaxImg; ?>">
   <?php if($hslides): ?>
     <div class="main-slider mainSlider">
@@ -66,14 +66,16 @@
           <?php if( $husps ){ ?>
           <ul class="clearfix reset-list">
             <?php 
-            $uspImg = '';
-            foreach( $husps as $husp ):
-            if( !empty($husp['image']) ) 
-            { 
-              $uspImg = cbv_get_image_src($husp['image']);
-            } 
+              $i = 0.5;
+              $uspImg = '';
+              foreach( $husps as $husp ):
+              if( !empty($husp['image']) ) 
+              { 
+                $uspImg = cbv_get_image_src($husp['image']);
+              } 
+
             ?>
-            <li>
+            <li class="wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>s">
               <div class="hm-cat-item inline-bg" style="background: url(<?php echo $uspImg; ?>);">
                 <?php if( !empty($husp['link']) ): ?>
                 <a class="overlay-link" href="<?php echo $husp['link']; ?>"></a>
@@ -81,7 +83,7 @@
                 <?php if( !empty($husp['title']) ) printf('<strong>%s</strong>', $husp['title']); ?>
               </div>
             </li>
-            <?php endforeach; ?>
+            <?php $i+=0.3; endforeach; ?>
           </ul>
           <?php } ?>
         </div>
@@ -112,7 +114,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="hm-beer-list-sec-hdr">
+            <div class="hm-beer-list-sec-hdr wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
               <?php if( !empty($beerlist['title']) ) printf('<h2 class="hm-beer-list-sec-hdr-title">%s</h2>', $beerlist['title']); ?>
             </div>
           </div>
@@ -120,11 +122,12 @@
             <div class="hm-beer-list-grds-cntlr">
               <ul class="reset-list clearfix">
                 <?php if( $availables ): ?>
-                <li>
+                <li class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="0.5s">
                   <div class="hm-beer-list-grd-title">
                     <h3 class="available-title">AVAILABLE</h3>
                   </div>
                   <?php 
+
                   foreach( $availables as $avail ): 
                     setup_postdata($avail);
                     global $product;
@@ -163,7 +166,7 @@
                 </li>
                 <?php endif; ?>
                 <?php if( $tanks ): ?>
-                <li>
+                <li class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="1s">
                   <div class="hm-beer-list-grd-title">
                     <h3 class="in-the-tank-title">IN THE TANK</h3>
                   </div>
@@ -206,7 +209,7 @@
                 </li>
                 <?php endif; ?>
                 <?php if( $concepts ): ?>
-                <li>
+                <li class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="1.5s">
                   <div class="hm-beer-list-grd-title">
                     <h3 class="concept-title">CONCEPT</h3>
                   </div>
@@ -278,7 +281,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="hm-latest-news-sec-hdr">
+            <div class="hm-latest-news-sec-hdr wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
               <?php if( !empty($hgallery['title']) ) printf('<h2 class="hm-latest-news-sec-hdr-title">%s</h2>', $hgallery['title']); ?>
             </div>
           </div>
@@ -289,6 +292,7 @@
         <div class="hm-gallery-img-cntlr">
           <ul class="clearfix reset-list">
             <?php 
+            $i= 0.5;
             $gfull = $gthum = '';
             foreach( $hgalleries as $hgallery ):
             if( !empty($hgallery['id']) ) 
@@ -297,12 +301,12 @@
               $gthum = cbv_get_image_src($hgallery['id'], 'hgallery');
             } 
             ?>
-            <li>
+            <li class="wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i;?>s">
               <div class="hm-gallery-item" data-fancybox="gallery" href="<?php echo $gfull; ?>">
                 <div class="hm-gallery-item-img" style="background: url(<?php echo $gthum; ?>);"></div>
               </div>
             </li>
-            <?php endforeach; ?>
+            <?php $i+=0.3; endforeach; ?>
           </ul>
         </div>
       </div>
@@ -326,7 +330,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="hm-latest-news-sec-hdr">
+            <div class="hm-latest-news-sec-hdr wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
               <h2 class="hm-latest-news-sec-hdr-title">S<?php _e('LATEST NEW', THEME_NAME); ?></h2>
             </div>
           </div>
@@ -336,7 +340,7 @@
               $thumb_id = get_post_thumbnail_id(get_the_ID());
           ?>
             <div class="hm-latest-news-item">
-              <div class="hm-latest-news-item-fea-img">
+              <div class="hm-latest-news-item-fea-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="1s">
                 <a href="<?php the_permalink();?>">
                   <?php if(!empty($thumb_id)){
                     echo cbv_get_image_tag($thumb_id, 'hbloggrid');
@@ -345,7 +349,7 @@
                   <?php } ?>
                 </a>
               </div>
-              <div class="hm-latest-news-item-des">
+              <div class="hm-latest-news-item-des wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
                 <h3 class="hm-latest-news-item-des-title"><?php the_title(); ?></h3>
                 <div>
                   <strong>Posted <?php echo get_the_date('l j F Y - g:i'); ?></strong>
@@ -353,10 +357,10 @@
                 <?php echo wpautop( cbv_get_excerpt() ); ?>
               </div>
               <div class="hm-latest-news-item-btns">
-                <div class="hm-lnib-1">
+                <div class="hm-lnib-1 wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.7s">
                   <a class="fl-btn" href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><?php _e('SEE ALL NEWS', THEME_NAME); ?></a>
                 </div>
-                <div class="hm-lnib-2">
+                <div class="hm-lnib-2 wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="1.1s">
                   <a class="fl-btn" href="<?php the_permalink();?>"><?php _e('READ MORE', THEME_NAME); ?></a>
                 </div>
               </div>
@@ -395,14 +399,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="eco-brewing-sec-hdr">
+            <div class="eco-brewing-sec-hdr wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
               <?php if( !empty($ecobrewing['title']) ) printf('<h2 class="eco-brewing-sec-hdr-title"">%s</h2>', $ecobrewing['title']); ?>
             </div>
           </div>
         </div>
       </div>  
       <div class="eco-brewing-gallery-images">
-        <ul class="reset-list clearfix">
+        <ul class="reset-list clearfix wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="1s">
           <li>
             <div class="eco-brewing-gallery-img">
               <div class="eco-brewing-gallery-img-div inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/eco-brewing-gallery-01.jpg);"></div>
@@ -428,7 +432,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="eco-brewing-sec-des">
+            <div class="eco-brewing-sec-des wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="1.3s">
               <?php if( !empty($ecobrewing['description']) ) echo wpautop( $ecobrewing['description'] ); ?>
             </div>
           </div>
