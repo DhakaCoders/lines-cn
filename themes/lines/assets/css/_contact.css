@@ -417,7 +417,7 @@
 
 @media(max-width: 767px){
 	.page-banner-cnt-des {
-	    min-height: 400px;
+	    min-height: 600px;
 	    height: 100%;
 	}
 	.cnt-banner-page-title {
@@ -533,6 +533,9 @@
 	}
 	.lb-inputfield input[type=text], .lb-inputfield input[type=email]{
 		height: 55px;
+	}
+	.page-banner-cnt-des {
+		min-height: 500px;
 	}
 
 }
