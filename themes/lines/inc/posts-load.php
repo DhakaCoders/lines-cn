@@ -9,6 +9,33 @@ function post_script_load_more($args = array()) {
   if( !empty($cterm) && !is_wp_error($cterm) ){
     $termID = $cterm->term_id;
   }
+  if(!empty($termID)){
+    $query = new WP_Query(array( 
+        'post_type'=> 'post',
+        'post_status' => 'publish',
+        'orderby' => 'date',
+        'order'=> 'DESC',
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'category',
+            'field' => 'term_id',
+            'terms' => $termID
+          )
+        ),
+      ) 
+    );
+  }else{
+   $query = new WP_Query(array( 
+        'post_type'=> 'post',
+        'post_status' => 'publish',
+        'orderby' => 'date',
+        'order'=> 'DESC'
+      ) 
+    );
+  }
+
+  if($query->have_posts()){
+
   echo '<ul class="reset-list" id="post-content">';
       ajax_post_script_load_more($args, $termID);
   echo '</ul>';
@@ -17,6 +44,9 @@ function post_script_load_more($args = array()) {
   <div class="ajaxloading" id="ajxaloader" style="display:none"><img src="'.THEME_URI.'/assets/images/loading.gif" alt="loader"></div>
    <div class="lines-stories-button wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="0.5s"><a href="#" id="loadMore"  data-page="1" data-url="'.admin_url("admin-ajax.php").'" >LOAD MORE</a></div>';
    echo '</div>';
+  }else{
+    echo '<div class="notfound">No Result!</div>';
+  }wp_reset_postdata();
 
 }
 /*
