@@ -18,6 +18,7 @@
 <body <?php body_class(); ?>>
 <?php 
 $logoObj = get_field('hdlogo', 'options');
+$hpopup = get_field('hpopup', 'options');
 if( is_array($logoObj) ){
   $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
 }else{
@@ -26,7 +27,11 @@ if( is_array($logoObj) ){
 ?>
 <div class="bdoverlay"></div>
 
-<?php if( is_front_page() ): ?>
+<?php 
+if( is_front_page() ): 
+$hlogo = $hpopup['logo'];
+$htext = $hpopup['text'];
+?>
 <div class="home-overlay">
   <div class="home-overlay-inr">
     <span class="home-overlay-graphics">
@@ -34,9 +39,15 @@ if( is_array($logoObj) ){
     </span>
     <div class="home-overlay-des">
       <div class="logo-overlay">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-overlay.png"></a>
+        <a href="#">
+          <?php 
+          if( is_array($hlogo) ){
+            echo '<img src="'.$hlogo['url'].'" alt="'.$hlogo['alt'].'" title="'.$hlogo['title'].'">';
+          }
+          ?>
+        </a>
       </div>
-      <p>BY ENTERING OUR SITE YOU AGREE THAT YOU ARE OF LEGAL DRINKING AGE</p>
+      <?php if( !empty($htext) ) echo wpautop($htext); ?>
       <a class="enter-now-btn" href="#">ENTER NOW</a>
     </div>
   </div>
