@@ -158,10 +158,10 @@ add_filter('body_class', 'custom_body_classes');
 
 function get_all_referenties_posts( $query ) {
         if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'product' ) ) {
-            $query->set( 'posts_per_page', '1' );
+            $query->set( 'posts_per_page', '6' );
         }
         if( !is_admin() && $query->is_main_query() && is_tax( 'product_cat' ) ) {
-            $query->set( 'posts_per_page', '1' );
+            $query->set( 'posts_per_page', '6' );
         }
     }
 add_action( 'pre_get_posts', 'get_all_referenties_posts' );
