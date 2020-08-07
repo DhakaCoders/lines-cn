@@ -659,6 +659,9 @@
 	.pp-migration-sec-top-angle-svg {
 	    top: 0px;
 	}
+	.pp-migration-sec-inr-cntlr{
+		margin-top: -30px;
+	}
 }
 @media(max-width: 575px){
 	.pp-des-title {
