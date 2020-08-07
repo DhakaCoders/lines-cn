@@ -218,6 +218,35 @@
 	font-weight: 700;
 }
 
+.pagination ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1;
+}
+.pagination ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0 5px 10px;
+	
+}
+.pagination ul li a{
+	color: #fff;
+}
+.pagination ul li .page-numbers.current,
+.pagination ul li .page-numbers:hover{
+	color: #985001;
+}
+.page-404{
+	min-height: 500px;
+	padding-top: 200px;
+	padding-bottom: 50px;
+}
+
 @media(max-width: 1499px){
 
 }
