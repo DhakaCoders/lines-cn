@@ -229,6 +229,10 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 	.sl-pg-stories-hedding{
 		padding-bottom: 70px;
 	}
+	.sl-pg-post-content-top-left{
+		width: 100%;
+		padding-bottom: 30px;
+	}
 }
 @media(max-width: 991px){
 	.sl-pg-post-content{
