@@ -157,11 +157,11 @@ function custom_body_classes($classes){
 add_filter('body_class', 'custom_body_classes');
 
 function get_all_referenties_posts( $query ) {
-        if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'referentie' ) ) {
-            $query->set( 'posts_per_page', '3' );
+        if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'product' ) ) {
+            $query->set( 'posts_per_page', '1' );
         }
-        if( !is_admin() && $query->is_main_query() && is_tax( 'referenties_cat' ) ) {
-            $query->set( 'posts_per_page', '3' );
+        if( !is_admin() && $query->is_main_query() && is_tax( 'product_cat' ) ) {
+            $query->set( 'posts_per_page', '1' );
         }
     }
 add_action( 'pre_get_posts', 'get_all_referenties_posts' );

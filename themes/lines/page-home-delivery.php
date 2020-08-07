@@ -3,15 +3,22 @@
   Template Name: Home Delivery
 */
 get_header(); 
-?>
-<div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>   
+  $pageTitle = get_the_title(get_the_ID());
+  $custom_page_title = get_field('custom_page_title', get_the_ID());
+  if(!empty(str_replace(' ', '', $custom_page_title))){
+    $pageTitle = $custom_page_title;
+  }
+
+  $pagebanner = get_field('bannerimage', get_the_ID());
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-home-delivery.png';
+?>  
   <section class="page-bnr-shop df-page-bnr">
-    <div class="page-bnr-shop-con" data-parallax="scroll" data-image-src="<?php echo THEME_URI; ?>/assets/images/page-bnr-home-delivery.png">
+    <div class="page-bnr-shop-con" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
-              <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">home delivery</h1>
+              <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
               <div class="main-shop-bnr-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
                 <ul class="reset-list">
                   <li><span>BEERS</span></li>
@@ -51,7 +58,7 @@ get_header();
   $query = new WP_Query(array( 
       'post_type'=> 'product',
       'post_status' => 'publish',
-      'posts_per_page' => 1,
+      'posts_per_page' => 3,
       'paged' => $paged,
       'orderby' => 'date',
       'tax_query' => array(
@@ -98,6 +105,7 @@ get_header();
           <div class="shop-all-beers-sec-grds">
             <ul class="reset-list clearfix">
               <?php 
+                $i = 0.3;
                 while($query->have_posts()): $query->the_post();
                 global $product;
                 $thumb_id = get_post_thumbnail_id(get_the_ID());
@@ -108,7 +116,7 @@ get_header();
                 }
                 $spacifi = get_field('right_col');
               ?>
-              <li class="fls-pro-red wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">
+              <li class="fls-pro-red wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/product-img-bg.jpg);">
                     <a class="overlay-link" href="<?php the_permalink();?>"></a>
@@ -129,7 +137,7 @@ get_header();
                   </div>
                 </div>
               </li>
-              <?php endwhile; ?>
+              <?php $i+= 0.3; endwhile; ?>
             </ul>
           </div>
           <div class="pagination">
