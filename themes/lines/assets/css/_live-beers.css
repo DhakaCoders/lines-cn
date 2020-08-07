@@ -168,7 +168,7 @@
 	}
 	.page-bnr-line-beers{
 		padding-top: 0;
-		min-height: auto;
+		min-height: 515px;
 		padding-top: 50px;
 		padding-bottom: 0;
 	}
@@ -195,7 +195,9 @@
 	.hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr {
 	    padding-bottom: 45px;
 	}
-	
+	.page-bnr-line-beers{
+		min-height: 415px;
+	}
 }
 
 @media(max-width: 767px){
@@ -236,6 +238,12 @@
 	}
 	.core-beer-item-btns .cbibtn-1 a{
 		min-width: 160px;
+	}
+	.page-bnr-line-beers{
+		min-height: 350px;
+	}
+	.hm-beer-list-sec-hdr-title{
+		font-size: 35px;
 	}
 }
 
