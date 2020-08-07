@@ -1,7 +1,7 @@
 
 .banner-page-story{
 	padding-top: 145px;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
 	min-height: 890px;
 }
 .banner-page-story-cntlr{
@@ -46,10 +46,12 @@
 	margin-bottom: 18px;
 }
 .lines-system{
-	padding: 135px 0 117px 0;
+	padding: 0 0 0 0;
+	background: rgb(8,8,8);
+	margin-bottom: 120px;
 }
 .lines-system-innr{
-
+	padding-bottom: 20px;
 }
 .lines-system-cntlr{
 
@@ -76,11 +78,20 @@
 	line-height: 40px;
 	margin-bottom: 18px;
 }
+.sections-cntlr .lines-system{
+	z-index: 8;
+}
+.page-template-page-lines-story .eco-brewing{
+	margin-top: -80px;
+	padding-top: 160px;
+}
 .eco-brewing{
 	padding: 0;
 	position: relative;
-	margin-top: 144px;
+	margin-top: 0;
+	padding-top: 50px;
 	margin-bottom: 120px;
+	background: rgba(8,8,8);
 }
 .eco-brewing-innr{
 	position: relative;
@@ -147,7 +158,7 @@
 		padding-right: 35px;
 	}
 	.lines-system {
-	    padding: 115px 0 90px 0;
+	    padding: 0 0 0 0;
 	}
 	.eco-brewing-desc{
 		padding-left: 40px;
@@ -160,7 +171,7 @@
 	}
 	.banner-page-story{
 		padding-top: 135px;
-		padding-bottom: 92px;
+		padding-bottom: 192px;
 	}
 	.banner-page-story-gelery{
 		max-width: 75%;
@@ -191,7 +202,7 @@
 		padding-right: 0;
 	}
 	.lines-system {
-	    padding: 95px 0 75px 0;
+	    padding: 0 0 75px 0;
 	}
 	.eco-brewing-img{
 		max-width: 100%;
@@ -216,14 +227,13 @@
 @media(max-width: 767px){
 	.banner-page-story{
 		padding-top: 100px;
-		padding-bottom: 85px;
 	}
 	.banner-page-story-desc-title{
 		font-size: 45px;
 	  	margin-bottom: 20px;
 	}
 	.lines-system {
-	    padding: 80px 0 60px 0;
+	    padding: 0 0 0 0;
 	}
 	.eco-brewing-cntlr{
 		padding-top: 20;
@@ -239,7 +249,6 @@
 @media(max-width: 575px){
 	.banner-page-story{
 		padding-top: 100px;
-		padding-bottom: 70px;
 	}
 	.lines-system-desc-title{
 		font-size: 37px;
@@ -273,9 +282,7 @@
 	.banner-page-story-gelery-items{
 		min-height: 180px;
 	}
-	.lines-system {
-	    padding: 65px 0 45px 0;
-	}
+
 }
 @media(max-width: 359px){
 	.banner-page-story-gelery-title-img {
