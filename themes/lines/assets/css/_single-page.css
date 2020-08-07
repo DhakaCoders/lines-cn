@@ -284,6 +284,11 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 @media(max-width: 767px){
 	.sl-pg-post-content{
 	}
+	.sl-pg-post-content-inr{
+		margin-top: -40px;
+		position: relative;
+		z-index: 10;
+	}
 }
 @media(max-width: 639px){
 	.sl-pg-lines-stories-innr{
