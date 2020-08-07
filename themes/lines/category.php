@@ -43,14 +43,14 @@
             ?>
               <div class="shop-filter-menu">
                 <ul class="reset-list">
-                  <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL BEERS</span></a></li>
+                  <li><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL POSTS</span></a></li>
                   <?php 
                   if( $terms ):
                   foreach( $terms as $term ):
 
                   if( $term->slug !='uncategorized' ):
                   ?>
-                  <li><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
+                  <li<?php echo ($cterm->slug == $term->slug)? ' class="active"': '';?>><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
                   <?php endif; endforeach;?>
                   <?php endif; ?>
                 </ul>

@@ -34,13 +34,13 @@ $cterm = get_queried_object();
             ?>
               <div class="shop-filter-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.9s">
                 <ul class="reset-list">
-                  <li class="active"><a href="<?php echo get_the_permalink(get_option( 'woocommerce_shop_page_id' ));?>"><span>ALL BEERS</span></a></li>
+                  <li><a href="<?php echo get_the_permalink(get_option( 'woocommerce_shop_page_id' ));?>"><span>ALL BEERS</span></a></li>
                   <?php 
                   if( $terms ):
                   foreach( $terms as $term ):
                   if( $term->slug !='uncategorized' ):
                   ?>
-                  <li><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
+                  <li<?php echo ($cterm->slug == $term->slug)? ' class="active"': '';?>><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
                   <?php endif; endforeach;?>
                   <?php endif; ?>
                 </ul>
