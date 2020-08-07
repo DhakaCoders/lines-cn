@@ -122,13 +122,28 @@ if( is_array($logoObj) ){
           wp_nav_menu( $menuOptions ); 
         ?>
       </div>
+      <?php 
+        $instagram = get_field('instagram_url', 'options');
+        $facebook = get_field('facebook_url', 'options');
+        $twitter = get_field('twitter_url', 'options');
+        $snapchat = get_field('snapchat_url', 'options');
+        $youtube = get_field('youtube_url', 'options');
+      ?>
       <div class="xs-popup-btm-content">
         <ul class="reset-list">
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <?php if( !empty( $facebook ) ): ?>
+          <li><a href="<?php echo $facebook; ?>"><i class="fab fa-facebook-f"></i></a></li>
+          <?php endif; if( !empty( $twitter ) ): ?>
+          <li><a href="<?php echo $twitter; ?>"><i class="fab fa-twitter"></i></a></li>
+          <?php endif; if( !empty( $instagram ) ): ?>
+          <li><a href="<?php echo $instagram; ?>"><i class="fab fa-instagram"></i></a></li>
+          <?php endif; if( !empty( $snapchat ) ): ?>
+          <li><a href="<?php echo $snapchat; ?>"><i class="fab fa-snapchat-ghost"></i></a></li>
+          <?php endif; if( !empty( $youtube ) ): ?>
+          <li><a href="<?php echo $youtube; ?>"><i class="fab fa-youtube"></i></a></li>
+        <?php endif; ?>
+
+
         </ul>
       </div>
     </div>

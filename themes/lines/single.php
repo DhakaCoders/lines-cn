@@ -2,6 +2,7 @@
   get_header(); 
   while ( have_posts() ) :
   the_post();
+  $permalink = get_the_permalink();
   $pagebanner = get_field('bannerimage', get_the_ID());
   if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/event-banner-slider-v2.png';
   ?>
@@ -59,27 +60,25 @@
               <h2 class="sl-pg-page-title">
                 <?php the_title(); ?>
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus est nisi, accumsan sit amet lectus ut, porttitor posuere purus. Vestibulum interdum tincidunt tortor sit amet posuere. Phasellus condimentum tellus nibh, quis varius purus tincidunt quis. </p>
+              <?php 
+                $toptext = get_field('toptext', get_the_ID());
+                if( !empty($toptext) ) echo wpautop( $toptext );
+              ?>
             </div>
 
             <div class="sl-pg-page-inr-desc-cntlr wow fadeInUpShort" data-wow-duration="1.0s" data-wow-delay="1.0s">
-              <h3>Sed pretium varius metus</h3>
-              <img src="<?php echo THEME_URI; ?>/assets/images/sl-pg-desc-img-001.jpg" alt="">
-              <p>Ut vel massa hendrerit, lacinia eros eget, faucibus elit. Cras id dapibus ante. Nam molestie, nisi ut euismod sagittis, massa erat scelerisque nibh, non maximus lectus risus vel lectus. Mauris ac dui sodales, molestie lacus non, gravida tortor. Donec <a href="#">dictum quam est,</a> sit amet fringilla elit tincidunt at. Nullam semper turpis in feugiat sollicitudin. Sed quis fringilla lacus, eu sagittis nisl. In semper, tellus quis malesuada laoreet, ipsum nibh rhoncus diam, eu imperdiet sem massa sit amet elit. Curabitur vulputate velit non metus pretium maximus. Cras posuere, ex at porttitor tristique, sapien urna efficitur justo, ut posuere magna velit id massa. Quisque ornare pharetra arcu.</p>
-              <p>Donec quis suscipit risus. Cras rutrum eget sapien nec ultrices. Sed ultricies vehicula diam sit amet mattis. Pellentesque auctor odio non metus vestibulum, nec pretium orci accumsan. Ut a arcu massa. Sed <a href="#">elementum mi fermentum</a> libero finibus, nec viverra elit pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
-              <h4>Nullam pharetra arcu vitae</h4>
-              <p>Fusce ligula massa, tincidunt in ornare quis, iaculis sit amet libero. Donec iaculis tempor massa, scelerisque auctor nisi rutrum at. Sed pretium varius metus, id ultrices erat finibus sed. Maecenas id facilisis ante, sit amet hendrerit sem. Donec gravida, nisl pharetra venenatis molestie, lacus elit pretium dolor, sit amet rutrum massa leo at ar<a href="#">cu. Aenean dignissim di</a>am ut ultrices sollicitudin. Cras nisi nisl, luctus hendrerit condimentum vitae, vehicula non dui. Suspendisse vel ligula vel metus blandit molestie.</p>
+              <?php the_content(); ?>
             </div>
             <div class="sl-pg-social-link wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="0.5s">
               <h4 class="sl-pg-social-title">SHARE:</h4>   
               <ul class="reset-list">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/home?status=<?php echo $permalink; ?>"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/?url=<?php echo $permalink; ?>"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://plus.google.com/share?url=<?php echo $permalink; ?>"><i class="fab fa-google-plus-g"></i></a></li>
                 <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fab fa-reddit"></i></a></li>
-                <li><a href="#"><i class="fab fa-digg"></i></a></li>
+                <li><a href="http://reddit.com/submit?url=<?php echo $permalink; ?>"><i class="fab fa-reddit"></i></a></li>
+                <li><a href="http://digg.com/submit?url=<?php echo $permalink; ?>"><i class="fab fa-digg"></i></a></li>
               </ul>
             </div>
           </div>

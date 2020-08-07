@@ -57,9 +57,10 @@ $cterm = get_queried_object();
   $query = new WP_Query(array( 
       'post_type'=> 'product',
       'post_status' => 'publish',
-      'posts_per_page' => 1,
+      'posts_per_page' => 6,
       'paged' => $paged,
       'orderby' => 'date',
+      'order'=> 'DESC',
       'tax_query' => array(
         array(
           'taxonomy' => 'product_cat',
