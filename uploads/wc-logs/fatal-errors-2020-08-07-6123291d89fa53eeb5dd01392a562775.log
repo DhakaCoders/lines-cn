@@ -1,2 +1,42 @@
 2020-08-07T16:29:45+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\inc\posts-load.php on line 47
 
+2020-08-07T20:20:07+00:00 CRITICAL Uncaught Error: Call to undefined function cbv_get_excerpt() in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php:357
+Stack trace:
+#0 C:\xampp\htdocs\2020\08\lines\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\08\lines\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\08\lines\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php on line 357
+
+2020-08-07T20:20:19+00:00 CRITICAL Uncaught Error: Call to undefined function cbv_get_excerpt() in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php:357
+Stack trace:
+#0 C:\xampp\htdocs\2020\08\lines\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\08\lines\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\08\lines\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php on line 357
+
+2020-08-07T20:20:31+00:00 CRITICAL Uncaught Error: Call to undefined function cbv_get_excerpt() in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php:357
+Stack trace:
+#0 C:\xampp\htdocs\2020\08\lines\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\08\lines\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\08\lines\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php on line 357
+
+2020-08-07T20:20:59+00:00 CRITICAL Uncaught Error: Call to undefined function cbv_get_excerpt() in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php:357
+Stack trace:
+#0 C:\xampp\htdocs\2020\08\lines\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\08\lines\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\08\lines\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php on line 357
+
+2020-08-07T20:21:14+00:00 CRITICAL Uncaught Error: Call to undefined function cbv_get_excerpt() in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php:357
+Stack trace:
+#0 C:\xampp\htdocs\2020\08\lines\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\08\lines\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\08\lines\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\08\lines\lines-cn\themes\lines\front-page.php on line 357
+

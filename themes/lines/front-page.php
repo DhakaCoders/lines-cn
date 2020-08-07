@@ -354,7 +354,7 @@
                 <div>
                   <strong>Posted <?php echo get_the_date('l j F Y - g:i'); ?></strong>
                 </div>
-                <?php echo wpautop( cbv_get_excerpt() ); ?>
+                <p><?php echo cbv_get_excerpt(50); ?></p>
               </div>
               <div class="hm-latest-news-item-btns">
                 <div class="hm-lnib-1 wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.7s">
