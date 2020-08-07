@@ -17,10 +17,12 @@
   if(!empty(str_replace(' ', '', $custom_page_title))){
     $pageTitle = $custom_page_title;
   } 
+  $pagebanner = get_field('bannerimage', $shopID);
+if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/cnt-page-banner-v2.jpg';
 ?>
   <section class="page-banner-cnt df-page-bnr">
     <div class="page-banner-cnt-controller" style="overflow: hidden;">
-      <div class="page-banner-cnt-des bg-position-btm" style="background: url('assets/images/cnt-page-banner-v2.jpg');">
+      <div class="page-banner-cnt-des bg-position-btm" style="background: url(<?php echo $pagebanner; ?>);">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">

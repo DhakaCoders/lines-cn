@@ -21,9 +21,9 @@ get_header();
               <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
               <div class="main-shop-bnr-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
                 <ul class="reset-list">
-                  <li><span>BEERS</span></li>
+                  <li><a href="<?php echo get_the_permalink(get_option( 'woocommerce_shop_page_id' ));?>">BEERS</a></li>
                   <li><span>MERCH</span></li>
-                  <li class="active"><span>HOME DELIVERY</span></li>
+                  <li class="active"><a href="<?php echo get_permalink(358); ?>">HOME DELIVERY</a></li>
                 </ul>
               </div>
               <div class="shop-filter-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.9s">
