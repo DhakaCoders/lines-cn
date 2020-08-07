@@ -453,9 +453,11 @@
 		padding-left: 00;
 		padding-right: 0;
 	}
-	.main-shop-bnr-menu ul li span{
+	.main-shop-bnr-menu ul li span,
+	.main-shop-bnr-menu ul li a{
 		display: block;
 	}
+
 }
 
 @media(max-width: 479px){

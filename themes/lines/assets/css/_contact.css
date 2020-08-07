@@ -412,7 +412,9 @@
 	.lb-cntinf-right-form {
 	    width: 50%;
 	}
-	
+	.lb-inputfield input[type=text], .lb-inputfield input[type=email]{
+		font-size: 17px;
+	}
 }
 
 @media(max-width: 767px){
@@ -537,7 +539,9 @@
 	.page-banner-cnt-des {
 		min-height: 500px;
 	}
-
+	.lb-cntinf-right-form{
+		margin-top: -30px;
+	}
 }
 
 @media(max-width: 479px){

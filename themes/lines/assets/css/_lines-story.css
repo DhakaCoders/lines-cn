@@ -251,7 +251,7 @@
 		padding-top: 100px;
 	}
 	.lines-system-desc-title{
-		font-size: 37px;
+		font-size: 35px;
 		margin-bottom: 20px;
 	}
 	.eco-brewing-cntlr{
@@ -265,6 +265,10 @@
 	
 	.banner-page-story-desc-title{
 		font-size: 40px;
+	}
+	.lines-system-desc p,
+	.eco-brewing-desc p{
+		line-height: 1.8;
 	}
 
 }
