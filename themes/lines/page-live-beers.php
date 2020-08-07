@@ -34,13 +34,14 @@
     <div class="container">
       <div class="row">
         <?php 
+        $i= 0.5;
         foreach( $intros as $intro ): 
           $link = $intro['link'];
 
 
         ?>
         <div class="col-md-6">
-          <div class="core-beer-item">
+          <div class="core-beer-item wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="<?php echo $i;?>s">
             <div class="core-beer-item-hdr">
               <?php if( !empty($intro['title']) ) printf('<h3 class="cbihdr-title">%s</h3>', $intro['title']); ?>
               <?php if( !empty($intro['subtitle']) ) printf('<span>%s</span>', $intro['subtitle']); ?>
@@ -88,7 +89,7 @@
             </div>
           </div>
         </div>
-      <?php endforeach; ?>
+      <?php $i+=0.5; endforeach; ?>
       </div>
     </div>
   </section>
@@ -115,7 +116,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="hm-beer-list-sec-hdr">
+            <div class="hm-beer-list-sec-hdr wow fadeInUpShort" data-wow-duration="1.0s" data-wow-delay="0.5s">
               <?php if( !empty($beerlist['title']) ) printf('<h2 class="hm-beer-list-sec-hdr-title">%s</h2>', $beerlist['title']); ?>
             </div>
           </div>
@@ -123,7 +124,7 @@
             <div class="hm-beer-list-grds-cntlr">
               <ul class="reset-list clearfix">
                 <?php if( $availables ): ?>
-                <li>
+                <li class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="0.5s">
                   <div class="hm-beer-list-grd-title">
                     <h3 class="available-title">AVAILABLE</h3>
                   </div>
@@ -166,7 +167,7 @@
                 </li>
                 <?php endif; ?>
                 <?php if( $tanks ): ?>
-                <li>
+                <li class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="1.0s">
                   <div class="hm-beer-list-grd-title">
                     <h3 class="in-the-tank-title">IN THE TANK</h3>
                   </div>
@@ -209,7 +210,7 @@
                 </li>
                 <?php endif; ?>
                 <?php if( $concepts ): ?>
-                <li>
+                <li class="wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="1.5s">
                   <div class="hm-beer-list-grd-title">
                     <h3 class="concept-title">CONCEPT</h3>
                   </div>
