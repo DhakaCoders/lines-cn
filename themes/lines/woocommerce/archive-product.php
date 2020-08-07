@@ -1,21 +1,27 @@
 <?php 
 get_header(); 
 $shopID = get_option( 'woocommerce_shop_page_id' );
+$pageTitle = get_the_title($shopID);
+$custom_page_title = get_field('custom_page_title', $shopID);
+if(!empty(str_replace(' ', '', $custom_page_title))){
+  $pageTitle = $custom_page_title;
+}
 
-?>
-  <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>   
+$pagebanner = get_field('bannerimage', $shopID);
+if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-shop-v2.png';
+?>  
   <section class="page-bnr-shop df-page-bnr">
-    <div class="page-bnr-shop-con bg-position-btm" data-parallax="scroll" data-image-src="<?php echo THEME_URI; ?>/assets/images/page-bnr-shop-v2.png">
+    <div class="page-bnr-shop-con bg-position-btm" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
-              <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s">SHOP</h1>
+              <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
               <div class="main-shop-bnr-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
                 <ul class="reset-list">
-                  <li class="active"><span>BEERS</span></li>
+                  <li class="active"><a href="<?php echo get_the_permalink(get_option( 'woocommerce_shop_page_id' ));?>">BEERS</a></li>
                   <li><span>MERCH</span></li>
-                  <li><span>HOME DELIVERY</span></li>
+                  <li><a href="<?php echo get_permalink(358); ?>">HOME DELIVERY</a></li>
                 </ul>
               </div>
              <?php 
