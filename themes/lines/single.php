@@ -62,7 +62,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus est nisi, accumsan sit amet lectus ut, porttitor posuere purus. Vestibulum interdum tincidunt tortor sit amet posuere. Phasellus condimentum tellus nibh, quis varius purus tincidunt quis. </p>
             </div>
 
-            <div class="sl-pg-page-inr-desc-cntlr wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="1.0s">
+            <div class="sl-pg-page-inr-desc-cntlr wow fadeInUpShort" data-wow-duration="1.0s" data-wow-delay="1.0s">
               <h3>Sed pretium varius metus</h3>
               <img src="<?php echo THEME_URI; ?>/assets/images/sl-pg-desc-img-001.jpg" alt="">
               <p>Ut vel massa hendrerit, lacinia eros eget, faucibus elit. Cras id dapibus ante. Nam molestie, nisi ut euismod sagittis, massa erat scelerisque nibh, non maximus lectus risus vel lectus. Mauris ac dui sodales, molestie lacus non, gravida tortor. Donec <a href="#">dictum quam est,</a> sit amet fringilla elit tincidunt at. Nullam semper turpis in feugiat sollicitudin. Sed quis fringilla lacus, eu sagittis nisl. In semper, tellus quis malesuada laoreet, ipsum nibh rhoncus diam, eu imperdiet sem massa sit amet elit. Curabitur vulputate velit non metus pretium maximus. Cras posuere, ex at porttitor tristique, sapien urna efficitur justo, ut posuere magna velit id massa. Quisque ornare pharetra arcu.</p>
