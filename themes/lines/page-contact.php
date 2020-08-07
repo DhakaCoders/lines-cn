@@ -22,7 +22,7 @@ if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/cnt-page-banner
 ?>
   <section class="page-banner-cnt df-page-bnr">
     <div class="page-banner-cnt-controller" style="overflow: hidden;">
-      <div class="page-banner-cnt-des bg-position-btm" style="background: url(<?php echo $pagebanner; ?>);">
+      <div class="page-banner-cnt-des bg-position-btm" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">

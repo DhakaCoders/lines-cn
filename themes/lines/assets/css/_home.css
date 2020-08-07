@@ -347,6 +347,9 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.hm-cat-item strong br{
+	display: block;
+}
 
 
 .hm-beer-list-sec{
@@ -1060,7 +1063,7 @@ body{
 }
 @media(max-width: 359px){
 	.hm-cat-item strong {
-	    font-size: 21px;
+	    font-size: 22px;
 	}
 }
 

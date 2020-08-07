@@ -137,7 +137,7 @@
                   <table class="table">
                     <?php foreach( $tapitems as $tapitem ): ?>
                     <tr>
-                      <td><span class="red" style="color: <?php echo $tapitem['point_color']; ?>"></span></td>
+                      <td><span style="background: <?php echo $tapitem['point_color']; ?>"></span></td>
                       <td><?php if( !empty($tapitem['title_1']) ) printf('%s', $tapitem['title_1']); ?></td>
                       <td><?php if( !empty($tapitem['title_2']) ) printf('%s', $tapitem['title_2']); ?></td>
                       <td class="triadic"><?php if( !empty($tapitem['abv']) ) printf('%s', $tapitem['abv']); ?><?php if( !empty($tapitem['abv']) ) echo '% ABV'; ?></td>
