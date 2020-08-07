@@ -539,7 +539,9 @@
 	.page-banner-cnt-des {
 		min-height: 500px;
 	}
-
+	.lb-cntinf-right-form{
+		margin-top: -30px;
+	}
 }
 
 @media(max-width: 479px){
