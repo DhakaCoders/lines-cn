@@ -15,6 +15,7 @@
 <body <?php body_class(); ?>>
 <?php 
 $logoObj = get_field('hdlogo', 'options');
+$hpopup = get_field('hpopup', 'options');
 if( is_array($logoObj) ){
   $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
 }else{
@@ -24,8 +25,10 @@ if( is_array($logoObj) ){
 <div class="bdoverlay"></div>
 
 <?php 
+$hlogo = $hpopup['logo'];
+$htext = $hpopup['text'];
 if( isset( $_POST['agevarification'] ) && $_POST['agevarification'] == 1 ) $_SESSION['agevarification'] = 1;
-if( !isset( $_SESSION['agevarification'] ) ): 
+if( !isset( $_SESSION['agevarification'] ) ):
 ?>
 <div class="home-overlay">
   <div class="home-overlay-inr">
@@ -34,9 +37,15 @@ if( !isset( $_SESSION['agevarification'] ) ):
     </span>
     <div class="home-overlay-des">
       <div class="logo-overlay">
-        <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-overlay.png"></a>
+        <a href="#">
+          <?php 
+          if( is_array($hlogo) ){
+            echo '<img src="'.$hlogo['url'].'" alt="'.$hlogo['alt'].'" title="'.$hlogo['title'].'">';
+          }
+          ?>
+        </a>
       </div>
-      <p>BY ENTERING OUR SITE YOU AGREE THAT YOU ARE OF LEGAL DRINKING AGE</p>
+      <?php if( !empty( $htext ) ) echo wpautop($htext); ?>
       <form action="" method="POST">
         <input type="hidden" name="agevarification"  id="agevarification" value="1">
         <button type="submit" class="enter-now-btn" href="#">ENTER NOW</button>

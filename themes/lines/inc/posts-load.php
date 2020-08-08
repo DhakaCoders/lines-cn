@@ -130,7 +130,7 @@ function ajax_post_script_load_more($args, $termID = '') {
               <h4 class="lines-stories-items-title" ><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
             </div>
             <div class="lines-stories-items-desc">
-              <?php the_excerpt(); ?>
+              <p><?php echo cbv_get_excerpt(); ?></p>
             <div class="sl-pg-grid-btn">
               <a href="<?php the_permalink();?>"><?php _e('READ MORE', THEME_NAME); ?></a>
             </div>

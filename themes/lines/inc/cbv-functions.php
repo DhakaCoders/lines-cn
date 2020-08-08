@@ -86,7 +86,7 @@ return 50;
 }
 add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
 
-function cbv_get_excerpt( $limit = 50 ){
+function cbv_get_excerpt( $limit = 20 ){
   $excerpt = explode(' ', get_the_excerpt(), $limit);
   if (count($excerpt)>=$limit) {
     array_pop($excerpt);
@@ -94,6 +94,7 @@ function cbv_get_excerpt( $limit = 50 ){
   } else {
     $excerpt = implode(" ",$excerpt);
   } 
+  $excerpt = preg_replace("/<.*?>/", " ", $excerpt);
   return $excerpt;
 }
 
