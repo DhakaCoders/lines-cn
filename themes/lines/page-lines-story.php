@@ -134,7 +134,7 @@
     if( $showhideeco ):
       $echobrewing = get_field('echobrewing', $thisID);
       if($echobrewing):
-      $link1 = $echobrewing['link'];
+      
   ?>
   <section class="eco-brewing">
     <span class="lines-story-eco-brewing-btm-angle">
