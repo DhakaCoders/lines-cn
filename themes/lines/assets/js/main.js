@@ -8,6 +8,11 @@ $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
+
+$('.fl-modal-des-btm-form input').focus(function(){
+   $(this).removeAttr('placeholder');
+});
+
 /*$(window).scroll(function(){
   var sticky = $('header.header'),
       scroll = $(window).scrollTop();
