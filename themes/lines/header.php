@@ -4,10 +4,7 @@
 <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
-  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
-<?php } ?>
+  <link rel="shortcut icon" href="<?php echo THEME_URI; ?>/assets/images/favicon.png" />
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,7 +23,10 @@ if( is_array($logoObj) ){
 ?>
 <div class="bdoverlay"></div>
 
-<?php if( is_front_page() ): ?>
+<?php 
+if( isset( $_POST['agevarification'] ) && $_POST['agevarification'] == 1 ) $_SESSION['agevarification'] = 1;
+if( !isset( $_SESSION['agevarification'] ) ): 
+?>
 <div class="home-overlay">
   <div class="home-overlay-inr">
     <span class="home-overlay-graphics">
@@ -37,11 +37,15 @@ if( is_array($logoObj) ){
         <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo-overlay.png"></a>
       </div>
       <p>BY ENTERING OUR SITE YOU AGREE THAT YOU ARE OF LEGAL DRINKING AGE</p>
-      <a class="enter-now-btn" href="#">ENTER NOW</a>
+      <form action="" method="POST">
+        <input type="hidden" name="agevarification"  id="agevarification" value="1">
+        <button type="submit" class="enter-now-btn" href="#">ENTER NOW</button>
+      </form>
     </div>
   </div>
 </div> 
 <?php endif; ?>
+
 <div class="hdr-gap"></div>
 <header class="header">
   <span class="hdr-btm-angle">
@@ -150,11 +154,12 @@ if( is_array($logoObj) ){
   </div>
 </header>
 <?php 
-if( is_page('contact') ){
+if( is_page('contact1') ){
   $bgclass = ' hasBg';
 } else {
   $bgclass = '';
 }
 ?>
 <div class="sections-cntlr<?php echo $bgclass;?>">
-<div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>
+<div class="section-graphics-top">
+  <img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>

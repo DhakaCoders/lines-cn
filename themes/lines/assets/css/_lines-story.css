@@ -3,6 +3,25 @@
 	padding-top: 145px;
 	padding-bottom: 200px;
 	min-height: 890px;
+	position: relative;
+}
+.hasBannerOverlay:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*background: rgba(0,0,0,0.5);*/
+	z-index: 1;
+}
+.banner-page-story-innr,
+.bannerOverlayInner{
+	position: relative;
+	z-index: 2;
+}
+.hasBannerOverlay{
+	position: relative;
 }
 .banner-page-story-cntlr{
 	display: flex;
@@ -91,12 +110,11 @@
 	margin-top: 0;
 	padding-top: 50px;
 	margin-bottom: 120px;
-	background: rgba(8,8,8);
+	background: rgba(8,8,8, 0.4);
 }
 .eco-brewing-innr{
 	position: relative;
 	z-index: 6;
-	background-color: #000;
 }
 .lines-story-eco-brewing-top-angle{
 	position: absolute;
