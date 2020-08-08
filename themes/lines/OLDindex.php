@@ -1,42 +1,36 @@
   <?php 
-  get_header(); 
-  $cterm = get_queried_object();
-  $thisID = get_option('page_for_posts ');
-  $pageTitle = get_the_title($thisID);
-  $custom_page_title = get_field('custom_page_title', $thisID);
-  if(!empty(str_replace(' ', '', $custom_page_title))){
-    $pageTitle = $custom_page_title;
-  }
-  $urlex = explode('/', $_SERVER['REQUEST_URI']);
+    get_header();
+    $thisID = get_option('page_for_posts ');
+    $pageTitle = get_the_title($thisID);
+    $custom_page_title = get_field('custom_page_title', $thisID);
+    if(!empty(str_replace(' ', '', $custom_page_title))){
+      $pageTitle = $custom_page_title;
+    }  
   ?>
-  <span id="catID" data-id="<?php echo $cterm->term_id; ?>" style="display: none;"></span>
+  <div class="section-graphics-top"><img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div> 
   <section class="page-bnr-shop news-events-banner df-page-bnr">
     <div class="page-bnr-shop-con bg-position-btm news-events-banner-con" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/page-bnr-news-events.png');">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">
-              <h1 class="pbs-title"><?php echo $pageTitle; ?></h1>
+              <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
                <?php 
-                if( !empty($cterm->parent) && $cterm->parent > 0){
-                  $parentID = $cterm->parent;
-                }else{
-                  $parentID = $cterm->term_id;
-                }
                 $tterms = get_terms( array(
-                  'taxonomy' => 'category',
+                  'taxonomy' => 'news_type',
                   'hide_empty' => false,
                   'parent' => 0
                 ) ); 
                 if( $tterms ):  
               ?>
-              <div class="main-shop-bnr-menu">
+              <div class="main-shop-bnr-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
                 <ul class="reset-list">
-                  <?php foreach( $tterms as $tterm ):
+                  <?php $i = 1; foreach( $tterms as $tterm ):
 
-                  if( $tterm->slug !='uncategorized' ): ?>
-                  <li<?php echo ($parentID == $tterm->term_id)? ' class="active"': '';?>><a href="<?php echo get_term_link($tterm); ?>"><?php echo $tterm->name; ?></a></li>
-                  <?php endif; endforeach; ?>
+                   if( $tterm->slug !='uncategorized' ): 
+                  ?>
+                  <li class="<?php echo ($i == 1)?'active':'';?>"><a href="?category=<?php echo $tterm->term_id; ?>"><?php echo $tterm->name; ?></a></li>
+                  <?php $i++; endif; endforeach; ?>
                 </ul>
               </div>
             <?php endif; ?>
@@ -44,25 +38,19 @@
               $terms = get_terms( array(
                 'taxonomy' => 'category',
                 'hide_empty' => false,
-                'parent' => $parentID
+                'parent' => 0
               ) );   
             ?>
-              <div class="shop-filter-menu">
+              <div class="shop-filter-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.9s">
                 <ul class="reset-list">
-                  <?php if(in_array('blog', $urlex)):?>
-                  <li<?php echo ($cterm->slug == 'blog')? ' class="active"': '';?>><a href="<?php echo home_url('news-and-events/blog');?>"><span>ALL POSTS</span></a></li>
-                  <?php elseif($cterm->slug == 'events'): ?>
-                    <li<?php echo (in_array('events', $urlex))? ' class="active"': '';?>><a href="<?php echo home_url('news-and-events/events');?>"><span>ALL Events</span></a></li>
-                  <?php elseif(in_array('recipes', $urlex)): ?>
-                    <li<?php echo ($cterm->slug == 'recipes')? ' class="active"': '';?>><a href="<?php echo home_url('news-and-events/recipes');?>"><span>ALL Recipes</span></a></li>
-                  <?php endif; ?>
+                  <li class="active"><a href="<?php echo get_the_permalink(get_option('page_for_posts '));?>"><span>ALL Posts</span></a></li>
                   <?php 
                   if( $terms ):
                   foreach( $terms as $term ):
 
                   if( $term->slug !='uncategorized' ):
                   ?>
-                  <li<?php echo ($cterm->slug == $term->slug)? ' class="active"': '';?>><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
+                  <li><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
                   <?php endif; endforeach;?>
                   <?php endif; ?>
                 </ul>
