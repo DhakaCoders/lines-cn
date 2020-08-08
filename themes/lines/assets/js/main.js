@@ -162,11 +162,10 @@ function initialize(){
       scrollwheel: false,
       zoomControl: true,
       disableDefaultUI: true,
-      zoom:7,
+      zoom:19,
       streetViewControl: false,
       rotateControl: true,
-      mapTypeId:google.maps.MapTypeId.ROADMAP,
-      styles: CustomMapStyles
+      mapTypeId:google.maps.MapTypeId.ROADMAP
       };
 
     var map= new google.maps.Map(document.getElementById('mapID'),mapProp);
@@ -279,10 +278,10 @@ $('.hdr-humbergur-btn').on('click', function(e){
     $(this).toggleClass('sub-menu-active');
   });
 
-$('.enter-now-btn').on('click', function(e){
+/*$('.enter-now-btn').on('click', function(e){
   e.preventDefault();
   $('.home-overlay').fadeOut(300);
-});
+});*/
 
 
 $('.qty').each(function() {

@@ -64,7 +64,8 @@ body{
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.home-overlay-des > a{
+.home-overlay-des  a.enter-now-btn,
+.home-overlay-des button.enter-now-btn{
 	background: url(../images/enter-now-btn-bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -80,8 +81,12 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 14px;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
 }
-.home-overlay-des > a:hover{
+.home-overlay-des  a.enter-now-btn:hover,
+.home-overlay-des button.enter-now-btn:hover{
 	color: #FF7274;
 }
 
@@ -383,7 +388,7 @@ body{
 
 .hm-beer-list-sec-inr{
     /*background: url(../images/hm-beer-list-sec-bg.png);*/
-    background: rgba(38,34,35,0.74);
+    background: rgba(38,34,35,0.50);
 }
 .hm-beer-list-sec-hdr{
 	text-align: center;
@@ -634,7 +639,7 @@ body{
 }
 .eco-brewing-sec-inr{
 	/*background: url(../images/eco-brewing-sec-bg.png);*/
-	background: rgba(38,34,35,.74);
+	background: rgba(38,34,35,0.40);
 
 }
 .eco-brewing-sec-hdr{
@@ -1001,7 +1006,8 @@ body{
 	.logo-overlay a{
 		max-width: 200px;
 	}
-	.home-overlay-des > a{
+	.home-overlay-des  a.enter-now-btn,
+	.home-overlay-des button.enter-now-btn{
 		font-size: 38px;
 	}
 	.eco-brewing-sec-hdr {
@@ -1084,7 +1090,8 @@ body{
 	.home-overlay-des p {
 	    font-size: 22px;
 	}
-	.home-overlay-des > a{
+	.home-overlay-des  a.enter-now-btn,
+	.home-overlay-des button.enter-now-btn{
 		font-size: 40px;
 		max-width: 375px;
 		height: 120px;
@@ -1098,7 +1105,8 @@ body{
 	.home-overlay-des p {
 	    font-size: 20px;
 	}
-	.home-overlay-des > a {
+	.home-overlay-des  a.enter-now-btn,
+	.home-overlay-des button.enter-now-btn{
 	    font-size: 35px;
 	    max-width: 350px;
 	    height: 115px;
@@ -1112,7 +1120,8 @@ body{
 	.home-overlay-des p {
 	    font-size: 19px;
 	}
-	.home-overlay-des > a {
+	.home-overlay-des  a.enter-now-btn,
+	.home-overlay-des button.enter-now-btn{
 	    font-size: 30px;
 	    max-width: 300px;
 	    height: 110px;

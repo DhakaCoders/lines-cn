@@ -1,0 +1,2 @@
+2020-08-08T01:36:28+00:00 CRITICAL Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in E:\Development\server\htdocs\2020\07\lines\lines-cn\themes\lines\header.php on line 27
+

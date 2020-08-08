@@ -435,6 +435,9 @@ body.active-scroll-off{
 .xs-main-nav > ul > li > a{
 	text-transform: uppercase;
 }
+.xs-main-nav > ul > li > a br{
+	display: none;
+}
 .xs-nav-cntlr .sub-menu{
 	display: none;
 	padding-top: 10px;

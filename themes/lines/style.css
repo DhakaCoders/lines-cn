@@ -31,21 +31,22 @@ Text Domain: linesbrew
 	transform: scale(1) rotate(0deg);
 }
 .section-graphics-top img{
-	max-height: 65%;
+	max-height: 90%;
 	width: auto;
 }
 
 
 .hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr,
-.bth-rp-sec-inr,
-body.contact,.eco-brewing-innr,
+/*body.contact,.eco-brewing-innr,*/
 .news-events-grds-sec .lines-stories-innr,.shop-pre-ftr-inr,
 .sl-pg-articles .sl-pg-lines-stories-innr{
 	background: rgba(8, 8, 8, 0.7)!important;
 }
-
+.bth-rp-sec-inr{
+	background: rgba(8, 8, 8, 0.4)!important;
+}
 .hm-gallery-sec-bg{
-	background: rgba(0, 0, 0, 0.7)!important;
+	background: rgba(0, 0, 0, 0.5)!important;
 }
 
 .story-page-2 .banner-page-story{
