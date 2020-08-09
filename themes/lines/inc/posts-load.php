@@ -111,9 +111,9 @@ function ajax_post_script_load_more($args, $termID = '') {
     while($query->have_posts()): $query->the_post();
       $thumb_id = get_post_thumbnail_id(get_the_ID());
       if(!empty($thumb_id)){
-        $thumb = cbv_get_image_src($thumb_id, 'hbloggrid');
+        $thumb = cbv_get_image_src($thumb_id, 'bloggrid');
       } else {
-        $thumb = THEME_URI.'/assets/images/hdflt-img.jpg';
+        $thumb = THEME_URI.'/assets/images/dfblog-img.jpg';
       }
         ?>
         <li class="wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="<?php echo $i;?>s">

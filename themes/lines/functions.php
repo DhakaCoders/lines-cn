@@ -27,6 +27,8 @@ if( !function_exists('cbv_theme_setup') ){
 			add_theme_support('category-thumbnails');
 		}
         add_image_size( 'hbloggrid', 1170, 510, true );
+        add_image_size( 'bloggrid', 350, 230, true );
+        add_image_size( 'productgrid', 340, 226, true );
         add_image_size( 'hgallery', 270, 320, true );
         add_image_size( 'brewerygallery', 586, 386, true );
         add_image_size( 'linesgallery', 590, 340, true );
