@@ -9,10 +9,7 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 
 $pagebanner = get_field('bannerimage', $shopID);
 if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-shop-v2.png';
-$cterm = get_queried_object();
-
-$urlex = explode('/', $_SERVER['REQUEST_URI']);
-?> 
+?>  
   <section class="page-bnr-shop df-page-bnr">
     <div class="page-bnr-shop-con bg-position-btm" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
       <div class="container">
@@ -21,50 +18,28 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
             <div class="page-bnr-shop-inr">
               <h1 class="pbs-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
               <div class="main-shop-bnr-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.6s">
-              <?php 
-                if( !empty($cterm->parent) && $cterm->parent > 0){
-                  $parentID = $cterm->parent;
-                }else{
-                  $parentID = $cterm->term_id;
-                }
-                $tterms = get_terms( array(
-                  'taxonomy' => 'product_cat',
-                  'hide_empty' => false,
-                  'parent' => 0
-                ) ); 
-                if( $tterms ):  
-              ?>
                 <ul class="reset-list">
-                  <?php foreach( $tterms as $tterm ):
-
-                  if( $tterm->slug !='uncategorized' ): ?>
-                  <li<?php echo ($parentID == $tterm->term_id)? ' class="active"': '';?>><a href="<?php echo get_term_link($tterm); ?>"><?php echo $tterm->name; ?></a></li>
-                  <?php endif; endforeach; ?>
+                  <li class="active"><a href="<?php echo get_the_permalink(get_option( 'woocommerce_shop_page_id' ));?>">BEERS</a></li>
+                  <li><span>MERCH</span></li>
+                  <li><a href="<?php echo get_permalink(358); ?>">HOME DELIVERY</a></li>
                 </ul>
-                <?php endif; ?>
               </div>
              <?php 
               $terms = get_terms( array(
                 'taxonomy' => 'product_cat',
                 'hide_empty' => false,
-                'parent' => $parentID
+                'parent' => 0
               ) );   
             ?>
               <div class="shop-filter-menu wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.9s">
                 <ul class="reset-list">
-                  <?php if(in_array('beers', $urlex)):?>
-                  <li<?php echo ($cterm->slug == 'beers')? ' class="active"': '';?>><a href="<?php echo home_url('shop/beers');?>"><span>ALL BEERS</span></a></li>
-                  <?php elseif($cterm->slug == 'merch'): ?>
-                    <li<?php echo (in_array('merch', $urlex))? ' class="active"': '';?>><a href="<?php echo home_url('shop/merch');?>"><span>ALL Foods</span></a></li>
-                  <?php elseif(in_array('home-delivery', $urlex)): ?>
-                    <li<?php echo ($cterm->slug == 'home-delivery')? ' class="active"': '';?>><a href="<?php echo home_url('shop/home-delivery');?>"><span>ALL Foods</span></a></li>
-                  <?php endif; ?>
+                  <li class="active"><a href="<?php echo get_the_permalink(get_option( 'woocommerce_shop_page_id' ));?>"><span>ALL BEERS</span></a></li>
                   <?php 
                   if( $terms ):
                   foreach( $terms as $term ):
                   if( $term->slug !='uncategorized' ):
                   ?>
-                  <li<?php echo ($cterm->slug == $term->slug)? ' class="active"': '';?>><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
+                  <li><a href="<?php echo get_term_link($term); ?>"><span><?php echo $term->name; ?></span></a></li>
                   <?php endif; endforeach;?>
                   <?php endif; ?>
                 </ul>
@@ -84,14 +59,7 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
       'posts_per_page' => 6,
       'paged' => $paged,
       'orderby' => 'date',
-      'order'=> 'DESC',
-      'tax_query' => array(
-        array(
-          'taxonomy' => 'product_cat',
-          'field'    => 'term_id',
-          'terms'    => $cterm->term_id
-        ),
-      ),
+      'order'=> 'DESC'
     ) 
   );
 ?>
