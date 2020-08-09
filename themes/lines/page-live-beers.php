@@ -76,14 +76,23 @@
                     <strong>EBC</strong>
                   </div>
                 </li>
-                <?php endif; ?>
+                <?php endif; 
+
+                if(!empty($link)){
+                  $pro = get_page_by_path(basename($link), '', 'product');
+                  $cart_url = home_url('cart/?add-to-cart='.$pro->ID);
+                }else{
+                  $cart_url = '#';
+                }
+
+                ?>
               </ul>
               <div class="core-beer-item-btns">
                 <div class="cbibtn-1">
                   <a class="fl-btn" href="<?php echo !empty($link)? $link:'#'; ?>">LEARN MORE</a>
                 </div>
                 <div class="cbibtn-2">
-                  <a class="fl-btn" href="#">BUY</a>
+                  <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
                 </div>
               </div>
             </div>
