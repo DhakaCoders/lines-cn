@@ -154,6 +154,11 @@
 	cursor: pointer;
 	opacity: 1;
 }
+.fl-modal-des-form-cntlr{
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 30px;
+}
 .fl-modal-des a:hover{
 	background: transparent;
 	color: #293377;
@@ -162,8 +167,7 @@
 	opacity: .9;
 }
 .fl-modal-des-btm{
-	display: flex;
-	justify-content: flex-end;
+
 }
 
 .fl-modal-des-btm-form{
@@ -216,6 +220,48 @@
 	cursor: pointer;
 	color: #fff;
 	font-weight: 700;
+}
+
+.matching-msg{
+	max-width: 460px;
+	margin-left: auto;
+}
+.matching-msg strong{
+	color: #69a40a;
+}
+.order-home-deli-btn-cntlr{
+
+}
+.matching-msg p{
+	margin-bottom: 50px;
+}
+.order-home-deli-btn{
+	border: none;
+	max-width: 420px;
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background: #66a107;
+	margin-left: auto;
+	cursor: pointer;
+	letter-spacing: 2px;
+	font-size: 17px;
+	border: 2px solid #66a107;
+}
+
+.matching-msg.not p strong{
+	color: #ee0a21;
+}
+
+.matching-msg.not .order-home-deli-btn{
+	background: #ee0a21;
+	border-color: #ee0a21;
 }
 
 .pagination ul{
