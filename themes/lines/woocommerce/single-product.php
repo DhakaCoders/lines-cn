@@ -19,8 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
-  <section class="page-bnr-product bg-position-btm df-page-bnr" data-parallax="scroll"  data-image-src="<?php echo THEME_URI; ?>/assets/images//page-bnr-news-events.png">
+get_header( 'shop' ); 
+  $pagebanner = get_field('bannerimage', get_the_ID());
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-news-events.png';
+
+  $urlex = explode('/', $_SERVER['REQUEST_URI']);
+?>
+  <section class="page-bnr-product bg-position-btm df-page-bnr" data-parallax="scroll"  data-image-src="<?php echo $pagebanner; ?>">
     <div class="page-bnr-shop-con">
       <div class="container">
         <div class="row">
@@ -28,11 +33,22 @@ get_header( 'shop' ); ?>
             <div class="page-bnr-shop-inr">
               <h1 class="pbs-title">SHOP</h1>
               <div class="main-shop-bnr-menu">
+              <?php 
+                $tterms = get_terms( array(
+                  'taxonomy' => 'product_cat',
+                  'hide_empty' => false,
+                  'parent' => 0
+                ) ); 
+                if( $tterms ):  
+              ?>
                 <ul class="reset-list">
-                  <li class="active"><span>BEERS</span></li>
-                  <li><span>MERCH</span></li>
-                  <li><span>HOME DELIVERY</span></li>
+                  <?php foreach( $tterms as $tterm ):
+
+                  if( $tterm->slug !='uncategorized' ): ?>
+                  <li<?php echo (in_array($tterm->slug, $urlex))? ' class="active"': '';?>><a href="<?php echo get_term_link($tterm); ?>"><?php echo $tterm->name; ?></a></li>
+                  <?php endif; endforeach; ?>
                 </ul>
+                <?php endif; ?>
               </div>
             </div>
           </div>

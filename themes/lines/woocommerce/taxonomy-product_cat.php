@@ -117,7 +117,14 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
         <div class="col-md-12">
         <?php if($query->have_posts()){ $totalproduct = $query->found_posts;?>
           <div class="shop-all-beers-sec-hdr wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2 class="sabs-hdr-title">ALL BEERS</h2>
+            <h2 class="sabs-hdr-title">
+              <?php 
+              if(in_array('beers', $urlex))
+                echo 'All Beers';
+              else
+                echo 'All Foods';
+              ?>
+            </h2>
             <span>
               <?php if( $totalproduct <= 1 ): ?>
                 <?php echo $totalproduct; ?> PRODUCT
@@ -135,11 +142,31 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                 $thumb_id = get_post_thumbnail_id(get_the_ID());
                 if(!empty($thumb_id)){
                   $thumbtag = cbv_get_image_tag($thumb_id, 'artgrid');
+                  $thumbsrc = cbv_get_image_src($thumb_id, 'artgrid');
                 } else {
                   $thumbtag = '<img src="'.THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg">';
+                  $thumbsrc = THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg';
                 }
                 $spacifi = get_field('right_col');
               ?>
+              <?php if( !empty($spacifi['food_promo']) ): ?>
+              <li class="fls-no-pro-center-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
+                <div class="fls-product-item">
+                  <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo $thumbsrc; ?>);">
+                    <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                    <div class="pro-img-angle">
+                      <?php printf('<strong>%s</strong>', $spacifi['food_promo']); ?>
+                    </div>
+                  </div>
+                  <div class="fls-product-item-des">
+                    <h4 class="flspid-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                    <div class="fls-price">
+                      <?php echo $product->get_price_html(); ?>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <?php else: ?>
               <li class="fls-pro-red wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/product-img-bg.jpg);">
@@ -147,6 +174,7 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                     <div class="pro-img-angle">
                       <?php if( $spacifi ): ?>
                       <?php if( !empty($spacifi['abv']) ): ?><strong>ABV: &nbsp;<?php echo $spacifi['abv'];?>%</strong><?php endif; ?>
+
                       <?php endif; ?>
                     </div>
                     <div class="pro-img">
@@ -161,6 +189,7 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                   </div>
                 </div>
               </li>
+              <?php endif; ?>
               <?php $i+=0.3; endwhile; ?>
             </ul>
           </div>

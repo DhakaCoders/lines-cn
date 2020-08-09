@@ -162,10 +162,10 @@
                       </div>
                       <div class="fl-product-bts">
                         <div>
-                          <a class="fl-btn" href="javascript:void(0)">LEARN MORE</a>
+                          <a class="fl-btn" href="<?php echo esc_url( get_permalink($avail) ); ?>"">LEARN MORE</a>
                         </div>
                         <div>
-                          <a class="fl-btn" href="javascript:void(0)">BUY</a>
+                          <a class="fl-btn" data-quantity="<?php echo isset( $args['quantity'] ) ? $args['quantity'] : 1 ; ?>" href="<?php echo $product->add_to_cart_url(); ?>">BUY</a>
                         </div>
                       </div>
                     </div>
@@ -213,10 +213,10 @@
                       </div>
                       <div class="fl-product-bts">
                         <div>
-                          <a class="fl-btn" href="javascript:void(0)">LEARN MORE</a>
+                          <a class="fl-btn" href="<?php echo esc_url( get_permalink($tank) ); ?>">LEARN MORE</a>
                         </div>
                         <div>
-                          <a class="fl-btn" href="javascript:void(0)">BUY</a>
+                          <a class="fl-btn" data-quantity="<?php echo isset( $args['quantity'] ) ? $args['quantity'] : 1 ; ?>" href="<?php echo $product->add_to_cart_url(); ?>">BUY</a>
                         </div>
                       </div>
                     </div>
@@ -264,10 +264,10 @@
                       </div>
                       <div class="fl-product-bts">
                         <div>
-                          <a class="fl-btn" href="javascript:void(0)">LEARN MORE</a>
+                          <a class="fl-btn" href="<?php echo esc_url( get_permalink($concept) ); ?>">LEARN MORE</a>
                         </div>
                         <div>
-                          <a class="fl-btn" href="javascript:void(0)">BUY</a>
+                          <a class="fl-btn" data-quantity="<?php echo isset( $args['quantity'] ) ? $args['quantity'] : 1 ; ?>" href="<?php echo $product->add_to_cart_url(); ?>">BUY</a>
                         </div>
                       </div>
                     </div>

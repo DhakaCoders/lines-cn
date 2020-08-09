@@ -5,9 +5,13 @@
   get_header(); 
   $thisID = get_the_ID();
   $intro = get_field('introsec', $thisID);
+
+
+  $pagebanner = get_field('bannerimage', get_the_ID());
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/beer_bg.jpg';
 ?>
 <section class="page-bnr-line-beers df-page-bnr" data-parallax="scroll" 
-  data-image-src="<?php echo THEME_URI; ?>/assets/images/beer_bg.jpg">
+  data-image-src="<?php echo $pagebanner; ?>">
     <div class="bannerImg"><img src="<?php echo THEME_URI; ?>/assets/images/Cans.png"></div>
   </section>
 <?php
