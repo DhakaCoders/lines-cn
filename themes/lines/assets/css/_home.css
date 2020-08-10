@@ -585,6 +585,7 @@ body{
 	margin: 0 0 2px 0;
 	font-size: 43px;
 	line-height: 1;
+	text-transform: uppercase;
 }
 .hm-latest-news-item-des strong{
 	display: block;
@@ -804,7 +805,9 @@ body{
 	.mainSlideItem-des{
 		margin-top: -65px;
 	}
-
+	.eco-brewing-sec-des p{
+		line-height: 1.3;
+	}
 }
 
 @media(max-width: 991px){

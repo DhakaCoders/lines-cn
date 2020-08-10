@@ -207,6 +207,18 @@ if( $('.events-mainSlider').length ){
 }
 
 
+
+$('.rpSlider').on('init', function (event, slick, direction) {
+
+    // check to see if there are one or less slides
+    if (!($('.rpSlider .slick-slide').length > 1)) {
+
+        // remove arrows
+        $('.rp-slider-arrow .slick-arrow').hide();
+
+    }
+
+});
 if( $('.rpSlider').length ){
     $('.rpSlider').slick({
       dots: false,

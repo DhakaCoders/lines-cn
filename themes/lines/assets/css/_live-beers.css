@@ -40,6 +40,7 @@
 .page-bnr-line-beers img{
 	width: 100%;
 }
+
 .core-beer-item{
 	text-align: center;
 }
@@ -128,8 +129,10 @@
 }
 
 
-@media(max-width: 1499px){
-
+@media(min-width: 1499px){
+	.page-bnr-line-beers .bannerImg{
+		width: 100%;
+	}
 }
 
 @media(max-width: 1399px){
