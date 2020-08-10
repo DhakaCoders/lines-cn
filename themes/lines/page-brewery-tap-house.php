@@ -23,7 +23,7 @@
       $parallaxImg = THEME_URI .'/assets/images/bth-page-banner.png';
     }
 ?> 
-  <section class="page-banner-bth df-page-bnr">
+  <section class="page-banner-bth">
     <div class="page-banner-bth-controller" style="overflow: hidden;">
       
       <div class="hasBannerOverlay page-banner-bth-des" data-parallax="scroll" data-bleed="90" data-image-src="<?php echo $parallaxImg; ?>">

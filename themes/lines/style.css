@@ -31,10 +31,13 @@ Text Domain: linesbrew
 	transform: scale(1) rotate(0deg);
 }
 .section-graphics-top img{
-	max-height: 90%;
-	width: auto;
+	height: auto;
+	max-width: 1500px;
+	width: 100%;
 }
-
+.globe-active .parallax-mirror{
+	z-index: 2!important;
+}
 
 .hm-beer-list-sec.line-beer-list-sec .hm-beer-list-sec-inr,
 /*body.contact,.eco-brewing-innr,*/
