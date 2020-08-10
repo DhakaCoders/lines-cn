@@ -57,7 +57,11 @@
 	text-decoration: underline;
 }
 
-
+.sl-pg-post-content-btm-anlge{
+	top: 100%;
+	left: 0;
+	right: 0;
+}
 
 /*modal*/
 .fl-modal{
