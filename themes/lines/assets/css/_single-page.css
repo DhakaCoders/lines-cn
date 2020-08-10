@@ -379,6 +379,9 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 	.sl-pg-stories-title{
 		font-size: 34px;
 	}
+	.sl-pg-page-title{
+		margin-top: 0;
+	}
 }
 @media(max-width: 479px){
 	.sl-pg-post-content-top-rgt > ul > li{
