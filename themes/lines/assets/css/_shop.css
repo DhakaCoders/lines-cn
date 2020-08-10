@@ -462,6 +462,9 @@
 	.main-shop-bnr-menu ul li a{
 		display: block;
 	}
+	.shop-all-beers-sec-hdr{
+		margin-top: -30px;
+	}
 
 }
 
