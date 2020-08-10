@@ -99,6 +99,7 @@ $a = session_id();
 if ($a == '') session_start();
 
 ?>
+<span id="beers_url" data-pageurl="<?php echo esc_url( home_url('shop/beers') );?>" style="display: none;"></span>
   <section class="shop-all-beers-sec">
     <span class="shop-top-angle">
       <svg class="shop-top-angle-top-angle-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="144.534" viewBox="0 0 1600 144.534">
@@ -257,7 +258,7 @@ if ($a == '') session_start();
               <div class="fl-modal-des-form-cntlr">
                 <form class="fl-modal-des-btm-form" id="postalcodecheck" onsubmit="submitPostalCode(); return false">
                   <input type="hidden" name="action" value="postalcode_check">
-                  <span><input type="text" name="postalcode" placeholder="CF14 3PX"></span>
+                  <span><input type="text" name="postalcode" placeholder="CF14 3PX" required></span>
                   <input type="hidden" name="user_postalcode_nonce" value="<?php echo wp_create_nonce('user-postalcode-nonce'); ?>"/>
                   <span><button class="check-btn">Check</button></span>
                 </form>

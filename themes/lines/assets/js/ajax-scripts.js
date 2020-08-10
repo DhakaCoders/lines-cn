@@ -83,7 +83,7 @@ function submitPostalCode(){
               jQuery('#msg-wrapp').html('<div class="matching-msg not"><p><strong>We\'re sorry!</strong>'+ 
               'We currently don\'t offer local delivery in your area. You can still order beers and merch for national delivery.</p>'+
               '<div class="order-home-deli-btn-cntlr">'+
-              '<button class="order-home-deli-btn">order home delivery</button>'+
+              '<button onclick="redirectBeersPage(); return false" class="order-home-deli-btn">order national delivery</button>'+
               '</div></div>');
           }else{
               console.log('error');
@@ -98,4 +98,13 @@ function submitPostalCode(){
       }
   })
   return false;
+}
+
+function redirectBeersPage(){
+  var beersURL = '';
+  console.log('Internal error');
+  if( jQuery("#beers_url").length ){
+    beersURL = jQuery("#beers_url").data('pageurl');
+    window.location.href = beersURL;
+  }
 }

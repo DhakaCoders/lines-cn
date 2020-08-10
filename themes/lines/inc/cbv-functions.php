@@ -191,18 +191,26 @@ function checkPostalcode(){
     global $wpdb; 
     $postcode = $_POST["postalcode"];
     if( isset($postcode) && !empty($postcode) ){
-      $userInfo = $wpdb->get_row  ( $wpdb->prepare ("
-          SELECT *
-          FROM $wpdb->usermeta
-          WHERE meta_value = %s", //OR meta_value !!
-          $postcode
-      ));
+      $hdelivery = get_field('hdelivery', 'options');
+      $postcodes = $hdelivery['postcodes'];
       //var_dump($userInfo);
-      if( $userInfo ){
-        $data['match'] = 'match';
+      if( !empty($postcodes) ){
+        $exCode = explode(', ', $postcodes);
+        $codeArray = array();
+        if( isset($exCode) ){
+          foreach ($exCode as $val) {
+            $codeArray[] = $val;
+          }
+        }
+        if( in_array($postcode, $codeArray) ){
+          $data['match'] = 'match';
+        }else{
+          $data['notmatch'] = 'notmatch';
+        }
       }else{
-        $data['notmatch'] = 'notmatch';
+          $data['notmatch'] = 'notmatch';
       }
+
 
     }else{
       $data['required'] = 'Field is required';
