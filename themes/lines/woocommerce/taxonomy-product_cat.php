@@ -238,7 +238,7 @@ if ($a == '') session_start();
       </div>
     </div>
   </section>
-  <?php if (!isset($_SESSION['hpopup']) && $_SESSION['hpopup'] != true): ?>
+  <?php if (!isset($_SESSION['hpopup'])): ?>
   <div class="modal fade fl-modal-cntlr pro_delivery_modal_01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
