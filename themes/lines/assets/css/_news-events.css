@@ -2,6 +2,18 @@
 .news-events-banner-con{
   padding-bottom: 200px;
 }
+.lines-stories.news-events-grds-sec{
+  padding-bottom: 0;
+  margin-bottom: 121px;
+}
+.lines-stories.news-events-grds-sec .lines-stories-innr{
+  background: rgb(8,8,8)!important;
+}
+.lines-stories.news-events-grds-sec .lines-stories-sec-btm-angle{
+  bottom: auto;
+  top: 100%;
+
+}
 .lines-stories{
   padding: 0 0 121px 0;
   position: relative;

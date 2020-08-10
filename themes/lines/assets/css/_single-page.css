@@ -27,7 +27,8 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 	align-items: center;
 	flex-wrap: wrap;
 }
-.sl-pg-post-content-top-left{
+.sl-pg-post-content-top-left,.sl-pg-post-content-top-rgt{
+	margin-bottom: 25px;
 }
 .sl-pg-post-content-top-left > ul >li{
 	font-size: 22px;
@@ -218,6 +219,11 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 	left: 0;
 	right: 0;
 }
+.woocommerce-form-row span em{
+	font-size: 16px;
+}
+
+
 /* responsive */
 @media(max-width: 1299px){
 
