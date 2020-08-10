@@ -358,7 +358,22 @@
 }
 
 @media(max-width: 767px){
-	
+	.fl-modal-fea-img{
+		display: none;
+	}
+	.fl-modal-cntlr .modal-body{
+		padding: 60px 30px 40px; 
+	}
+	.fl-modal-des{
+		padding-left: 0;
+		text-align: center;
+	}
+	.fl-modal-des-form-cntlr{
+		justify-content: center;
+	}
+	.order-home-deli-btn{
+		margin-right: auto;
+	}
 }
 
 @media(max-width: 575px){
@@ -368,12 +383,20 @@
 
 @media(max-width: 479px){
 	.fl-modal-cntlr .modal-body {
-	    padding: 60px 20px 50px;
+	    padding: 60px 20px 40px;
 	}	
 	.fl-modal-des .modal-title{
-		font-size: 25px;
+		font-size: 30px;
 	}
-
+	.fl-modal-des-btm-form {
+	    display: flex;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	.order-home-deli-btn{
+		font-size: 15px;
+	}
 }
 
 @media(max-width: 359px){
