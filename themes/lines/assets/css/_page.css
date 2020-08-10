@@ -78,7 +78,7 @@
 	margin-right: auto;
 }
 .fl-modal-cntlr{
-	padding: 0 15px;
+	padding: 0 15px!important;
 }
 .fl-modal-cntlr .modal-content{
 	text-align: center;
@@ -197,6 +197,7 @@
 
 
 
+
 .fl-modal-des-btm-form input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #000;
 }
@@ -220,6 +221,14 @@
 	cursor: pointer;
 	color: #fff;
 	font-weight: 700;
+}
+.fl-modal-des-btm-form button:hover{
+	background: transparent;
+	color: #7A5C48;
+	background: transparent;
+}
+.fl-modal-cntlr .modal-content{
+	border: none;
 }
 
 .matching-msg{
@@ -255,6 +264,14 @@
 	border: 2px solid #66a107;
 }
 
+.order-home-deli-btn:hover{
+	background: transparent;
+	color: #66a107;
+}
+.matching-msg.not .order-home-deli-btn:hover{
+	background: transparent;
+	color: #ee0a21;
+}
 .matching-msg.not p strong{
 	color: #ee0a21;
 }
@@ -310,11 +327,34 @@
 		width: 20px!important;
 		height: 20px!important;
 	}
+	.fl-modal-cntlr .modal-body {
+	    padding: 70px 87px 90px 30%;
+	}
 
 }
 
 @media(max-width: 991px){
-		
+	.fl-modal-des .modal-title{
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+	.fl-modal-cntlr .modal-body {
+	    padding: 65px 60px 60px 30%;
+	}
+	.fl-modal-des > p {
+	    font-size: 24px;
+	   	margin-bottom: 25px;
+	}
+	.matching-msg p {
+	    margin-bottom: 30px;
+	}
+	.fl-modal-des-btm-form input[type="text"], .fl-modal-des-btm-form button {
+	    height: 60px;
+	    font-size: 30px;
+	}
+	.fl-modal-des-btm-form button{
+		font-size: 25px;
+	}
 }
 
 @media(max-width: 767px){

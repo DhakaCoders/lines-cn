@@ -107,6 +107,6 @@ Text Domain: linesbrew
 
 
 
-/*.matching-msg.not{
+.matching-msg.not{
 	display: none;
-}*/
+}
