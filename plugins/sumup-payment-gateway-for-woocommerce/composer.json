@@ -1,0 +1,16 @@
+{
+    "name": "sumup/sumup-gateway-for-woocommerce",
+    "description": "SumUp Gateway for WooCommerce",
+    "type": "project",
+    "require": {
+        "sumup/sumup-ecom-php-sdk": "^1.0"
+    },
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "SumUp",
+            "email": "integration@sumup.com",
+            "homepage": "https://github.com/sumup"
+        }
+    ]
+}
