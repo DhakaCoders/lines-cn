@@ -161,7 +161,7 @@ if ($a == '') session_start();
                       <?php if (isset($_SESSION['hpopup']) && $_SESSION['hpopup'] = true){?>
                         <a class="overlay-link" href="<?php the_permalink();?>"></a>
                       <?php }else { ?>
-                        <a class="modal-btn overlay-link" data-toggle="modal" data-target="#pro_delivery_modal_01" href="#"></a>
+                        <a class="modal-btn overlay-link" data-toggle="modal" data-target=".pro_delivery_modal_01" href="#"></a>
                       <?php } ?>
                     <?php else: ?>
                       <a class="overlay-link" href="<?php the_permalink();?>"></a>
@@ -186,7 +186,7 @@ if ($a == '') session_start();
                       <?php if (isset($_SESSION['hpopup']) && $_SESSION['hpopup'] = true){?>
                         <a class="overlay-link" href="<?php the_permalink();?>"></a>
                       <?php }else { ?>
-                        <a class="modal-btn overlay-link" data-toggle="modal" data-target="#pro_delivery_modal_01" href="#"></a>
+                        <a class="modal-btn overlay-link" data-toggle="modal" data-target=".pro_delivery_modal_01" href="#"></a>
                       <?php } ?>
                     <?php else: ?>
                       <a class="overlay-link" href="<?php the_permalink();?>"></a>
@@ -238,7 +238,8 @@ if ($a == '') session_start();
       </div>
     </div>
   </section>
-  <div class="modal fade fl-modal-cntlr" id="pro_delivery_modal_01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <?php if (!isset($_SESSION['hpopup']) && $_SESSION['hpopup'] != true): ?>
+  <div class="modal fade fl-modal-cntlr pro_delivery_modal_01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -270,5 +271,6 @@ if ($a == '') session_start();
       </div>
     </div>
   </div>  
+<?php endif; ?>
 <?php get_template_part('templates/payment', 'process'); ?>
 <?php get_footer(); ?>
