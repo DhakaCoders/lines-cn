@@ -164,3 +164,54 @@ function redirect_after_add_to_cart( $url ) {
     return esc_url( get_permalink( get_page_by_title( 'cart' ) ) );
 }
 add_filter( 'woocommerce_add_to_cart_redirect', 'redirect_after_add_to_cart', 99 );
+
+
+add_action('wp_enqueue_scripts', 'checkPostalcode_init');
+
+function checkPostalcode_init(){
+    wp_register_script('checkpostalcode-script', get_stylesheet_directory_uri(). '/assets/js/ajax-scripts.js', array('jquery') );
+    wp_enqueue_script('checkpostalcode-script');
+
+    wp_localize_script( 'checkpostalcode-script', 'checkpostalcode_object', array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' )
+    ));
+    // Enable the user with no privileges to run ajax_login() in AJAX
+}
+add_action('wp_ajax_nopriv_postalcode_check', 'checkPostalcode');
+add_action('wp_ajax_postalcode_check', 'checkPostalcode');
+function checkPostalcode(){
+  $data = array();
+  if (isset( $_POST["postalcode"] ) && wp_verify_nonce($_POST['user_postalcode_nonce'], 'user-postalcode-nonce')){
+    global $woocommerce, $wpdb; 
+    $customer = new WC_customer();
+    $customer_id = $customer->ID;
+    $postcode = $_POST["postalcode"];
+    if( isset($postcode) && !empty($postcode) ){
+      $userInfo = $wpdb->get_row  ( $wpdb->prepare ("
+          SELECT *
+          FROM $wpdb->usermeta
+          WHERE meta_value = %s", //OR meta_value !!
+          $postcode
+      ));
+      //var_dump($userInfo);
+      if( $userInfo ){
+        $data['match'] = 'match';
+              echo json_encode($data);
+      wp_die();
+      }else{
+        $data['notmatch'] = 'notmatch';
+              echo json_encode($data);
+      wp_die();
+      }
+
+    }else{
+      $data['required'] = 'Field is required';
+      echo json_encode($data);
+      wp_die();
+    }
+  }else{
+    $data['error'] = 'Something was wrong.';
+    echo json_encode($data);
+    wp_die();
+  }
+}

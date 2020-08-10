@@ -153,7 +153,8 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
               <li class="fls-no-pro-center-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo $thumbsrc; ?>);">
-                    <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                    <!-- <a class="overlay-link" href="<?php the_permalink();?>"></a> -->
+                    <a class="modal-btn overlay-link" data-toggle="modal" data-target="#pro_delivery_modal_01" href="#"></a>
                     <div class="pro-img-angle">
                       <?php printf('<strong>%s</strong>', $spacifi['food_promo']); ?>
                     </div>
@@ -218,6 +219,37 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
       </div>
     </div>
   </section>
+  <div class="modal fade fl-modal-cntlr" id="pro_delivery_modal_01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
 
+        <div class="modal-body">
+          <div class="fl-modal-fea-img">
+            <img src="<?php echo THEME_URI; ?>/assets/images/modal-fea-img.jpg">
+          </div>
+          <div class="fl-modal-des">
+            <span class="modal-title">We just need to check we can <em>deliver to you...</em></span>
+            <p>Please enter your postcode below</p>
+            <div class="fl-modal-des-btm">
+              <div class="fl-modal-des-form-cntlr">
+                <form class="fl-modal-des-btm-form" id="postalcodecheck" onsubmit="submitPostalCode(); return false">
+                  <input type="hidden" name="action" value="postalcode_check">
+                  <span><input type="text" name="postalcode" placeholder="CF14 3PX"></span>
+                  <input type="hidden" name="user_postalcode_nonce" value="<?php echo wp_create_nonce('user-postalcode-nonce'); ?>"/>
+                  <span><button class="check-btn">Check</button></span>
+                </form>
+              </div>
+              <div id="msg-wrapp">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
 <?php get_template_part('templates/payment', 'process'); ?>
 <?php get_footer(); ?>
