@@ -94,6 +94,10 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
       ),
     ) 
   );
+
+$a = session_id();
+if ($a == '') session_start();
+
 ?>
   <section class="shop-all-beers-sec">
     <span class="shop-top-angle">
@@ -153,8 +157,15 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
               <li class="fls-no-pro-center-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo $thumbsrc; ?>);">
-                    <!-- <a class="overlay-link" href="<?php the_permalink();?>"></a> -->
-                    <a class="modal-btn overlay-link" data-toggle="modal" data-target="#pro_delivery_modal_01" href="#"></a>
+                    <?php if(in_array('home-delivery', $urlex)): ?>
+                      <?php if (isset($_SESSION['hpopup']) && $_SESSION['hpopup'] = true){?>
+                        <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                      <?php }else { ?>
+                        <a class="modal-btn overlay-link" data-toggle="modal" data-target="#pro_delivery_modal_01" href="#"></a>
+                      <?php } ?>
+                    <?php else: ?>
+                      <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                    <?php endif; ?>
                     <div class="pro-img-angle">
                       <?php printf('<strong>%s</strong>', $spacifi['food_promo']); ?>
                     </div>
@@ -171,7 +182,15 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
               <li class="fls-pro-red wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/product-img-bg.jpg);">
-                    <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                    <?php if(in_array('home-delivery', $urlex)): ?>
+                      <?php if (isset($_SESSION['hpopup']) && $_SESSION['hpopup'] = true){?>
+                        <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                      <?php }else { ?>
+                        <a class="modal-btn overlay-link" data-toggle="modal" data-target="#pro_delivery_modal_01" href="#"></a>
+                      <?php } ?>
+                    <?php else: ?>
+                      <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                    <?php endif; ?>
                     <div class="pro-img-angle">
                       <?php if( $spacifi ): ?>
                       <?php if( !empty($spacifi['abv']) ): ?><strong>ABV: &nbsp;<?php echo $spacifi['abv'];?>%</strong><?php endif; ?>

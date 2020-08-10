@@ -166,7 +166,13 @@ function redirect_after_add_to_cart( $url ) {
 add_filter( 'woocommerce_add_to_cart_redirect', 'redirect_after_add_to_cart', 99 );
 
 
-add_action('wp_enqueue_scripts', 'checkPostalcode_init');
+add_action('wp_enqueue_scripts', 'postalcode_action_hooks');
+
+
+function postalcode_action_hooks(){
+    checkPostalcode_init();
+    popupcheck_init();
+}
 
 function checkPostalcode_init(){
     wp_register_script('checkpostalcode-script', get_stylesheet_directory_uri(). '/assets/js/ajax-scripts.js', array('jquery') );
@@ -182,9 +188,7 @@ add_action('wp_ajax_postalcode_check', 'checkPostalcode');
 function checkPostalcode(){
   $data = array();
   if (isset( $_POST["postalcode"] ) && wp_verify_nonce($_POST['user_postalcode_nonce'], 'user-postalcode-nonce')){
-    global $woocommerce, $wpdb; 
-    $customer = new WC_customer();
-    $customer_id = $customer->ID;
+    global $wpdb; 
     $postcode = $_POST["postalcode"];
     if( isset($postcode) && !empty($postcode) ){
       $userInfo = $wpdb->get_row  ( $wpdb->prepare ("
@@ -196,21 +200,42 @@ function checkPostalcode(){
       //var_dump($userInfo);
       if( $userInfo ){
         $data['match'] = 'match';
-              echo json_encode($data);
-      wp_die();
       }else{
         $data['notmatch'] = 'notmatch';
-              echo json_encode($data);
-      wp_die();
       }
 
     }else{
       $data['required'] = 'Field is required';
-      echo json_encode($data);
-      wp_die();
     }
   }else{
     $data['error'] = 'Something was wrong.';
+  }
+  echo json_encode($data);
+  wp_die();
+}
+
+
+function popupcheck_init(){
+    wp_register_script('popupcheck-script', get_stylesheet_directory_uri(). '/assets/js/ajax-scripts.js', array('jquery') );
+    wp_enqueue_script('popupcheck-script');
+
+    wp_localize_script( 'popupcheck-script', 'popupcheck_object', array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' )
+    ));
+    // Enable the user with no privileges to run ajax_login() in AJAX
+}
+add_action('wp_ajax_nopriv_popupcheckCode', 'popupcheckCode');
+add_action('wp_ajax_popupcheckCode', 'popupcheckCode');
+function popupcheckCode(){
+  $data = array();
+  if (isset( $_POST["check"] ) && $_POST["check"] == 1){
+    session_start();
+    if (!isset($_SESSION['hpopup'])){
+      $_SESSION['hpopup'] = true;
+      $data['success'] = 'success';
+    }else{
+      $data['error'] = 'error';
+    }
     echo json_encode($data);
     wp_die();
   }
