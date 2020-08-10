@@ -83,16 +83,17 @@ body.single-product .pro-cart-btn button:hover svg{
 .woocommerce .woocommerce-error::before, 
 .woocommerce .woocommerce-info::before, 
 .woocommerce .woocommerce-message::before {
-    top: 6px;
+    top: 15px;
     left: 16px;
 }
 .woocommerce .woocommerce-info,
 .woocommerce .woocommerce-error,
 .woocommerce .woocommerce-notices-wrapper ul,
 .woocommerce .woocommerce-message {
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 45px;
+    font-size: 15px;
 }
 .woocommerce-info a,
 a.woocommerce-privacy-policy-link{
