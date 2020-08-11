@@ -170,5 +170,5 @@ if( is_page('contact1') ){
 }
 ?>
 <div class="sections-cntlr<?php echo $bgclass;?>">
-<div class="section-graphics-top">
+<div class="section-graphics-top" style="opacity: 0;">
   <img src="<?php echo THEME_URI; ?>/assets/images/section-graphics-top.png"></div>

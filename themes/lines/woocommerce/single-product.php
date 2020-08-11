@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); 
   $pagebanner = get_field('bannerimage', get_the_ID());
-  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-news-events.png';
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-news-events-03.jpg';
 
   $urlex = explode('/', $_SERVER['REQUEST_URI']);
 ?>

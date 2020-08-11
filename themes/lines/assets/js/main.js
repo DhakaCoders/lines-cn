@@ -424,5 +424,5 @@ function handleScroll(){
 if( $('.pro_delivery_modal_01').length ){
   $('.pro_delivery_modal_01').modal('show');
 }
-
+$('body').addClass('globeshow');
 })(jQuery);

@@ -10,9 +10,10 @@
   $urlex = explode('/', $_SERVER['REQUEST_URI']);
   ?>
   <span id="catID" data-id="<?php echo $cterm->term_id; ?>" style="display: none;"></span>
-  <section class="page-bnr-shop news-events-banner df-page-bnr">
-    <div class="page-bnr-shop-con bg-position-btm news-events-banner-con" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/page-bnr-news-events.png');">
-      <div class="container">
+  <section class="page-bnr-shop news-events-banner hasBannerOverlay">
+    <div class="page-bnr-shop-con news-events-banner-con" 
+    data-parallax="scroll" data-image-src="<?php echo THEME_URI; ?>/assets/images/page-bnr-news-events-03.jpg'); ?>">
+      <div class="container bannerOverlayInner">
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">

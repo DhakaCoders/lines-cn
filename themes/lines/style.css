@@ -25,17 +25,19 @@ Text Domain: linesbrew
 	display: flex;
     align-items: center;
     justify-content: center;
-}
-.globe-active .section-graphics-top{
-	opacity: 1;
+	opacity: 0;
 	transform: scale(1) rotate(0deg);
 }
+/*.globe-active .section-graphics-top{
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}*/
 .section-graphics-top img{
 	height: auto;
 	max-width: 1500px;
 	width: 100%;
 }
-.globe-active .parallax-mirror{
+.parallax-mirror{
 	z-index: 2!important;
 }
 
@@ -105,6 +107,9 @@ Text Domain: linesbrew
 }
 .parallax-mirror img{
 	transition: none;
+}
+body.globeshow .section-graphics-top{
+	opacity: 1!important;
 }
 
 

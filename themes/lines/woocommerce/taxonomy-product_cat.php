@@ -8,14 +8,14 @@ if(!empty(str_replace(' ', '', $custom_page_title))){
 }
 
 $pagebanner = get_field('bannerimage', $shopID);
-if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-shop-v2.png';
+if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-news-events-03.jpg';
 $cterm = get_queried_object();
 
 $urlex = explode('/', $_SERVER['REQUEST_URI']);
 ?> 
-  <section class="page-bnr-shop df-page-bnr">
-    <div class="page-bnr-shop-con bg-position-btm" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
-      <div class="container">
+  <section class="page-bnr-shop hasBannerOverlay">
+    <div class="page-bnr-shop-con" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
+      <div class="container bannerOverlayInner">
         <div class="row">
           <div class="col-md-12">
             <div class="page-bnr-shop-inr">

@@ -5,7 +5,7 @@
 	min-height: 550px;
 	height: 100%;
 	padding: 100px 0 150px;
-	background-attachment: fixed;
+/*	background-attachment: fixed;*/
 }
 .page-bnr-shop img{
 	width: 100%;
@@ -48,6 +48,9 @@
 }
 .pro-img {
 	overflow: hidden;
+}
+.pro-img img{
+	max-height: 185px;
 }
 .fls-product-item:hover .fls-product-item-fea-img-bx{
 	border-color: #dc1c27;
