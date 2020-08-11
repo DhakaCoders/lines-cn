@@ -237,9 +237,7 @@ add_action('wp_ajax_popupcheckCode', 'popupcheckCode');
 function popupcheckCode(){
   $data = array();
   if (isset( $_POST["check"] ) && $_POST["check"] == 1){
-    session_start();
-    if (!isset($_SESSION['hpopup'])){
-      $_SESSION['hpopup'] = true;
+    if (!isset($_COOKIE['hpopup'])){
       $data['success'] = 'success';
     }else{
       $data['error'] = 'error';
