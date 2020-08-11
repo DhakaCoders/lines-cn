@@ -99,6 +99,16 @@ if( !isset( $_SESSION['agevarification'] ) ):
                     wp_nav_menu( $menuOptions ); 
                   ?>
                   </nav>
+                  <div class="hdr-cart-btn">
+                    <a href="#">
+                      <i>
+                        <svg class="cart-icon-svg" width="34" height="34" viewBox="0 0 34 34" fill="#fff">
+                          <use xlink:href="#cart-icon-svg"></use>
+                        </svg> 
+                      </i>
+                      <strong></strong>
+                    </a>
+                  </div>
                   <div class="hdr-humbergar">
                     <div class="hdr-humbergur-btn">
                       <span></span>
