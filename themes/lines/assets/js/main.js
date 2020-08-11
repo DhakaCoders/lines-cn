@@ -296,10 +296,10 @@ $('.hdr-humbergur-btn').on('click', function(e){
     $(this).toggleClass('sub-menu-active');
   });
 
-/*$('.enter-now-btn').on('click', function(e){
+$('.enter-now-btn').on('click', function(e){
   e.preventDefault();
   $('.home-overlay').fadeOut(300);
-});*/
+});
 
 
 $('.qty').each(function() {
