@@ -44,9 +44,8 @@ ul.select2-results__options li{
 .woocommerce a.button:hover, 
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover{
-	background: transparent!important;
-	color: #985001!important;
 	border-color: #985001!important;
+    background-color: #985001!important;
 }
 body.single-product .pro-cart-btn button:hover svg{
 	fill: #F6C042!important;

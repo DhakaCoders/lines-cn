@@ -134,7 +134,6 @@
                     $thumb_id = get_post_thumbnail_id($avail);
                     $spacifi = get_field('right_col', $avail->ID);
                     $color = $spacifi['color'];
-                    
                   ?>
                   <div class="fl-product-item red-product clearfix">
                     <div class="fl-product-item-fea-img">

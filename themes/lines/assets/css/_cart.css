@@ -1,15 +1,12 @@
-
-
 .qty{
   width: 95px;
   height: 60px;
-  border: solid 2px #fff;
-  background-color: #dc1c27;
+  border: 1px solid #fff;
+  background-color: transparent;
   position: relative;
 }
 .qty:hover{
-	background-color: #dc1c27;
-	border-color: #dc1c27;
+  background-color: transparent;
 }
 .qty .plus,
 .qty .minus{
@@ -50,6 +47,7 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     z-index: 2;
+    font-weight: bold;
 }
 .qty .plus {
     right: 14px;

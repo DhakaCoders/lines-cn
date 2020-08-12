@@ -10,14 +10,16 @@
   }
 
   $pagebanner = get_field('bannerimage', get_the_ID());
-  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/event-banner-slider.png';
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/cnt-page-banner-v2.jpg';
   ?> 
   <section class="sl-pg-banner bg-position-btm df-page-bnr" data-parallax="scroll" 
   data-image-src="<?php echo $pagebanner; ?>">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          
+          <div class="page-banner-cnt-des-inner">
+            <h1 class="cnt-banner-page-title wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="0.3s"><?php echo $pageTitle; ?></h1>
+          </div>
         </div>
       </div>
     </div>

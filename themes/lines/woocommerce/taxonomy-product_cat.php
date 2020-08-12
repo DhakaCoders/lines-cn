@@ -151,6 +151,9 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                   $thumbsrc = THEME_URI.'/assets/images/dfblog-img.jpg';
                 }
                 $spacifi = get_field('right_col');
+                if( isset($spacifi['packs']) ) $packs = $spacifi['packs']; else $packs = '';
+                $packs = $spacifi['packs'];
+                $cart_url = home_url('cart/?add-to-cart='.get_the_ID());
               ?>
               <?php if( !empty($spacifi['food_promo']) ): ?>
               <li class="fls-no-pro-center-img wow fadeInUpShort" data-wow-duration="1s" data-wow-delay="<?php echo $i; ?>s">
@@ -173,6 +176,14 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                     <h4 class="flspid-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
                     <div class="fls-price">
                       <?php echo $product->get_price_html(); ?>
+                    </div>
+                  </div>
+                  <div class="core-beer-item-btns">
+                    <div class="cbibtn-1">
+                      <a class="fl-btn" href="<?php echo !empty($link)? $link:'#'; ?>">LEARN MORE</a>
+                    </div>
+                    <div class="cbibtn-2">
+                      <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
                     </div>
                   </div>
                 </div>
@@ -200,10 +211,33 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                       <?php echo $thumbtag; ?>
                     </div>
                   </div>
-                  <div class="fls-product-item-des">
+                  <div class="fls-product-item-des" style="display: none;">
                     <h4 class="flspid-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
                     <div class="fls-price">
                       <?php echo $product->get_price_html(); ?>
+                    </div>
+                  </div>
+                  <div class="sing-product-item-des">
+                    <div class="lineTitle">
+                      <h4 class="flspid-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                      <?php if( !empty( $packs ) ) printf('<span class="packs">%s</span>', $packs ); ?>
+                    </div>
+                    <div class="lineStyle">
+                      <div class="pr-lstyle">
+                        <?php 
+                        if( !empty($spacifi['style']) ) echo $spacifi['style']; 
+                        if( !empty($spacifi['abv']) ) echo ' | ', $spacifi['abv'];
+                        ?>
+                      </div>
+                      <div class="pr-lprice"><?php echo $product->get_price_html(); ?></div>
+                    </div>
+                  </div>
+                  <div class="core-beer-item-btns gridNewbtns">
+                    <div class="cbibtn-1">
+                      <a class="fl-btn" href="<?php the_permalink();?>">LEARN MORE</a>
+                    </div>
+                    <div class="cbibtn-2">
+                      <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
                     </div>
                   </div>
                 </div>

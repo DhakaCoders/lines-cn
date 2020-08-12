@@ -40,7 +40,7 @@ if (!function_exists('add_custom_box_product_summary')) {
         $output .='</h2>';
         if( $spacifi ):
           $output .= '<span>';
-          $output .= ( !empty($spacifi['style']) )? $spacifi['style']: '';$output .= ( !empty($spacifi['abv']) )? '|'.$spacifi['abv'].'%': '';$output .= ( !empty($spacifi['capacity']) )? '|'.$spacifi['capacity']: '';
+          $output .= ( !empty($spacifi['style']) )? $spacifi['style']: '';$output .= ( !empty($spacifi['abv']) )? ' | '.$spacifi['abv'].'%': '';$output .= ( !empty($spacifi['capacity']) )? ' | '.$spacifi['capacity']: '';
           $output .= '</span>';
         endif;
             $output .= '<strong>'.$product->get_price_html().'</strong>';

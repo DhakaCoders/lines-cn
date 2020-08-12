@@ -92,12 +92,12 @@ nav.main-nav ul li.current-menu-item a{
 
 
 .shop-filter-menu ul li a span:after{
-	background: #985001;
+	background: #ecde8c;
 }
 
 .shop-filter-menu ul li.active a,
 .shop-filter-menu ul li:hover a{
-	color: #985001;
+	color: #ecde8c;
 }
 
 

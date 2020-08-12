@@ -53,7 +53,7 @@
 	max-height: 185px;
 }
 .fls-product-item:hover .fls-product-item-fea-img-bx{
-	border-color: #dc1c27;
+	border: 1px solid #fff;
 }
 .fls-pro-yellow .fls-product-item:hover .fls-product-item-fea-img-bx{
 	border-color: #d8a819;
@@ -221,6 +221,8 @@
 	background: #f6ece0;
 	border-color: #f6ece0;
 	color: #000000;
+/*    border-color: #985001!important;
+    background-color: #985001!important;*/
 }
 
 .shop-filter-menu ul{
@@ -290,7 +292,58 @@
 	border-bottom: none;
 	padding-bottom: 0;
 }
-
+.sing-product-item-des{
+    text-align: center;
+    padding-top: 25px;
+	padding-bottom: 25px;
+}
+.lineTitle{
+	padding-bottom: 15px;
+}
+.lineTitle,
+.lineStyle{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;	
+}
+.lineTitle h4 {
+    margin: 0;
+    padding-right: 0;
+    max-width: 75%;
+    text-align: left;
+}
+.lineTitle .packs{
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.lineStyle .pr-lprice{
+	font-size: 20px;
+	color: #ECDE8C;
+}
+.gridNewbtns.core-beer-item-btns .cbibtn-1,
+.gridNewbtns.core-beer-item-btns .cbibtn-2{
+	width: 50%;
+}
+.gridNewbtns.core-beer-item-btns .cbibtn-1 a, .gridNewbtns.core-beer-item-btns .cbibtn-2 a {
+    margin: 0;
+    display: block;
+    line-height: 36px;
+    min-width: initial;
+}
+.pr-lstyle{
+    max-width: 75%;
+    text-align: left;	
+}
+.core-beer-item-btns.gridNewbtns{
+	border: 2px solid #fff;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.fls-product-item:hover > .core-beer-item-btns.gridNewbtns{
+	opacity: 1;
+}
 @media(max-width: 1499px){
 
 }
@@ -412,7 +465,7 @@
 	}
 	
 	.fls-product-item{
-		max-width: 300px;
+		max-width: 350px;
 	    width: 100%;
 	    margin: 0 auto;
 	}
@@ -468,6 +521,9 @@
 	}
 	.shop-all-beers-sec-hdr{
 		margin-top: -30px;
+	}
+	.shop-all-beers-sec-grds ul{
+		margin: 0;
 	}
 
 }
