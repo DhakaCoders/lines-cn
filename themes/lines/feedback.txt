@@ -1,4 +1,5 @@
 * Product grid ar design change korci. Pull korle pabe. / dwr-rps
+- https://prnt.sc/ty5nrb
 
 1. Blog ar load more button ta hide thakbe, 9 tar besi hole then ata dekhabe
 2. Author archive page lagbe akta. Click korle ai author ar sob post load hobe
@@ -13,3 +14,8 @@ But popup ta to postcode check korar jonno. Home delivery page a asbe, postcode 
 - https://www.dropbox.com/s/0d70k234vtjn7yq/06_shop.ai?dl=0
 7. Header Cart icon only shop page gulote show hobe
 8. Cart and checkout page ar design client ar pochondo hoyni. Client design dite chailo.
+9. 3 type ar product hobe. Beers, Merch and Food
+- Beers ar jonno option ache amader. Merch and Food ar jonno same options thakbe.
+- https://prnt.sc/ty5qdo, https://prnt.sc/ty5pes - Subtile ar jonno only akta text field use kori
+- https://prnt.sc/ty5qdo - Left col ar jonno title, editor right ar jonno o title editor
+- Product ar parent cat (Beers, Merch and Food) use kore akta class add kore diyo
