@@ -1,5 +1,6 @@
 <?php 
 get_header(); 
+
 $shopID = get_option( 'woocommerce_shop_page_id' );
 $pageTitle = get_the_title($shopID);
 $custom_page_title = get_field('custom_page_title', $shopID);
@@ -12,6 +13,7 @@ if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-news-e
 $cterm = get_queried_object();
 
 $urlex = explode('/', $_SERVER['REQUEST_URI']);
+
 ?> 
   <section class="page-bnr-shop hasBannerOverlay">
     <div class="page-bnr-shop-con" data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
@@ -94,10 +96,6 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
       ),
     ) 
   );
-
-$a = session_id();
-if ($a == '') session_start();
-
 ?>
 <span id="beers_url" data-pageurl="<?php echo esc_url( home_url('shop/beers') );?>" style="display: none;"></span>
   <section class="shop-all-beers-sec">
@@ -159,7 +157,7 @@ if ($a == '') session_start();
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo $thumbsrc; ?>);">
                     <?php if(in_array('home-delivery', $urlex)): ?>
-                      <?php if (isset($_SESSION['hpopup']) && $_SESSION['hpopup'] = true){?>
+                      <?php if (isset($_COOKIE['hpopup']) && $_COOKIE['hpopup'] = 'true'){?>
                         <a class="overlay-link" href="<?php the_permalink();?>"></a>
                       <?php }else { ?>
                         <a class="modal-btn overlay-link" data-toggle="modal" data-target=".pro_delivery_modal_01" href="#"></a>
@@ -184,7 +182,7 @@ if ($a == '') session_start();
                 <div class="fls-product-item">
                   <div class="fls-product-item-fea-img-bx inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/product-img-bg.jpg);">
                     <?php if(in_array('home-delivery', $urlex)): ?>
-                      <?php if (isset($_SESSION['hpopup']) && $_SESSION['hpopup'] = true){?>
+                      <?php if (isset($_COOKIE['hpopup']) && $_COOKIE['hpopup'] = 'true'){?>
                         <a class="overlay-link" href="<?php the_permalink();?>"></a>
                       <?php }else { ?>
                         <a class="modal-btn overlay-link" data-toggle="modal" data-target=".pro_delivery_modal_01" href="#"></a>
@@ -239,7 +237,8 @@ if ($a == '') session_start();
       </div>
     </div>
   </section>
-  <?php if (!isset($_SESSION['hpopup'])): ?>
+  <?php  if(in_array('home-delivery', $urlex)): ?>
+  <?php if (!isset($_COOKIE['hpopup'])): ?>
   <div class="modal fade fl-modal-cntlr pro_delivery_modal_01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -272,6 +271,7 @@ if ($a == '') session_start();
       </div>
     </div>
   </div>  
+<?php endif; ?>
 <?php endif; ?>
 <?php get_template_part('templates/payment', 'process'); ?>
 <?php get_footer(); ?>
