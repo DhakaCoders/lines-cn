@@ -2,18 +2,27 @@
 - https://prnt.sc/ty5nrb
 
 1. Blog ar load more button ta hide thakbe, 9 tar besi hole then ata dekhabe
+
 2. Author archive page lagbe akta. Click korle ai author ar sob post load hobe
 - https://prnt.sc/ty39bj
+
 3. Product a click korle popup ta ase, amon kora ache. 
 But popup ta to postcode check korar jonno. Home delivery page a asbe, postcode na mille to product access e korte parbe na. Tahole product click a modal ta linkup korlam keno? Aktu to vabte hobe, naki amra robot?
+
 4. Merch active hole 'All Merch' hobe
 - https://prnt.sc/ty4px4
-5. Sub cat active hole current Sub cat ar title asbe
+
+5. Sub cat active hole sub cat ar title asbe
 - https://prnt.sc/ty4qv7
+
 6. Header Cart icon and mini cart ar design korte hobe. Update design akhane ache
 - https://www.dropbox.com/s/0d70k234vtjn7yq/06_shop.ai?dl=0
-7. Header Cart icon only shop page gulote show hobe
+- https://www.dropbox.com/s/t40zly2zw5fbu1i/basket.svg?dl=0
+
+7. Only cart a item thakle, shop page gulote header cart icon show hobe.
+
 8. Cart and checkout page ar design client ar pochondo hoyni. Client design dite chailo.
+
 9. 3 type ar product hobe. Beers, Merch and Food
 - Beers ar jonno option ache amader. Merch and Food ar jonno same options thakbe.
 - https://prnt.sc/ty5qdo, https://prnt.sc/ty5pes - Subtile ar jonno only akta text field use kori
