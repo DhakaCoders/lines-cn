@@ -78,13 +78,16 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 	border-color: #FF7274;
 	color: #FF7274;
 }
+.sl-pg-page-title-holder{
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
 .sl-pg-page-title{
 	font-size: 47px;
 	font-weight: 700;
 	line-height: 1;
 	text-transform: uppercase;
-	margin-top: 45px;
-	margin-bottom: 45px;
+	margin: 0;
 }
 .sl-pg-post-content-inr >p{
 	font-size: 24px;
@@ -93,12 +96,19 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 .sl-pg-page-inr-desc-cntlr{
 	padding: 0 33px;
 }
+.sl-pg-page-inr-desc-cntlr h2{
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1;
+	margin-top: 30px;
+	margin-bottom: 80px;	
+}
 .sl-pg-page-inr-desc-cntlr h3{
 	font-size: 35px;
 	font-weight: 700;
 	line-height: 1;
 	margin-top: 30px;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 .sl-pg-page-inr-desc-cntlr img{
 	margin-bottom: 60px;
@@ -222,7 +232,9 @@ body .lines-stories-innr.sl-pg-lines-stories-innr{
 .woocommerce-form-row span em{
 	font-size: 16px;
 }
-
+.event-date{
+	margin-top: 15px;
+}
 
 /* responsive */
 @media(max-width: 1299px){

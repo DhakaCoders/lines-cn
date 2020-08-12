@@ -1,18 +1,20 @@
   <?php 
   get_header(); 
   $cterm = get_queried_object();
-  $thisID = get_option('page_for_posts ');
+  $thisID = get_option('page_for_posts');
   $pageTitle = get_the_title($thisID);
   $custom_page_title = get_field('custom_page_title', $thisID);
   if(!empty(str_replace(' ', '', $custom_page_title))){
     $pageTitle = $custom_page_title;
   }
+  $pagebanner = get_field('bannerimage', $thisID);
+  if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/page-bnr-news-events-03.jpg';
   $urlex = explode('/', $_SERVER['REQUEST_URI']);
   ?>
   <span id="catID" data-id="<?php echo $cterm->term_id; ?>" style="display: none;"></span>
   <section class="page-bnr-shop news-events-banner hasBannerOverlay">
     <div class="page-bnr-shop-con news-events-banner-con" 
-    data-parallax="scroll" data-image-src="<?php echo THEME_URI; ?>/assets/images/page-bnr-news-events-03.jpg'); ?>">
+    data-parallax="scroll" data-image-src="<?php echo $pagebanner; ?>">
       <div class="container bannerOverlayInner">
         <div class="row">
           <div class="col-md-12">

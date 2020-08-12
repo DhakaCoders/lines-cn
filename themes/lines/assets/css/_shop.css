@@ -216,7 +216,8 @@
 }
 
 .main-shop-bnr-menu ul li.active span,
-.main-shop-bnr-menu ul li.active a{
+.main-shop-bnr-menu ul li.active a,
+.main-shop-bnr-menu ul li a:hover{
 	background: #f6ece0;
 	border-color: #f6ece0;
 	color: #000000;

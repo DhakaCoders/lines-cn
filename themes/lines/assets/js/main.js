@@ -92,6 +92,12 @@ $(window).scroll(function() {
     'transform'         : 'scale(' + (1 + scroll/2000) + ')'
   });
 });
+/*$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  $('.section-graphics-top').css({
+    'margin-top' : -(1 + scroll/20)
+  });
+});*/
 
 
 if($('.fancybox').length){

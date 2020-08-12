@@ -133,6 +133,7 @@
                     global $product;
                     $thumb_id = get_post_thumbnail_id($avail);
                     $spacifi = get_field('right_col', $avail->ID);
+                    $color = $spacifi['color'];
                     
                   ?>
                   <div class="fl-product-item red-product clearfix">
@@ -151,7 +152,12 @@
                       <h4><?php echo $avail->post_title;?></h4>
                       <?php if( !empty($spacifi['abv']) ): ?><p>ABV: <?php echo $spacifi['abv'];?>%</p><?php endif; ?>
                       <?php if( !empty($spacifi['style']) ): ?><p>Style: <?php echo $spacifi['style'];?></p><?php endif; ?>
-                      <?php if( !empty($spacifi['line']) ): ?><p>Line: <?php echo $spacifi['line'];?> <i></i></p><?php endif; ?>
+                      <?php if( !empty($spacifi['line']) ): ?>
+                        <p>Line: <?php echo $spacifi['line'];?>
+                        <?php if( !empty( $color ) ) {?>
+                          <i style="background: <?php echo $color; ?>"></i>
+                        <?php } ?></p>
+                      <?php endif; ?>
                       <div class="fl-product-bts" style="display: none;">
                         <div>
                           <a class="fl-btn" href="<?php echo esc_url( get_permalink($avail) ); ?>">LEARN MORE</a>

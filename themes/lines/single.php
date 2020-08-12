@@ -5,6 +5,8 @@
   $permalink = get_the_permalink();
   $pagebanner = get_field('bannerimage', get_the_ID());
   if( empty($pagebanner) ) $pagebanner = THEME_URI.'/assets/images/event-banner-slider-v2.png';
+  $content = get_field('main_content', get_the_ID());
+  $event_date = get_field('event_date', get_the_ID());
   ?>
   <section class="sl-pg-banner bg-position-btm df-page-bnr" data-parallax="scroll"  data-image-src="<?php echo $pagebanner; ?>">
     <div class="container">
@@ -39,10 +41,14 @@
           <div class="sl-pg-post-content-inr">
             <div class="sl-pg-post-content-top wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="0.5s">
               <div class="sl-pg-post-content-top-left">
+                <?php 
+                  $author_id = get_post_field( 'post_author', get_the_ID() );
+                  $author_name = get_the_author_meta('display_name', $author_id);
+                ?>
                 <ul class="reset-list">
                   <li>BLOG</li>
-                  <li><?php echo get_the_date('M d Y'); ?></li>
-                  <li>WRITTEN BY <?php echo get_the_author_link(); ?></li>
+                  <?php if( empty( $event_date ) ) printf('<li>%s</li>', get_the_date('M d Y')); ?>
+                  <li>WRITTEN BY <a href="javascript:void(0)"><?php echo $author_name; ?></a></li>
                 </ul>
               </div>
               <div class="sl-pg-post-content-top-rgt">
@@ -65,9 +71,12 @@
               </div>
             </div>
             <div class="wow fadeInUpShort" data-wow-duration="0.5s" data-wow-delay="0.8s">
-              <h2 class="sl-pg-page-title">
-                <?php the_title(); ?>
-              </h2>
+              <div class="sl-pg-page-title-holder">
+                <h1 class="sl-pg-page-title"><?php the_title(); ?></h1>
+                <?php 
+                if( !empty( $event_date ) ) printf('<div class="event-date">%s</div>', $event_date);
+                ?>
+              </div>
               <?php 
                 $toptext = get_field('toptext', get_the_ID());
                 if( !empty($toptext) ) echo wpautop( $toptext );
@@ -75,7 +84,7 @@
             </div>
 
             <div class="sl-pg-page-inr-desc-cntlr wow fadeInUpShort" data-wow-duration="1.0s" data-wow-delay="1.0s">
-              <?php the_content(); ?>
+              <?php if( !empty($content) ) echo wpautop( $content ); ?>
             </div>
             <div class="sl-pg-social-link wow fadeInLeftShort" data-wow-duration="0.5s" data-wow-delay="0.5s">
               <h4 class="sl-pg-social-title">SHARE:</h4>   
@@ -112,7 +121,7 @@ $query = new WP_Query(array(
 );
 if($query->have_posts()):
 ?>
-  <section class="lines-stories sl-pg-articles">
+  <section class="lines-stories sl-pg-articles" style="display: none;">
     <span class="sl-pg-articles-sec-top-angle">
       <svg class="sl-pg-articles-sec-top-angle-svg svg-cntlr" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1600" height="144.535" viewBox="0 0 1600 144.535">
         <g id="Top" transform="translate(0 -1921.064)">

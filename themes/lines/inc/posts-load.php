@@ -67,7 +67,7 @@ function ajax_post_script_load_more($args, $termID = '') {
         $ajax = true;
     }
     //number of posts per page default
-    $num =1;
+    $num =9;
     //page number
     $paged = 1;
     if(isset($_POST['catid']) && !empty($_POST['catid'])){
