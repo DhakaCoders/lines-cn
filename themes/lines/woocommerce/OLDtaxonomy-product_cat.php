@@ -175,6 +175,8 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                     <?php if(in_array('home-delivery', $urlex)): ?>
                       <?php if (isset($_COOKIE['hpopup']) && $_COOKIE['hpopup'] = 'true'){?>
                         <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                      <?php }else { ?>
+                        <a class="modal-btn overlay-link" data-toggle="modal" data-target=".pro_delivery_modal_01" href="#"></a>
                       <?php } ?>
                     <?php else: ?>
                       <a class="overlay-link" href="<?php the_permalink();?>"></a>
@@ -189,8 +191,6 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                       <?php echo $product->get_price_html(); ?>
                     </div>
                   </div>
-                  <?php if(in_array('home-delivery', $urlex)): ?>
-                  <?php if (isset($_COOKIE['hpopup']) && $_COOKIE['hpopup'] = 'true'){?>
                   <div class="core-beer-item-btns">
                     <div class="cbibtn-1">
                       <a class="fl-btn" href="<?php echo !empty($link)? $link:'#'; ?>">LEARN MORE</a>
@@ -199,17 +199,6 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                       <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
                     </div>
                   </div>
-                  <?php } ?>
-                  <?php else: ?>
-                    <div class="core-beer-item-btns">
-                      <div class="cbibtn-1">
-                        <a class="fl-btn" href="<?php echo !empty($link)? $link:'#'; ?>">LEARN MORE</a>
-                      </div>
-                      <div class="cbibtn-2">
-                        <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
-                      </div>
-                    </div>
-                  <?php endif; ?>
                 </div>
               </li>
               <?php else: ?>
@@ -219,6 +208,8 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                     <?php if(in_array('home-delivery', $urlex)): ?>
                       <?php if (isset($_COOKIE['hpopup']) && $_COOKIE['hpopup'] = 'true'){?>
                         <a class="overlay-link" href="<?php the_permalink();?>"></a>
+                      <?php }else { ?>
+                        <a class="modal-btn overlay-link" data-toggle="modal" data-target=".pro_delivery_modal_01" href="#"></a>
                       <?php } ?>
                     <?php else: ?>
                       <a class="overlay-link" href="<?php the_permalink();?>"></a>
@@ -254,27 +245,14 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
                       <div class="pr-lprice"><?php echo $product->get_price_html(); ?></div>
                     </div>
                   </div>
-                  <?php if(in_array('home-delivery', $urlex)): ?>
-                  <?php if (isset($_COOKIE['hpopup']) && $_COOKIE['hpopup'] = 'true'){?>
-                  <div class="core-beer-item-btns">
+                  <div class="core-beer-item-btns gridNewbtns">
                     <div class="cbibtn-1">
-                      <a class="fl-btn" href="<?php echo !empty($link)? $link:'#'; ?>">LEARN MORE</a>
+                      <a class="fl-btn" href="<?php the_permalink();?>">LEARN MORE</a>
                     </div>
                     <div class="cbibtn-2">
                       <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
                     </div>
                   </div>
-                  <?php } ?>
-                  <?php else: ?>
-                    <div class="core-beer-item-btns">
-                      <div class="cbibtn-1">
-                        <a class="fl-btn" href="<?php echo !empty($link)? $link:'#'; ?>">LEARN MORE</a>
-                      </div>
-                      <div class="cbibtn-2">
-                        <a class="fl-btn" href="<?php echo $cart_url; ?>">BUY</a>
-                      </div>
-                    </div>
-                  <?php endif; ?>
                 </div>
               </li>
               <?php endif; ?>
@@ -311,6 +289,10 @@ $urlex = explode('/', $_SERVER['REQUEST_URI']);
   <div class="modal fade fl-modal-cntlr pro_delivery_modal_01" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
         <div class="modal-body">
           <div class="fl-modal-fea-img">
             <img src="<?php echo THEME_URI; ?>/assets/images/modal-fea-img.jpg">

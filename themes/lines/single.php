@@ -48,7 +48,7 @@
                 <ul class="reset-list">
                   <li>BLOG</li>
                   <?php if( empty( $event_date ) ) printf('<li>%s</li>', get_the_date('M d Y')); ?>
-                  <li>WRITTEN BY <a href="javascript:void(0)"><?php echo $author_name; ?></a></li>
+                  <li>WRITTEN BY <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo $author_name; ?></a></li>
                 </ul>
               </div>
               <div class="sl-pg-post-content-top-rgt">

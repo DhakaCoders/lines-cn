@@ -67,7 +67,7 @@ function ajax_post_script_load_more($args, $termID = '') {
         $ajax = true;
     }
     //number of posts per page default
-    $num =9;
+    $num = 9;
     //page number
     $paged = 1;
     if(isset($_POST['catid']) && !empty($_POST['catid'])){
@@ -107,6 +107,7 @@ function ajax_post_script_load_more($args, $termID = '') {
      }
 
     if($query->have_posts()):
+    $totalPost = $query->found_posts;
       $i= 0.2;
     while($query->have_posts()): $query->the_post();
       $thumb_id = get_post_thumbnail_id(get_the_ID());
@@ -138,8 +139,11 @@ function ajax_post_script_load_more($args, $termID = '') {
         </li>
         <?php
     $i+=0.2; endwhile; 
+
     endif;  
-    
+    if($totalPost <= $num){
+      echo '<style>.lines-stories-button{display:none !important;}</style>';
+    }
     wp_reset_postdata();
     //check ajax call
     if($ajax) wp_die();
