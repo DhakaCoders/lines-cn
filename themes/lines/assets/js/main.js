@@ -428,7 +428,10 @@ function handleScroll(){
 */
 
 if( $('.pro_delivery_modal_01').length ){
-  $('.pro_delivery_modal_01').modal('show');
+  $('.pro_delivery_modal_01').modal({
+    show: true,
+    backdrop: false,
+  });
 }
 $('body').addClass('globeshow');
 

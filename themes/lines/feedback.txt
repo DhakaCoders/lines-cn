@@ -1,18 +1,18 @@
 * Product grid ar design change korci. Pull korle pabe. / dwr-rps
 - https://prnt.sc/ty5nrb
 
-1. Blog ar load more button ta hide thakbe, 9 tar besi hole then ata dekhabe
+1. Blog ar load more button ta hide thakbe, 9 tar besi hole then ata dekhabe - done
 
 2. Author archive page lagbe akta. Click korle ai author ar sob post load hobe
 - https://prnt.sc/ty39bj
 
 3. Product a click korle popup ta ase, amon kora ache. 
-But popup ta to postcode check korar jonno. Home delivery page a asbe, postcode na mille to product access e korte parbe na. Tahole product click a modal ta linkup korlam keno? Aktu to vabte hobe, naki amra robot?
+But popup ta to postcode check korar jonno. Home delivery page a asbe, postcode na mille to product access e korte parbe na. Tahole product click a modal ta linkup korlam keno? Aktu to vabte hobe, naki amra robot? - Done
 
-4. Merch active hole 'All Merch' hobe
+4. Merch active hole 'All Merch' hobe  - Done
 - https://prnt.sc/ty4px4
 
-5. Sub cat active hole sub cat ar title asbe
+5. Sub cat active hole sub cat ar title asbe  - Done
 - https://prnt.sc/ty4qv7
 
 6. Header Cart icon and mini cart ar design korte hobe. Update design akhane ache
