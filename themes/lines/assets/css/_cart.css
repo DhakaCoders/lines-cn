@@ -1,3 +1,10 @@
+body .cartcheckout{
+  padding-top: 150px!important;
+  padding-bottom: 100px;
+}
+body .cartcheckout .sl-pg-page-title{
+  display: none;
+}
 .qty{
   width: 95px;
   height: 60px;
@@ -212,4 +219,87 @@ span{
 }
 .woocommerce .pp-quantity-row div.quantity{
   float: none!important;
+}
+.cartTableHdr{
+  background: #000;
+  padding: 10px;
+  color: #fff;
+  display: none;
+}
+.cartcheckoutIn .cartHolder{
+  padding: 20px;
+  background: #F6ECE0;
+}
+.cartcheckoutIn .default-page .cartHolderIn {
+    background: #fff;
+}
+.cartcheckoutIn .default-page .cartHolderIn table,
+.cartcheckoutIn .default-page .cartHolderIn table .quantity .qty,
+.cartHolderIn table .product-name a{
+  color: #2F2E2E!important;
+}
+tr.space td {
+    padding: 15px 0!important;
+}
+tr.buttons{
+  background: #000;
+}
+tr td.product-thumbnail a{
+  display: inline-block;
+}
+tr td.product-thumbnail img {
+    max-width: 50px!important;
+    width: 100%!important;
+    padding-top: 25px;
+}
+tr td.product-remove{
+  text-align: right;
+}
+tr td.product-remove a{
+  display: inline-block!important;
+}
+.cartcheckoutIn .default-page .cartHolderIn table th {
+    padding: 9px 12px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    border: transparent;
+}
+.cartcheckoutIn .default-page .cartHolderIn table thead{
+    background: #000;
+    padding: 10px;
+    color: #fff;
+}
+.cartcheckoutIn .default-page .cartHolderIn table .quantity .qty{
+  height: 40px;
+  width: 60px;
+  border: 1px solid #000;
+}
+.cartcheckoutIn .default-page .cartHolderIn table .quantity input[type=number]::-webkit-inner-spin-button, 
+.cartcheckoutIn .default-page .cartHolderIn table .quantity input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals{
+  padding: 15px;
+}
+.cart_totals h2{
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 30px;  
+}
+.woocommerce .cart-collaterals table.shop_table th, 
+.woocommerce .cart-collaterals table.shop_table td{
+    border: 1px solid rgba(0,0,0,.1)!important;
+}
+.cartcheckoutIn .default-page .cartHolderIn #coupon_code {
+    width: 235px;
+    border: 1px solid #F6C042!important;
+    padding: 10px;
 }

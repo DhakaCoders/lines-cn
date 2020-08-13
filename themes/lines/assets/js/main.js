@@ -431,4 +431,10 @@ if( $('.pro_delivery_modal_01').length ){
   $('.pro_delivery_modal_01').modal('show');
 }
 $('body').addClass('globeshow');
+
+$('a.miniCartHandle').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().toggleClass('minCartActive');
+});
+
 })(jQuery);
